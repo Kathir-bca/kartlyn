@@ -1,0 +1,610 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kartlyn</title>
+    <link rel="stylesheet" href="styles/home.css">
+    <link rel="stylesheet" href="styles/homemedia.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.3.0/css/all.min.css"
+        integrity="sha512-ApSLB1Pd3/bZN8fWB/RG9YhN/7bd9Hkf3AGaE2mPfebjrxagjuBtx2GcgdqIlJkUzwylBo61r9Xa9NmgBI0swA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <p class="Announcement">Flash Sale!<i class="fa-solid fa-tag"></i> Up to 50% off on selected products. <span
+            style="color: #1D4ED8;">Shop Now</span> </p>
+
+
+
+    <header class="header">
+
+        <div class="left-section">
+            <img src="images/Kartlyn.png" alt="kartlyn" class="page-logo">
+        </div>
+
+        <div class="middle-section">
+            <select name="All Categories" id="categories">
+                <option value="all">All Categories</option>
+                <option value="electronics">Electronics</option>
+                <option value="fashion">Fashion</option>
+                <option value="home">Home & Living</option>
+            </select>
+            <input type="text" id="search-bar" placeholder="Search for products, brands and more...">
+            <button type="button"><img src="Icons/search.png" alt="search"></button>
+        </div>
+
+        <div class="right-section">
+            <div>
+                <i class="fa-solid fa-truck"></i>Track Order
+            </div>
+            <div class="wishlist">
+                <i class="fa-regular fa-heart"></i>Wishlist
+                <span>3</span>
+            </div>
+            <div class="cart">
+                <i class="fa-solid fa-cart-shopping"></i>Cart
+                <span>2</span>
+            </div>
+            <div href="profile.html"  class="user-profile">
+                <div>
+                    <img src="images/k2.jpg" alt="user">
+                </div>
+                <span class="my-account">
+                    <a href="profile.html"><small>Hi, Kathiravan</small></a>
+                    <a href="profile.html" class="user-account">My Account<i class="fa-solid fa-angle-down"></i></a>
+                </span>
+            </div>
+        </div>
+
+    </header>
+
+
+
+    <nav class="nav">
+        <div class="allCate">
+            <i class="fa-solid fa-bars"></i>
+            <span>All Categories</span>
+        </div>
+        <div class="nav-row">
+            <a href="home.html" class="nav-active">Home</a>
+            <a href="shop.html">Shop</a>
+            <a href="deals.html">Deals</a>
+            <a href="new.html">New Arrivals</a>
+            <a href="brands.html">Brands</a>
+            <a href="blog.html">Blog</a>
+            <a href="contact.html">Contact Us</a>
+        </div>
+    </nav>
+
+
+
+    <div class="main">
+        <div class="side-bar">
+            <div>
+                <i class="fa-solid fa-display" style="color: rgb(0, 0, 0);"></i>
+                <p>Electronics</p>
+                <i class="fa-solid fa-chevron-right" style="color: rgb(0, 0, 0);"></i>
+            </div>
+            <div>
+                <i class="fa-solid fa-shirt" style="color: rgb(0, 0, 0);"></i>
+                <p>Fashion & Apparel</p>
+                <i class="fa-solid fa-chevron-right" style="color: rgb(0, 0, 0);"></i>
+            </div>
+            <div>
+                <i class="fa-solid fa-home" style="color: rgb(0, 0, 0);"></i>
+                <p>Home & Living</p>
+                <i class="fa-solid fa-chevron-right" style="color: rgb(0, 0, 0);"></i>
+            </div>
+            <div>
+                <i class="fa-solid fa-spray-can-sparkles" style="color: rgb(0, 0, 0);"></i>
+                <p>Beauty & Personal Care</p>
+                <i class="fa-solid fa-chevron-right" style="color: rgb(0, 0, 0);"></i>
+            </div>
+            <div>
+                <i class="fa-regular fa-futbol" style="color: rgb(0, 0, 0);"></i>
+                <p>Sports & Outdoors</p>
+                <i class="fa-solid fa-chevron-right" style="color: rgb(0, 0, 0);"></i>
+            </div>
+            <div>
+                <i class="fa-solid fa-book" style="color: rgb(0, 0, 0);"></i>
+                <p>Books & Stationary</p>
+                <i class="fa-solid fa-chevron-right" style="color: rgb(0, 0, 0);"></i>
+            </div>
+            <div>
+                <i class="fa-solid fa-car" style="color: rgb(0, 0, 0);"></i>
+                <p>Automotive</p>
+                <i class="fa-solid fa-chevron-right" style="color: rgb(0, 0, 0);"></i>
+            </div>
+            <div>
+                <i class="fa-solid fa-cubes-stacked" style="color: rgb(0, 0, 0);"></i>
+                <p>Toys & Games</p>
+                <i class="fa-solid fa-chevron-right" style="color: rgb(0, 0, 0);"></i>
+            </div>
+            <div>
+                <i class="fa-solid fa-heart-circle-plus" style="color: rgb(0, 0, 0);"></i>
+                <p>Health & Wellness</p>
+                <i class="fa-solid fa-chevron-right" style="color: rgb(0, 0, 0);"></i>
+            </div>
+            <div>
+                <i class="fa-solid fa-ellipsis" style="color: rgb(0, 0, 0);"></i>
+                <p>More Categories</p>
+                <i class="fa-solid fa-chevron-right" style="color: rgb(0, 0, 0);"></i>
+            </div>
+        </div>
+
+
+
+
+
+
+
+
+        <section class="slider" data-slider aria-label="Featured products">
+
+            <div class="slider-viewport">
+
+                <div class="slides" data-track>
+
+                    <article class="slide is-active" data-slide aria-hidden="false">
+                        <div class="slide-content">
+                            <p class="slide-label" style="color: #1D4ED8;">Featured Product</p>
+                            <h1>Experience Music Like Never Before</h1>
+                            <p>Premium sound. Ultimate comfort.</p>
+                            <p>Up to 40% OFF on headphones</p>
+
+                            <a class="slide-button" href="shop.html">
+                                Shop Now <span aria-hidden="true">→</span>
+                            </a>
+                        </div>
+
+                        <img class="slide-image" src="images/headphone.png" alt="Wireless headphones">
+                    </article>
+
+                    <article class="slide" data-slide aria-hidden="true">
+                        <div class="slide-content">
+                            <p class="slide-label" style="color: #1D4ED8;">New Collection</p>
+                            <h1>Premium Fashion For Every Occasion</h1>
+                            <p>Discover the latest trends in clothing, footwear
+                            <p>and accessories for every occasion.</p>
+                            </p>
+                            <p>Up to 60% OFF on t-shirts</p>
+
+                            <a class="slide-button" href="shop.html">
+                                Explore Fashion <span aria-hidden="true">→</span>
+                            </a>
+                        </div>
+
+                        <img class="slide-image" src="images/fashionslider.png" alt="Modern laptop">
+                    </article>
+
+                    <article class="slide" data-slide aria-hidden="true">
+                        <div class="slide-content">
+                            <p class="slide-label" style="color: #1D4ED8;">Exclusive Collection</p>
+                            <h1>Complete Your Look with Premium Accessories</h1>
+                            <p>Explore trendy backpacks, wallets, belts, Watches, sunglasses
+                            <p>and-crafted to add the perfect finishing touch every oufit.</p>
+                            </p>
+                            <p>Smart watches up to 40% OFF</p>
+
+                            <a class="slide-button" href="shop.html">
+                                Shop Now <span aria-hidden="true">→</span>
+                            </a>
+                        </div>
+
+                        <img class="slide-image" src="images/accessslider.png" alt="Smart watch">
+                    </article>
+
+                </div>
+
+                <button type="button" class="slider-arrow slider-arrow-left" data-prev aria-label="Previous slide">
+                    &#10094;
+                </button>
+
+                <button type="button" class="slider-arrow slider-arrow-right" data-next aria-label="Next slide">
+                    &#10095;
+                </button>
+
+                <div class="slider-dots" data-dots role="tablist" aria-label="Choose a slide">
+                </div>
+
+            </div>
+
+        </section>
+
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <section class="feature">
+        <div class="sec1">
+            <img src="Icons/truck.png" alt="deliver">
+            <div>
+                <h4>Free Shipping</h4>
+                <p>On orders over ₹499</p>
+            </div>
+        </div>
+        <div class="sec2">
+            <img src="Icons/return.png" alt="return">
+            <div>
+                <h4>Easy Returns</h4>
+                <p>30 days return policy</p>
+            </div>
+        </div>
+        <div class="sec3">
+            <img src="Icons/security.png" alt="return">
+            <div>
+                <h4>Secure Payments</h4>
+                <p>100% secure checkout</p>
+            </div>
+        </div>
+        <div class="sec4">
+            <img src="Icons/tag.png" alt="return">
+            <div>
+                <h4>Best Prices</h4>
+                <p>Guaranteed best price</p>
+            </div>
+        </div>
+        <div class="sec5">
+            <img src="Icons/support.png" alt="return">
+            <div>
+                <h4>24/7 Support</h4>
+                <p>Dedicated Support</p>
+            </div>
+        </div>
+    </section>
+
+
+    <section class="cate-deals">
+        <div class="cate-grid">
+            <div class="cate-title">
+                <div>
+                    <h2>Shop by Category</h2>
+                    <small>Explore top categories</small>
+                </div>
+                <div>
+                    <a href="#">View All</a>
+                </div>
+            </div>
+
+            <div class="cate-row">
+                <div class="cate-column">
+                    <img src="images/elect.png" alt="electronics">
+                    <p>Electronics</p>
+                </div>
+                <div class="cate-column">
+                    <img src="images/fash.jpg" alt="fashion">
+                    <p>Fashion</p>
+                </div>
+                <div class="cate-column">
+                    <img src="images/home.jpg" alt="home">
+                    <p>Home & Living</p>
+                </div>
+                <div class="cate-column">
+                    <img src="images/beauty.png" alt="Beauty">
+                    <p>Beauty</p>
+                </div>
+                <div class="cate-column">
+                    <img src="images/cr7.png" alt="sports">
+                    <p>Sports</p>
+                </div>
+                <div class="cate-column">
+                    <img src="images/book.png" alt="books">
+                    <p>Books</p>
+                </div>
+                <div class="cate-column">
+                    <img src="images/toy.png" alt="toy">
+                    <p>Toys & Games</p>
+                </div>
+                <div class="cate-column">
+                    <img src="images/tire.png" alt="automotive">
+                    <p>Automotive</p>
+                </div>
+            </div>
+        </div>
+        <div class="dealofday">
+            <div class="dealofday-text">
+                <div>
+                    <h3>Deal Of the Day</h3>
+                    <span>08 : 45 : 32</span>
+                </div>
+                <div>
+                    <legend>boAt Airpods 141</legend>
+                    <p>True Wireless Earbuds</p>
+                </div>
+                <div class="price-offer">
+                    <h2>₹1,299</h2>
+                    <p>₹2,499</p>
+                    <span>40% OFF</span>
+                </div>
+                <a href="shop.html">
+                    <button>Shop Now<i class="fa-solid fa-arrow-right"></i></button>
+                </a>
+            </div>
+            <div class="dealofday-img">
+                <img src="images/airpods.png" alt="airpods">
+            </div>
+        </div>
+    </section>
+
+    <section class="product-section">
+        <div class="product-top-sec">
+            <div class="p-title">
+                <h2>Top Picks For You </h2>
+                <p>Handpicked products just for you</p>
+            </div>
+            <a href="#">View all</a>
+        </div>
+        <div class="products" id="products">
+
+        </div>
+        <div class="elect-section">
+            <h2>Best Deals On Electronics</h2>
+            <div class="e-products" id="eProducts">
+
+            </div>
+        </div>
+    </section>
+
+
+    <section class="offer-section">
+        <div class="offer-container1">
+            <div class="offer-deatils">
+                <h2>Fashion Sale</h2>
+                <h3>Up to 60% OFF</h3>
+                <p>Latest trends & styles</p>
+                <a href="shop.html">
+                    <button type="button">Shop Fashion<i class="fa-solid fa-arrow-right"></i></button>
+                </a>
+            </div>
+            <div>
+                <img src="images/1piece.png" alt="fashion">
+            </div>
+        </div>
+        <div class="offer-container2">
+            <div class="offer-deatils">
+                <h2>Home Essentials</h2>
+                <h3>Up to 50% OFF</h3>
+                <p>Make your home better</p>
+                <a href="shop.html">
+                    <button type="button">Shop Home<i class="fa-solid fa-arrow-right"></i></button>
+                </a>
+            </div>
+            <div>
+                <img src="images/Homeessss.png" alt="home">
+            </div>
+        </div>
+        <div class="offer-container3">
+            <div class="offer-deatils">
+                <h2>Beauty Bestsellers</h2>
+                <h3>Up to 40% OFF</h3>
+                <p>Look good, feel great</p>
+                <a href="shop.html">
+                    <button type="button">Shop Beauty<i class="fa-solid fa-arrow-right"></i></button>
+                </a>
+            </div>
+            <div>
+                <img src="images/beautybest.png" alt="beauty">
+            </div>
+        </div>
+
+    </section>
+
+
+    <section class="brand-section">
+        <div class="brand-heading">
+            <div>
+                <h2>Top Brands</h2>
+                <p>Trusted by millions</p>
+            </div>
+            <a href="shop.html">View All</a>
+        </div>
+        <div class="brands-container">
+            <button class="arrow-btn">
+                <img src="Icons/left-arrow.png" alt="left-arrow" onclick="scrollLeftBtn()">
+            </button>
+
+            <div class="brands" id="brands">
+                <div class="brand-name">
+                    <img src="logo/samsung.png" alt="samusung">
+                </div>
+                <div class="brand-name">
+                    <img src="logo/apple.png" alt="apple">
+                </div>
+                <div class="brand-name">
+                    <img src="logo/realme.png" alt="realme">
+                </div>
+                <div class="brand-name">
+                    <img src="logo/oneplus.png" alt="1plus">
+                </div>
+                <div class="brand-name">
+                    <img src="logo/noise.png" alt="dell">
+                </div>
+                <div class="brand-name">
+                    <img src="logo/sony.png" alt="sony">
+                </div>
+                <div class="brand-name">
+                    <img src="logo/boat.png" alt="boat">
+                </div>
+                <div class="brand-name">
+                    <img src="logo/vivo.png" alt="mi">
+                </div>
+                <div class="brand-name">
+                    <img src="logo/oppo.png" alt="dell">
+                </div>
+                <div class="brand-name">
+                    <img src="logo/hp.png" alt="dell">
+                </div>
+                <div class="brand-name">
+                    <img src="logo/dell.png" alt="dell">
+                </div>
+            </div>
+            <button class="arrow-btn">
+                <img src="Icons/right-arrow.png" alt="right-arrow" onclick="scrollRightBtn()">
+            </button>
+        </div>
+
+    </section>
+
+
+
+    <section class="blog-section">
+        <div>
+            <h2>From Our Blog</h2>
+            <p>Tips, trends & more</p>
+        </div>
+        <div class="blogs">
+            <div class="blog-card">
+                <img src="images/blog.mobile.png" alt="blog">
+                <div>
+                    <p>May 20, 2026</p>
+                    <h3>Top 5 Mobile Phones in 2026</h3>
+                    <p>Ultimate guide to choose the best headphones.</p>
+                </div>
+                <a href="blog.html">Read More →</a>
+            </div>
+            <div class="blog-card">
+                <img src="images/blog.home.png" alt="blog">
+                <div>
+                    <p>May 14, 2026</p>
+                    <h3>How to Style Your Home</h3>
+                    <p>Simple tips to make your home beautiful.</p>
+                </div>
+                <a href="blog.html">Read More →</a>
+            </div>
+            <div class="blog-card">
+                <img src="images/blog.skin.png" alt="blog">
+                <div>
+                    <p>May 15, 2026</p>
+                    <h3>Skincare Routine for Healthy Skin</h3>
+                    <p>Daily skincare routine for glowing skin.</p>
+                </div>
+                <a href="blog.html">Read More →</a>
+            </div>
+        </div>
+    </section>
+
+
+
+
+    <section class="newsletter">
+        <div class="newsletter-content">
+
+            <div class="newsletter-text">
+                <div class="mail-icon">
+                    <i class="fa-regular fa-envelope"></i>
+                </div>
+
+                <div>
+                    <h2>Subscribe to Our Newsletter</h2>
+                    <p>Get updates on the latest offers, deals & more</p>
+                </div>
+            </div>
+
+            <form class="newsletter-form">
+                <input type="email" placeholder="Enter your email address">
+                <button type="submit">Subscribe</button>
+            </form>
+
+        </div>
+    </section>
+
+
+    <footer class="footer">
+        <div class="footer-top">
+            <div style="width: 300px; text-align: center;">
+                <img src="images/Kartlyn.PNG" alt="KartLyn">
+                <p>Your one-stop destination for all your shopping needs. Quality products, best prices & great service.
+                </p>
+                <div class="app-icons">
+                    <img src="Icons/communication.png" alt="fb">
+                    <img src="Icons/twitter.png" alt="twitter">
+                    <img src="Icons/youtube.png" alt="yt">
+                    <img src="Icons/instagram.png" alt="insta">
+                </div>
+            </div>
+            <div>
+                <h4>Customer Service</h4>
+                <p>Help Center</p>
+                <p>Track Order</p>
+                <p>Return & Refunds</p>
+                <p>Shipping Info</p>
+                <p>FAQs</p>
+            </div>
+            <div>
+                <h4>About Us</h4>
+                <p>About Kartlyn</p>
+                <p>Careers</p>
+                <p>Press & Media</p>
+                <p>Become a Seller</p>
+                <p>Contact Us</p>
+            </div>
+            <div>
+                <h4>My Account</h4>
+                <p>My Orders</p>
+                <p>Wishlist</p>
+                <p>Account Details</p>
+                <p>Addresses</p>
+                <p>Logout</p>
+            </div>
+            <div>
+                <h4>Categories</h4>
+                <p>Electronics</p>
+                <p>Fashion</p>
+                <p>Home & Living</p>
+                <p>Beauty</p>
+                <p>View All Categories</p>
+            </div>
+        </div>
+
+
+        <hr>
+
+
+        <div class="footer-bottom">
+            <div>
+                <p>&copy; 2026 Kartlyn. All Rights Reserved.</p>
+            </div>
+            <div class="footer-info">
+                <p><a href="privacy-policy.pdf">Privacy Policy</a></p>
+                <p><a href="Terms of Service.txt">Terms of Service</a></p>
+                <p><a href="refund.pdf">Refund Policy</a></p>
+            </div>
+            <div class="div">
+                <img src="Icons/visa.png" alt="visa">
+                <img src="Icons/mcard.png" alt="mc">
+                <img src="Icons/paytm.png" alt="paytm">
+                <img src="Icons/upi.png" alt="upi">
+            </div>
+        </div>
+    </footer>
+
+
+    <script src="script/home.js"></script>
+</body>
+
+</html>

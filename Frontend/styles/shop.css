@@ -1,0 +1,116 @@
+:root {
+    --bg-cl: rgb(0, 0, 53);
+    --text-cl: #FAF9F6;
+    --font-fam: Poppins, sans-serif;
+    --color: #1D4ED8;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    font-family: var(--font-fam);
+}
+
+i{
+    cursor: pointer;
+}
+a{
+    text-decoration: none;
+    color: #000;
+}
+
+.Announcement {
+    background-color: #0c1e29;
+    color: #fffe15;
+    text-align: center;
+    padding-top: 6px;
+    padding-bottom: 6px;
+    font-size: 13px;
+}
+.Announcement i{
+    color: #1D4ED8;
+}
+.Announcement span {
+    cursor: pointer;
+}
+
+.header {
+    display: grid;
+    grid-template-columns: 200px 1fr 500px;
+    place-items: center;
+    padding: 10px;
+}
+
+.page-logo {
+    padding-top: 4px;
+    width: 180px;
+}
+.middle-section{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-items: center;
+}
+#categories{
+    padding: 8.5px;
+    margin: -1px;
+    background-color: var(--color);
+    color: var(--text-cl);
+    border-radius: 6px 0 0 6px;
+}
+#search-bar{
+    padding: 8px;
+    width: 400px;
+}
+.middle-section i {
+    background-color: var(--color);
+    padding: 12px;
+    color: var(--text-cl);
+    margin: -1px;
+    border-radius: 0 6px 6px 0;
+}
+.right-section{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 40px 1fr;
+    place-items: center;
+}
+.right-section div , i{
+    display: inline-block;
+    font-size: 12px;
+    color: black;
+}
+.user-account{
+    font-size: 16px;
+    font-weight: 650;
+}
+.user-account i {
+    font-size: 11px;
+    margin: -8px;
+}
+.nav{
+    display: grid;
+    grid-template-columns: 250px 1fr;
+    padding: 20px;
+    text-align: center;
+    font-size: 16px;
+    font-weight: 600;
+    box-shadow: 0px 1px 2px rgba(0, 0, 0 ,0.2) ;
+}
+.allCate{
+    text-align: center;
+}
+.allCate span , i{
+    font-size: 16px;
+    padding-left: 10px;  
+}
+.nav-row{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+.nav-active{
+    color: var(--color);
+    padding-bottom: 20px;
+    margin-bottom: -21px;
+    border-bottom: 2.5px solid #1D4ED8;
+}

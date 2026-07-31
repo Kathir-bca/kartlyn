@@ -1,0 +1,254 @@
+* {
+    color: #111827;
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    margin: 0;
+    display: grid;
+    place-items: center;
+    min-height: 70vh;
+    background-color: #1D4ED8;
+}
+
+.header {
+    margin-top: 70px;
+    margin-bottom: 20px;
+    text-align: center
+}
+
+.header img {
+    width: 120px;
+    border-radius: 75px;
+}
+
+.header h1,p {
+    color: #FAF9F6;
+}
+
+.reg-container {
+    background-color: #FAF9F6;
+    width: auto;
+    display: grid;
+    grid-template-columns: 1fr;
+    place-items: center;
+    gap: 20px;
+    padding: 30px;
+    color: black;
+    border-radius: 6px;
+    box-shadow: 3px 3px 6px rgba(0, 0, 0, 0.5);
+}
+
+.reg-container h1 {
+    text-align: center;
+}
+
+.reg-container .u-line {
+    margin-top: 3px;
+    width: 180px;
+    height: 4px;
+    background-color: #1D4ED8;
+    border: none;
+    border-radius: 2px;
+}
+
+.login-form {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 20px;
+}
+
+.login-form label {
+    font-size: 14px;
+    font-weight: 600;
+}
+
+input {
+    padding: 8px;
+    border-radius: 6px;
+    border: 1.5px solid #d1d5db;
+    width: 95%;
+    background-color:#FAF9F6;
+
+}
+
+.name-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+}
+
+.name-container input {
+    padding: 8px;
+    border-radius: 6px;
+    border: 1.5px solid #d1d5db;
+    width: 90%;
+}
+
+.name-container label {
+    display: block;
+}
+
+.terms {
+    display: grid;
+    grid-template-columns: 40px 1fr;
+    vertical-align: center;
+}
+
+.terms input {
+    height: 16px;
+    box-shadow: none;
+}
+
+a {
+    color: #1D4ED8;
+    text-decoration: none;
+}
+
+#create-button {
+    padding: 10px;
+    border-radius: 6px;
+    background-color: #1D4ED8;
+    border: none;
+    color: #FAF9F6;
+    font-weight: 700;
+    transition: opacity 0.3s;
+}
+#create-button:hover{
+    opacity: 0.8;
+}
+#create-button:active{
+    opacity: 0.5;
+}
+
+.error{
+    color: white;
+    text-align: center;
+    display: none;
+    font-size: 12px;
+    background-color: red;
+    width: 300px;
+    border-radius: 4px;
+}
+
+.OR {
+    display: grid;
+    grid-template-columns: 1fr 50px 1fr;
+    align-items: center;
+}
+
+.OR span {
+    text-align: center;
+}
+
+.sign-in {
+    padding: 8px;
+    background-color: white;
+    border-radius: 6px;
+    border-color: #1D4ED8;
+    display: flex;
+    justify-content: center;
+    font-weight: 600;
+    transition: backgroun-color 0.3s ease , opacity 0.15s ease-in-out;
+}
+
+.sign-in img {
+    width: 18px;
+    padding-right: 5px;
+}
+
+.sign-in:hover{
+    background-color: #1D4ED8;
+    color: #FAF9F6;
+}
+.sign-in:active{
+    opacity: 0.7;
+}
+.to-login {
+    text-align: center;
+}
+
+.footer {
+    margin-top: 70px;
+    margin-bottom: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+}
+
+.footer p {
+    color: #FAF9F6;
+    font-size: 14px;
+    font-weight: 600;
+}
+
+.image {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    width: 200px;
+}
+
+.image img {
+    width: 20px;
+}
+.signin-with-google {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #204097;
+    padding: 20px;
+    text-align: center;
+    border-radius: 12px;
+    display: none;
+    box-shadow: 3px 3px 5px rgba(0,0,0,0.3);
+}
+.signin-with-google h2{
+    color: #FAF9F6;
+    font-weight: 500;
+    padding: 10px;
+}
+.google-accounts img{
+    width: 34px;
+    border-radius: 100%;
+}
+.google-accounts p , h3 , h4{
+    color: #48494b;
+}
+.google-accounts{
+    text-align: left;
+    background-color: #FAF9F6;
+    padding: 10px;
+    border-radius: 12px;
+}
+.google-accounts div{
+    display: grid;
+    grid-template-columns: 60px 1fr;
+    place-items: left;
+    padding: 10px;
+    align-items: center;
+}
+.google-accounts hr {
+    border: none;
+    border-top: 1.7px solid #204097;
+    margin: 0;
+}
+#add-acc{
+    width: 24px;
+    border-bottom:  none;
+}
+#backToSignin{
+    padding: 10px 40px;
+    margin-top: 20px;
+    border-radius: 6px;
+    border: none;
+    transition: opacity 0.15s linear;
+}
+#backToSignin:active{
+    opacity: 0.6;
+}
+
+

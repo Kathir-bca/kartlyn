@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register</title>
+    <link rel="stylesheet" href="styles/register.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <header class="header">
+        <img src="images/reg-removebg-preview.png" alt="img">
+        <h1>Create Your Account</h1>
+        <p>Join us and start your Journey</p>
+    </header>
+    <div class="reg-container">
+        <div class="reg-title">
+            <h1>REGISTER</h1>
+            <hr class="u-line">
+        </div>
+        <form class="login-form" id="register-form" onsubmit="return Validate()" action="index.html" novalidate>
+
+            <div class="name-container">
+                <div>
+                    <label for="f-name">First Name</label>
+                    <input type="text" placeholder="Enter your first name" id="f-name">
+                </div>
+                <div>
+                    <label for="l-name">Last Name</label>
+                    <input type="text" placeholder="Enter your last name" id="l-name">
+                </div>
+            </div>
+            <p id="name-error" class="error"></p>
+            <div class="email-container">
+                <label for="email">Email Address</label>
+                <input type="email" placeholder="Enter your email address" id="email">
+            </div>
+
+            <p id="email-error" class="error"></p>
+
+            <div class="username-container">
+                <label for="username">User Name</label>
+                <input type="text" placeholder="Choose a username" id="username">
+            </div>
+
+            <p id="user-error" class="error"></p>
+
+            <div class="password-container">
+                <label for="password">Password</label>
+                <input type="password" placeholder="Create a password" id="password">
+            </div>
+            <p id="password-error" class="error"></p>
+            <div>
+                <label for="c-password">Confirm Password</label>
+                <input type="password" placeholder="Confirm your password" id="c-password">
+            </div>
+            <p id="cpass-error" class="error"></p>
+            <div class="terms">
+                <input type="checkbox" id="agree">
+                <label for="agree"> I agree to the <a href="Terms of Service.txt">Terms of Service</a> and <a
+                        href="privacy-policy.pdf">Privacy Policy</a></label>
+            </div>
+            <p id="terms-error" class="error"></p>
+            <button type="submit" id="create-button">Create Account</button>
+
+            <div class="OR">
+                <div>
+                    <hr>
+                </div>
+                <span>OR</span>
+                <div>
+                    <hr>
+                </div>
+            </div>
+
+            <button type="button" class="sign-in" onclick="popUp()"><img src="images/google.png" alt=""> Sign in with Google</button>
+
+
+
+            <div class="signin-with-google" id="signin-with-google">
+                <img src="images/google.png" alt="google">
+                <p>Signin with Google</p>
+                <h2>Choose an account for MySite</h2>
+
+                <div class="google-accounts">
+                    <div>
+                        <img src="images/k2.jpg" alt="K">
+                        <span>
+                            <h3>Kathir</h3>
+                            <p>kathir1234@gmail.com</p>
+                        </span>
+                    </div>
+                    <hr>
+                    <div>
+                        <img src="images/m.jpg" alt="m">
+                        <span>
+                            <h3>Mohamed Rajak</h3>
+                            <p>rajak35@gmail.com</p>
+                        </span>
+                    </div>
+                    <hr>
+                    <div>
+                        <img src="images/h.jpg" alt="h">
+                        <span>
+                            <h3>Hari</h3>
+                            <p>hari1234@gmail.com</p>
+                        </span>
+                    </div>
+                    <hr>
+                    <div>
+                        <img src="images/s.jpg" alt="s">
+                        <span>
+                            <h3>Saravanan</h3>
+                            <p>sara1234@gmail.com</p>
+                        </span>
+                    </div>
+                    <hr>
+                    <div style="border-bottom: none;">
+                        <img src="images/add.png" alt="add" id="add-acc">
+                        <h4>Add another account</h4>
+                    </div>
+                </div>
+                <button type="button" id="backToSignin" onclick="back()">Back</button>
+            </div>
+
+
+
+
+            <span class="to-login">Already have an account? <a href="index.html">Login</a></span>
+        </form>
+    </div>
+    <footer class="footer">
+        <div class="image">
+            <img src="images/fb.png" alt="img">
+            <img src="images/twitter.png" alt="img">
+            <img src="images/link.png" alt="img">
+            <img src="images/ins.png" alt="img">
+        </div>
+        <p>&copy; 2025 Your Company. All rights reserved.</p>
+    </footer>
+    <script src="script/register.js"></script>
+</body>
+
+</html>
