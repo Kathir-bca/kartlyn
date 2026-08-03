@@ -67,7 +67,7 @@ img {
 
     .offer-section {
         display: grid;
-        grid-template-columns: repeat(2, minmax(0, 1fr));
+        grid-template-columns: 1fr 1fr;
     }
 
     .offer-container3 {
@@ -80,6 +80,22 @@ img {
 
     .blogs img {
         width: 100%;
+    }
+
+    .newsletter-content {
+        display: grid;
+        grid-template-columns: 1fr;
+        place-items: center;
+    }
+
+    .footer-bottom {
+        display: flex;
+        align-items: center;
+        gap: 20px;
+    }
+
+    .footer-bottom img {
+        width: 34px;
     }
 }
 
@@ -246,7 +262,7 @@ img {
     }
 
     .feature {
-        grid-template-columns: repeat(2, minmax(0, 1fr));
+        grid-template-columns: repeat(3, minmax(0, 1fr));
         gap: 0;
         margin: 12px;
         padding: 10px;

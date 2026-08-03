@@ -465,7 +465,8 @@ a {
 .sec4,
 .sec5 {
     display: grid;
-    grid-template-columns: 30px 1fr;
+    grid-template-columns: 50px 1fr;
+    gap: 10px;
     place-items: center;
     border-right: 1px solid rgb(233, 232, 236);
 }
@@ -475,8 +476,7 @@ a {
 }
 
 .feature img {
-    padding-left: 60px;
-    width: 20px;
+    width: 24px;
 }
 
 .cate-deals {
