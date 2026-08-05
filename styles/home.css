@@ -27,6 +27,7 @@ button {
 a {
     text-decoration: none;
     color: #000;
+    display: block;
 }
 
 
@@ -145,37 +146,37 @@ a {
   transform: translateY(-4px) scale(1.05);
   box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
   border-radius: 12px;
-  background-color: #1D4ED8;
 }
 .user-profile img {
     border-radius: 50%;
     width: 44px;
     position: absolute;
-    top: 19px;
-    left: 0px;
+    top: 21px;
+    left: 4px;
+    border: 2px solid gray;
 }
 
 .my-account {
     display: grid;
     grid-template-columns: 100px;
-    background-color: #1D4ED8;
-    color: #FAF9F6;
+    border: 2px solid #1D4ED8;
+    background-color: #bfcceb;
     border-radius: 40px;
-    padding: 5px 0px 5px 45px;
+    padding: 5px 0px 5px 48px;
     margin-bottom: 25px;
 }
 .my-account  small{
-    color: #FAF9F6;
+    color: #000;
 }
 
 .user-account {
-    color: #FAF9F6;
+    color: #000;
     font-weight: 500;
 }
 
 .user-account i {
     font-size: 11px;
-    color: #FAF9F6;
+    color: #000;
     padding-right: 2px;
 }
 
