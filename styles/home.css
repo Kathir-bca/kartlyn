@@ -81,16 +81,16 @@ a {
     padding: 10px;
     width: 350px;
     margin-left: -1px;
-    height: 54px;
+    height: 30px;
 }
 
 .middle-section button {
     background-color: var(--color);
-    padding: 0 20px 0 20px;
+    padding: 18px 20px 36px 20px;
     color: var(--text-cl);
     border-radius: 0 10px 10px 0;
     border: none;
-    height: 54px;
+    height: 30px;
 }
 
 .middle-section img {
@@ -151,8 +151,8 @@ a {
     border-radius: 50%;
     width: 44px;
     position: absolute;
-    top: 21px;
-    left: 4px;
+    top: 19.6px;
+    left: 2px;
     border: 2px solid gray;
 }
 
@@ -162,7 +162,7 @@ a {
     border: 2px solid #1D4ED8;
     background-color: #bfcceb;
     border-radius: 40px;
-    padding: 5px 0px 5px 48px;
+    padding: 6px 0px 6px 50px;
     margin-bottom: 25px;
 }
 .my-account  small{
@@ -171,13 +171,14 @@ a {
 
 .user-account {
     color: #000;
+    font-size: 12px;
     font-weight: 500;
 }
 
 .user-account i {
     font-size: 11px;
     color: #000;
-    padding-right: 2px;
+    padding-left: 2px;
 }
 
 .nav {
