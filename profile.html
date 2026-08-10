@@ -19,6 +19,10 @@
 
 <body>
     <header class="header">
+        <button type="button" id="menuToggle" class="menu-toggle" aria-label="Toggle navigation menu"
+            aria-expanded="false" aria-controls="sideBar">
+            <i class="fa-solid fa-bars"></i>
+        </button>
         <div class="header-search">
             <i class="fa-solid fa-magnifying-glass" style="color: rgb(0, 0, 0);"></i>
             <input type="text" placeholder="Search anything...">
@@ -41,12 +45,19 @@
         </div>
     </header>
 
-    <div class="side-bar">
+    <div id="sidebarOverlay" class="sidebar-overlay"></div>
+
+    <div class="side-bar" id="sideBar">
         <div class="side-bar-logo">
             <img src="images/secure-bank.png" alt="Profile">
         </div>
 
         <div class="side-bar-items">
+
+            <div class="active">
+                <img src="Icons/user-setting.png" alt="Settings">
+                <a href="profile.html">Profile & Settings</a>
+            </div>
             <div>
                 <img src="Icons/home.png" alt="Dashboard">
                 <a href="dashboard.html">Dashboard</a>
@@ -54,10 +65,6 @@
             <div>
                 <img src="Icons/account.png" alt="Accounts">
                 <a href="accounts.html">Accounts</a>
-            </div>
-            <div>
-                <img src="Icons/wallet.png" alt="Balance">
-                <a href="balance.html">Balance</a>
             </div>
             <div>
                 <img src="Icons/transaction.png" alt="Transactions">
@@ -72,25 +79,10 @@
                 <a href="loans.html">Loans</a>
             </div>
             <div>
-                <img src="Icons/graph.png" alt="Investments">
-                <a href="investments.html">Investments</a>
-            </div>
-            <div>
                 <img src="Icons/group.png" alt="Beneficiaries">
                 <a href="beneficiaries.html">Beneficiaries</a>
             </div>
-            <div>
-                <img src="Icons/discount.png" alt="Offers">
-                <a href="offers.html">Offers</a>
-            </div>
-            <div class="active">
-                <img src="Icons/user-setting.png" alt="Settings">
-                <a href="profile.html">Profile & Settings</a>
-            </div>
-            <div>
-                <img src="Icons/support.png" alt="Help & Support">
-                <a href="help-support.html">Help & Support</a>
-            </div>
+
         </div>
 
         <div class="side-bar-logout">
@@ -242,8 +234,8 @@
 
 
             <div class="quick-settings-container">
+                <h4>Quick Settings</h4>
                 <div class="quick-settings">
-                    <h4>Quick Settings</h4>
                     <div>
                         <img src="Icons/lock-purple.png" alt="">
                         <p>Change Password</p>
@@ -362,20 +354,20 @@
                         </div>
                     </div>
                     <div class="security-info">
-                        <div>
+                        
                         <i class="fa-solid fa-check" style="color: green;"></i>
-                        </div>
+                     
                         <span>Password is strong</span>
                     </div>
                     <div class="security-info">
                         <div>
-                        <i class="fa-solid fa-check" style="color: green;"></i>
+                            <i class="fa-solid fa-check" style="color: green;"></i>
                         </div>
                         <span>Two-factor authentication is enabled</span>
                     </div>
                     <div class="security-info">
                         <div>
-                        <i class="fa-solid fa-check" style="color: green;"></i>
+                            <i class="fa-solid fa-check" style="color: green;"></i>
                         </div>
                         <span>No suspicious activity detected</span>
                     </div>
@@ -388,7 +380,7 @@
 
 
         </div>
-
+        <script src="script/profile.js"> </script>
 </body>
 
 </html>
