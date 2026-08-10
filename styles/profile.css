@@ -699,7 +699,7 @@ a {
 
     .customer-info-container {
         display: grid;
-        width: 900px;
+        width: 920px;
         grid-template-columns: 300px 1fr;
     }
 
@@ -723,7 +723,7 @@ a {
     }
 
     .quick-settings-container {
-        width: 900px;
+        width: 920px;
         place-items: center;
     }
 
@@ -748,7 +748,7 @@ a {
 
     .footer {
         display: grid;
-        grid-template-columns: 520px 360px;
+        grid-template-columns: 525px 375px;
         gap: 20px;
     }
 }
