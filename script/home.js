@@ -133,7 +133,6 @@ document.addEventListener("DOMContentLoaded", () => {
         }
     });
 
-    // Touch/swipe support
     track.addEventListener("pointerdown", event => {
         touchStartX = event.clientX;
     });
