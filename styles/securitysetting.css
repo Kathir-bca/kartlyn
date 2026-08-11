@@ -723,17 +723,24 @@ svg {
 @media (max-width: 1024px) {
     .content {
         padding: 20px;
+        margin-top: 85px;
     }
     .grid {
         grid-template-columns: 1fr;
     }
 }
 
-@media (max-width: 900px) {
+@media (max-width: 780px) {
     body {
         padding-left: 0;
     }
-
+    
+    hr{
+        width: 780px;
+    }
+    .card{
+        width: 700px;
+    }
     .sidebar {
         display: none;
     }
@@ -754,18 +761,18 @@ svg {
     .card {
         padding: 18px 16px 16px;
         border-radius: 14px;
+        width: 780px;
     }
-
-    .setting-row {
-        flex-wrap: wrap;
-        row-gap: 10px;
-    }
-
     .setting-row .btn-outline,
     .setting-row .row-action {
         margin-left: 54px;
     }
-
+    .settings-options{
+        gap: 65px;
+    }
+    hr{
+        width: 850px;
+    }
     .activity-row {
         flex-wrap: wrap;
     }

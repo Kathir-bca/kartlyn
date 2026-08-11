@@ -525,9 +525,10 @@ a {
 
 
 
-@media (max-width: 1100px) {
+@media (max-width: 1023px) {
     .content {
         padding: 20px;
+        margin-top: 85px;
     }
 
     .settings-content {
@@ -552,12 +553,14 @@ a {
 @media (max-width: 746px) {
 
     .settings-content {
-        padding: 14px;
-        place-items: center;
+        padding: 16px;
     }
-
+    hr{
+        width: 750px;
+    }
     .settings-card {
         padding: 18px;
+        width: 650px;
     }
 
     .setting-row,
@@ -570,6 +573,7 @@ a {
     }
     .settings-grid {
         grid-template-columns:  1fr;
+        place-items: center;
     }
 
     .setting-icon {
@@ -606,7 +610,9 @@ a {
         align-items: flex-start;
         padding: 12px 0;
     }
-
+    /* .settings-card {
+        width: 100px;
+    } */
     .setting-select {
         width: 105px;
         min-width: 95px;

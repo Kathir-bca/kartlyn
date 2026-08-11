@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Profile</title>
-    <link rel="stylesheet" href="styles/preferences.css">
+    <link rel="stylesheet" href="styles/notifications.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.3.0/css/all.min.css"
         integrity="sha512-ApSLB1Pd3/bZN8fWB/RG9YhN/7bd9Hkf3AGaE2mPfebjrxagjuBtx2GcgdqIlJkUzwylBo61r9Xa9NmgBI0swA=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
@@ -93,35 +93,581 @@
 
     <div class="content">
         <div class="main-content">
-            <h2>Profile & Settings</h2>
-            <p>Manage your profile information, preferences and account settings</p>
-        </div>
-        <div class="settings-options">
-            <div>
-                <i class="fa-regular fa-user"></i>
-                <a href="profile.html">Profile Information</a>
+            <h2>Notifications</h2>
+            <p>Manage how and when you receive notifications from SecureBank</p>
+            <div class="settings-options">
+                <div>
+                    <i class="fa-regular fa-user"></i>
+                    <a href="profile.html">Profile Information</a>
+                </div>
+                <div>
+                    <i class="fa-solid fa-shield-halved"></i>
+                    <a href="securitysetting.html">Security Settings</a>
+                </div>
+                <div>
+                    <i class="fa-solid fa-sliders"></i>
+                    <a href="preferences.html">Preferences</a>
+                </div>
+                <div class="active-option">
+                    <i class="fa-regular fa-bell"></i>
+                    <a href="notifications.html">Notifications</a>
+                </div>
+                <div>
+                    <i class="fa-solid fa-link"></i>
+                    <a href="linkaccount.html">Linked Accounts</a>
+                </div>
             </div>
-            <div >
-                <i class="fa-solid fa-shield-halved"></i>
-                <a href="securitysetting.html">Security Settings</a>
-            </div>
-            <div >
-                <i class="fa-solid fa-sliders"></i>
-                <a href="preferences.html">Preferences</a>
-            </div>
-            <div class="active-option">
-                <i class="fa-regular fa-bell"></i>
-                <a href="notifications.html">Notifications</a>
-            </div>
-            <div>
-                <i class="fa-solid fa-link"></i>
-                <a href="linkaccount.html">Linked Accounts</a>
-            </div>
-        </div>
-        <hr>
+            <hr>
 
-    </div>
-    <script src="script/notifications.js"></script>
+            <section class="notification-content">
+
+                <div class="notification-layout">
+
+                
+
+                    <div class="notification-card notification-preferences">
+
+                        <div class="notification-header">
+
+                            <div>
+                                <h2>Notification Preferences</h2>
+                                <p>
+                                    Choose the types of notifications you want to receive
+                                    and how you want to receive them.
+                                </p>
+                            </div>
+
+                            <div class="select-all-box">
+                                <span>Select All</span>
+
+                                <label class="notification-switch">
+                                    <input type="checkbox" id="selectAll" checked>
+                                    <span class="notification-slider"></span>
+                                </label>
+                            </div>
+
+                        </div>
+
+
+                        <!-- TABLE HEADER -->
+
+                        <div class="notification-table-header">
+
+                            <span>Notification Type</span>
+
+                            <div class="channel-heading">
+                                <span>Email</span>
+                                <span>SMS</span>
+                                <span>Push</span>
+                            </div>
+
+                        </div>
+
+
+                        <!-- ACCOUNT ALERTS -->
+
+                        <div class="notification-row">
+
+                            <div class="notification-info">
+
+                                <div class="notification-icon purple">
+                                    <i class="fa-regular fa-bell"></i>
+                                </div>
+
+                                <div>
+                                    <h3>Account Alerts</h3>
+                                    <p>
+                                        Important updates about your account status and activities
+                                    </p>
+                                </div>
+
+                            </div>
+
+                            <div class="channel-toggles">
+
+                                <label class="notification-switch">
+                                    <input type="checkbox" class="notification-toggle" data-channel="email" checked>
+                                    <span class="notification-slider"></span>
+                                </label>
+
+                                <label class="notification-switch">
+                                    <input type="checkbox" class="notification-toggle" data-channel="sms" checked>
+                                    <span class="notification-slider"></span>
+                                </label>
+
+                                <label class="notification-switch">
+                                    <input type="checkbox" class="notification-toggle" data-channel="push" checked>
+                                    <span class="notification-slider"></span>
+                                </label>
+
+                            </div>
+
+                        </div>
+
+
+                        <!-- TRANSACTION ALERTS -->
+
+                        <div class="notification-row">
+
+                            <div class="notification-info">
+
+                                <div class="notification-icon green">
+                                    <i class="fa-solid fa-arrow-right-arrow-left"></i>
+                                </div>
+
+                                <div>
+                                    <h3>Transaction Alerts</h3>
+                                    <p>
+                                        Notifications for all debit and credit transactions
+                                    </p>
+                                </div>
+
+                            </div>
+
+                            <div class="channel-toggles">
+
+                                <label class="notification-switch">
+                                    <input type="checkbox" class="notification-toggle" data-channel="email" checked>
+                                    <span class="notification-slider"></span>
+                                </label>
+
+                                <label class="notification-switch">
+                                    <input type="checkbox" class="notification-toggle" data-channel="sms" checked>
+                                    <span class="notification-slider"></span>
+                                </label>
+
+                                <label class="notification-switch">
+                                    <input type="checkbox" class="notification-toggle" data-channel="push" checked>
+                                    <span class="notification-slider"></span>
+                                </label>
+
+                            </div>
+
+                        </div>
+
+
+                        <!-- BILL PAYMENTS -->
+
+                        <div class="notification-row">
+
+                            <div class="notification-info">
+
+                                <div class="notification-icon yellow">
+                                    <i class="fa-regular fa-credit-card"></i>
+                                </div>
+
+                                <div>
+                                    <h3>Bill Payments</h3>
+                                    <p>
+                                        Reminders and updates for bill payments
+                                    </p>
+                                </div>
+
+                            </div>
+
+                            <div class="channel-toggles">
+
+                                <label class="notification-switch">
+                                    <input type="checkbox" class="notification-toggle" data-channel="email" checked>
+                                    <span class="notification-slider"></span>
+                                </label>
+
+                                <label class="notification-switch">
+                                    <input type="checkbox" class="notification-toggle" data-channel="sms">
+                                    <span class="notification-slider"></span>
+                                </label>
+
+                                <label class="notification-switch">
+                                    <input type="checkbox" class="notification-toggle" data-channel="push" checked>
+                                    <span class="notification-slider"></span>
+                                </label>
+
+                            </div>
+
+                        </div>
+
+
+                        <!-- OFFERS -->
+
+                        <div class="notification-row">
+
+                            <div class="notification-info">
+
+                                <div class="notification-icon purple">
+                                    <i class="fa-regular fa-star"></i>
+                                </div>
+
+                                <div>
+                                    <h3>Offers & Promotions</h3>
+                                    <p>
+                                        Receive exciting offers and promotional updates
+                                    </p>
+                                </div>
+
+                            </div>
+
+                            <div class="channel-toggles">
+
+                                <label class="notification-switch">
+                                    <input type="checkbox" class="notification-toggle" data-channel="email" checked>
+                                    <span class="notification-slider"></span>
+                                </label>
+
+                                <label class="notification-switch">
+                                    <input type="checkbox" class="notification-toggle" data-channel="sms">
+                                    <span class="notification-slider"></span>
+                                </label>
+
+                                <label class="notification-switch">
+                                    <input type="checkbox" class="notification-toggle" data-channel="push">
+                                    <span class="notification-slider"></span>
+                                </label>
+
+                            </div>
+
+                        </div>
+
+
+                        <!-- SECURITY ALERTS -->
+
+                        <div class="notification-row">
+
+                            <div class="notification-info">
+
+                                <div class="notification-icon red">
+                                    <i class="fa-solid fa-shield-halved"></i>
+                                </div>
+
+                                <div>
+                                    <h3>Security Alerts</h3>
+                                    <p>
+                                        Important security updates and login alerts
+                                    </p>
+                                </div>
+
+                            </div>
+
+                            <div class="channel-toggles">
+
+                                <label class="notification-switch">
+                                    <input type="checkbox" class="notification-toggle" data-channel="email" checked>
+                                    <span class="notification-slider"></span>
+                                </label>
+
+                                <label class="notification-switch">
+                                    <input type="checkbox" class="notification-toggle" data-channel="sms" checked>
+                                    <span class="notification-slider"></span>
+                                </label>
+
+                                <label class="notification-switch">
+                                    <input type="checkbox" class="notification-toggle" data-channel="push" checked>
+                                    <span class="notification-slider"></span>
+                                </label>
+
+                            </div>
+
+                        </div>
+
+
+                        <!-- STATEMENTS -->
+
+                        <div class="notification-row">
+
+                            <div class="notification-info">
+
+                                <div class="notification-icon blue">
+                                    <i class="fa-regular fa-file-lines"></i>
+                                </div>
+
+                                <div>
+                                    <h3>Statements & Documents</h3>
+                                    <p>
+                                        Updates about your statements and important documents
+                                    </p>
+                                </div>
+
+                            </div>
+
+                            <div class="channel-toggles">
+
+                                <label class="notification-switch">
+                                    <input type="checkbox" class="notification-toggle" data-channel="email" checked>
+                                    <span class="notification-slider"></span>
+                                </label>
+
+                                <label class="notification-switch">
+                                    <input type="checkbox" class="notification-toggle" data-channel="sms">
+                                    <span class="notification-slider"></span>
+                                </label>
+
+                                <label class="notification-switch">
+                                    <input type="checkbox" class="notification-toggle" data-channel="push">
+                                    <span class="notification-slider"></span>
+                                </label>
+
+                            </div>
+
+                        </div>
+
+
+                        <!-- SERVICE -->
+
+                        <div class="notification-row">
+
+                            <div class="notification-info">
+
+                                <div class="notification-icon cyan">
+                                    <i class="fa-solid fa-headset"></i>
+                                </div>
+
+                                <div>
+                                    <h3>Service & Support</h3>
+                                    <p>
+                                        Updates about your service requests and support tickets
+                                    </p>
+                                </div>
+
+                            </div>
+
+                            <div class="channel-toggles">
+
+                                <label class="notification-switch">
+                                    <input type="checkbox" class="notification-toggle" data-channel="email" checked>
+                                    <span class="notification-slider"></span>
+                                </label>
+
+                                <label class="notification-switch">
+                                    <input type="checkbox" class="notification-toggle" data-channel="sms">
+                                    <span class="notification-slider"></span>
+                                </label>
+
+                                <label class="notification-switch">
+                                    <input type="checkbox" class="notification-toggle" data-channel="push" checked>
+                                    <span class="notification-slider"></span>
+                                </label>
+
+                            </div>
+
+                        </div>
+
+
+                        <!-- INFORMATION -->
+
+                        <div class="notification-info-box">
+
+                            <i class="fa-solid fa-circle-info"></i>
+
+                            <span>
+                                You can change these preferences at any time.
+                            </span>
+
+                        </div>
+
+                    </div>
+
+
+                    
+
+                    <div class="notification-right">
+
+
+                        
+
+                        <div class="notification-card summary-card">
+
+                            <h2>Notification Summary</h2>
+
+                            <p class="summary-description">
+                                You will receive notifications via:
+                            </p>
+
+
+                            <!-- EMAIL -->
+
+                            <div class="summary-row">
+
+                                <div class="summary-left">
+
+                                    <div class="summary-icon blue">
+                                        <i class="fa-regular fa-envelope"></i>
+                                    </div>
+
+                                    <div>
+                                        <h3>Email</h3>
+                                        <p>
+                                            <span id="emailCount">7</span> of 7 enabled
+                                        </p>
+                                    </div>
+
+                                </div>
+
+                                <span class="status active" id="emailStatus">
+                                    Active
+                                </span>
+
+                            </div>
+
+
+                            <!-- SMS -->
+
+                            <div class="summary-row">
+
+                                <div class="summary-left">
+
+                                    <div class="summary-icon green">
+                                        <i class="fa-regular fa-message"></i>
+                                    </div>
+
+                                    <div>
+                                        <h3>SMS</h3>
+                                        <p>
+                                            <span id="smsCount">3</span> of 7 enabled
+                                        </p>
+                                    </div>
+
+                                </div>
+
+                                <span class="status partial" id="smsStatus">
+                                    Partial
+                                </span>
+
+                            </div>
+
+
+                            <!-- PUSH -->
+
+                            <div class="summary-row">
+
+                                <div class="summary-left">
+
+                                    <div class="summary-icon purple">
+                                        <i class="fa-solid fa-mobile-screen-button"></i>
+                                    </div>
+
+                                    <div>
+                                        <h3>Push Notifications</h3>
+                                        <p>
+                                            <span id="pushCount">5</span> of 7 enabled
+                                        </p>
+                                    </div>
+
+                                </div>
+
+                                <span class="status partial" id="pushStatus">
+                                    Partial
+                                </span>
+
+                            </div>
+
+                        </div>
+
+
+                       
+
+                        <div class="notification-card quiet-card">
+
+                            <h2>Quiet Hours</h2>
+
+                            <p class="quiet-description">
+                                Choose when you don't want to receive
+                                non-urgent notifications.
+                            </p>
+
+
+                            <!-- TIME SELECT -->
+
+                            <div class="time-container">
+
+                                <div class="time-group">
+
+                                    <label>From</label>
+
+                                    <div class="time-select">
+
+                                        <i class="fa-regular fa-moon"></i>
+
+                                        <select id="quietFrom">
+                                            <option>10:00 PM</option>
+                                            <option>9:00 PM</option>
+                                            <option>11:00 PM</option>
+                                            <option>12:00 AM</option>
+                                        </select>
+
+                                    </div>
+
+                                </div>
+
+
+                                <div class="time-group">
+
+                                    <label>To</label>
+
+                                    <div class="time-select">
+
+                                        <i class="fa-regular fa-sun"></i>
+
+                                        <select id="quietTo">
+                                            <option>7:00 AM</option>
+                                            <option>6:00 AM</option>
+                                            <option>8:00 AM</option>
+                                            <option>9:00 AM</option>
+                                        </select>
+
+                                    </div>
+
+                                </div>
+
+                            </div>
+
+
+                            <!-- QUIET HOURS SWITCH -->
+
+                            <div class="quiet-toggle-row">
+
+                                <div>
+
+                                    <h3>Enable Quiet Hours</h3>
+
+                                    <p>
+                                        During quiet hours, only important alerts
+                                        will be sent.
+                                    </p>
+
+                                </div>
+
+                                <label class="notification-switch">
+
+                                    <input type="checkbox" id="quietHours" checked>
+
+                                    <span class="notification-slider"></span>
+
+                                </label>
+
+                            </div>
+
+
+                            <!-- INFO -->
+
+                            <div class="quiet-info">
+
+                                <i class="fa-solid fa-circle-info"></i>
+
+                                <span>
+                                    Quiet hours apply to SMS and Push
+                                    notifications only.
+                                </span>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </section>
+        </div>
+        <script src="script/notifications.js"></script>
 </body>
 
 </html>
