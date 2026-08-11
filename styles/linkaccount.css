@@ -279,3 +279,680 @@ a {
 .active-option a{
     color: #1d4ed8;
 }
+
+
+
+/* =====================================================
+   LINKED ACCOUNTS CONTENT
+===================================================== */
+
+.linked-content {
+    width: 100%;
+    padding: 24px 34px;
+    box-sizing: border-box;
+    background: #f7f9fc;
+}
+
+
+/* =====================================================
+   MAIN GRID
+===================================================== */
+
+.linked-grid {
+    display: grid;
+    grid-template-columns: 1.15fr 0.85fr;
+    gap: 20px;
+}
+
+
+/* =====================================================
+   CARD
+===================================================== */
+
+.linked-card {
+    background: #ffffff;
+    border: 1px solid #e8edf4;
+    border-radius: 14px;
+    padding: 22px 26px;
+    box-sizing: border-box;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.025);
+}
+
+.linked-card h2 {
+    margin: 0;
+    color: #17213a;
+    font-size: 17px;
+    font-weight: 700;
+}
+
+.card-description {
+    margin: 6px 0 16px;
+    color: #66738a;
+    font-size: 13px;
+}
+
+
+/* =====================================================
+   BANK LIST
+===================================================== */
+
+.bank-list {
+    border: 1px solid #e7ebf2;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.bank-item {
+    min-height: 72px;
+    padding: 10px 14px;
+    box-sizing: border-box;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    border-bottom: 1px solid #e7ebf2;
+}
+
+.bank-item:last-child {
+    border-bottom: none;
+}
+
+
+/* =====================================================
+   BANK INFO
+===================================================== */
+
+.bank-info {
+    display: flex;
+    align-items: center;
+    gap: 14px;
+}
+
+.bank-info h3,
+.service-info h3 {
+    margin: 0 0 4px;
+    font-size: 14px;
+    color: #202942;
+    font-weight: 650;
+}
+
+.bank-info p,
+.service-info p {
+    margin: 0;
+    font-size: 12px;
+    color: #69768d;
+}
+
+
+/* =====================================================
+   BANK LOGOS
+===================================================== */
+
+.bank-logo {
+    width: 38px;
+    height: 38px;
+    border-radius: 8px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    font-size: 21px;
+    font-weight: 800;
+}
+
+
+/* HDFC */
+
+.bank-logo.hdfc {
+    color: #d71920;
+    background: #fff;
+    border: 2px solid #d71920;
+}
+
+
+/* ICICI */
+
+.bank-logo.icici {
+    color: #ffffff;
+    background: linear-gradient(135deg, #c0392b, #e67e22);
+    font-family: Georgia, serif;
+}
+
+
+/* SBI */
+
+.bank-logo.sbi {
+    color: #ffffff;
+    background: #168bd1;
+    border-radius: 50%;
+}
+
+
+/* AXIS */
+
+.bank-logo.axis {
+    color: #c2185b;
+    background: #fff;
+    font-style: italic;
+}
+
+
+/* KOTAK */
+
+.bank-logo.kotak {
+    color: #ffffff;
+    background: #163c68;
+    border-radius: 50%;
+}
+
+
+/* =====================================================
+   BANK ACTIONS
+===================================================== */
+
+.bank-actions {
+    display: flex;
+    align-items: center;
+    gap: 18px;
+}
+
+.status {
+    padding: 7px 14px;
+    border-radius: 20px;
+    font-size: 11px;
+    font-weight: 600;
+    white-space: nowrap;
+}
+
+.status.active {
+    background: #e5f8ed;
+    color: #20a35b;
+}
+
+.status.inactive {
+    background: #edf0f5;
+    color: #6f7b8e;
+}
+
+
+/* =====================================================
+   MENU BUTTON
+===================================================== */
+
+.menu-btn {
+    border: none;
+    background: transparent;
+    color: #3c4b64;
+
+    font-size: 15px;
+
+    cursor: pointer;
+
+    width: 25px;
+    height: 30px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.menu-btn:hover {
+    color: #1d4ed8;
+}
+
+
+/* =====================================================
+   VIEW ALL BUTTON
+===================================================== */
+
+.view-all-btn {
+    width: 100%;
+    margin-top: 12px;
+
+    border: none;
+    background: transparent;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    padding: 4px 8px;
+
+    color: #1554d1;
+    font-size: 13px;
+    font-weight: 700;
+
+    cursor: pointer;
+}
+
+.view-all-btn i {
+    font-size: 11px;
+}
+
+.view-all-btn:hover {
+    color: #0b3da8;
+}
+
+
+/* =====================================================
+   FORM
+===================================================== */
+
+.form-group {
+    margin-top: 20px;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 8px;
+
+    color: #34415a;
+    font-size: 13px;
+    font-weight: 600;
+}
+
+
+/* =====================================================
+   SELECT
+===================================================== */
+
+.form-group select {
+    width: 100%;
+    height: 47px;
+
+    padding: 0 14px;
+
+    border: 1px solid #dce2eb;
+    border-radius: 8px;
+
+    background: #ffffff;
+
+    color: #65728a;
+    font-size: 13px;
+
+    outline: none;
+    cursor: pointer;
+}
+
+.form-group select:focus {
+    border-color: #2563eb;
+}
+
+
+/* =====================================================
+   RADIO BUTTONS
+===================================================== */
+
+.radio-group {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.radio-option {
+    display: flex !important;
+    align-items: center;
+
+    gap: 10px;
+
+    margin: 0 !important;
+
+    color: #66738a !important;
+
+    font-size: 13px !important;
+    font-weight: 500 !important;
+
+    cursor: pointer;
+}
+
+.radio-option input {
+    width: 18px;
+    height: 18px;
+
+    margin: 0;
+
+    accent-color: #2563eb;
+
+    cursor: pointer;
+}
+
+
+/* =====================================================
+   LINK ACCOUNT BUTTON
+===================================================== */
+
+.link-account-btn {
+    width: 100%;
+    height: 47px;
+
+    margin-top: 24px;
+
+    border: none;
+    border-radius: 7px;
+
+    background: #1559e8;
+
+    color: #ffffff;
+
+    font-size: 14px;
+    font-weight: 600;
+
+    cursor: pointer;
+
+    transition: 0.2s;
+}
+
+.link-account-btn:hover {
+    background: #104bc7;
+    transform: translateY(-1px);
+}
+
+
+/* =====================================================
+   SECURITY MESSAGE
+===================================================== */
+
+.security-message {
+    display: flex;
+    align-items: center;
+    gap: 9px;
+
+    margin-top: 22px;
+
+    color: #66738a;
+    font-size: 12px;
+}
+
+.security-message i {
+    color: #718096;
+}
+
+
+/* =====================================================
+   CONNECTED SERVICES
+===================================================== */
+
+.service-list {
+    border: 1px solid #e7ebf2;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.service-item {
+    min-height: 60px;
+
+    padding: 8px 14px;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    border-bottom: 1px solid #e7ebf2;
+
+    cursor: pointer;
+}
+
+.service-item:last-child {
+    border-bottom: none;
+}
+
+.service-info {
+    display: flex;
+    align-items: center;
+    gap: 14px;
+}
+
+.service-logo {
+    width: 38px;
+    height: 38px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    font-size: 11px;
+    font-weight: 800;
+}
+
+
+/* UPI */
+
+.service-logo.upi {
+    color: #19a75a;
+    font-size: 12px;
+}
+
+
+/* Paytm */
+
+.service-logo.paytm {
+    color: #1474d4;
+    font-size: 10px;
+}
+
+
+/* PhonePe */
+
+.service-logo.phonepe {
+    width: 34px;
+    height: 34px;
+
+    background: #673ab7;
+    color: white;
+
+    border-radius: 50%;
+
+    font-size: 16px;
+}
+
+
+/* =====================================================
+   SERVICE RIGHT
+===================================================== */
+
+.service-right {
+    display: flex;
+    align-items: center;
+    gap: 22px;
+
+    color: #66738a;
+    font-size: 12px;
+}
+
+
+/* =====================================================
+   TRUSTED CARD
+===================================================== */
+
+.trusted-card {
+    padding: 22px 26px;
+}
+
+.trusted-heading {
+    display: flex;
+    align-items: flex-start;
+    gap: 16px;
+}
+
+.trusted-icon {
+    width: 56px;
+    height: 56px;
+
+    min-width: 56px;
+
+    border-radius: 50%;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    background: #edf4ff;
+    color: #2563eb;
+
+    font-size: 25px;
+}
+
+.trusted-heading h2 {
+    margin-top: 2px;
+}
+
+.trusted-heading p {
+    margin: 6px 0 0;
+
+    color: #68758c;
+
+    font-size: 13px;
+    line-height: 1.5;
+}
+
+
+/* =====================================================
+   SECURITY POINTS
+===================================================== */
+
+.security-points {
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+
+    margin-top: 24px;
+}
+
+.security-points div {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+
+    color: #55637a;
+    font-size: 13px;
+}
+
+.security-points i {
+    color: #26b86a;
+    font-size: 17px;
+}
+
+
+/* =====================================================
+   INFO BOX
+===================================================== */
+
+.info-box {
+    display: flex;
+    align-items: center;
+    gap: 14px;
+
+    margin-top: 22px;
+    padding: 15px 18px;
+
+    border-radius: 9px;
+
+    background: #eef4ff;
+    border: 1px solid #e0eaff;
+}
+
+.info-box i {
+    color: #2563eb;
+    font-size: 19px;
+}
+
+.info-box p {
+    margin: 0;
+
+    color: #4163a5;
+
+    font-size: 12px;
+    line-height: 1.5;
+}
+
+
+
+@media (max-width: 1023px) {
+
+    .linked-content {
+        padding: 20px;
+    }
+    .content{
+        padding: 20px;
+        margin-top: 85px;
+    }
+    .linked-grid {
+        grid-template-columns: 1fr ;
+    }
+}
+
+
+@media (max-width: 650px) {
+
+    .linked-content {
+        padding: 14px;
+    }
+    hr{
+        width: 730px;
+    }
+    .linked-card {
+        padding: 18px;
+    }
+
+    .bank-item {
+        padding: 10px;
+    }
+
+    .bank-actions {
+        gap: 8px;
+    }
+
+    .status {
+        padding: 6px 9px;
+        font-size: 10px;
+    }
+
+    .bank-info h3,
+    .service-info h3 {
+        font-size: 13px;
+    }
+
+    .bank-info p,
+    .service-info p {
+        font-size: 11px;
+    }
+
+    .service-right {
+        gap: 8px;
+    }
+
+    .trusted-heading {
+        gap: 12px;
+    }
+
+    .trusted-icon {
+        width: 45px;
+        height: 45px;
+        min-width: 45px;
+        font-size: 20px;
+    }
+}
+
+
+@media (max-width: 450px) {
+
+    .bank-actions .status {
+        display: none;
+    }
+
+    .bank-logo {
+        width: 34px;
+        height: 34px;
+    }
+
+    .service-logo {
+        width: 32px;
+        height: 32px;
+    }
+
+    .trusted-heading p {
+        font-size: 11px;
+    }
+}

@@ -119,7 +119,486 @@
             </div>
         </div>
         <hr>
+        <!-- ================= LINKED ACCOUNTS CONTENT ================= -->
 
+        <section class="linked-content">
+
+            <div class="linked-grid">
+
+                <!-- =========================================
+             LINKED BANK ACCOUNTS
+        ========================================== -->
+
+                <div class="linked-card">
+
+                    <h2>Linked Bank Accounts</h2>
+                    <p class="card-description">
+                        View and manage your linked bank accounts
+                    </p>
+
+                    <div class="bank-list">
+
+                        <!-- HDFC -->
+                        <div class="bank-item">
+
+                            <div class="bank-info">
+
+                                <div class="bank-logo hdfc">
+                                    H
+                                </div>
+
+                                <div>
+                                    <h3>HDFC Bank</h3>
+                                    <p>Savings Account •••• 1234</p>
+                                </div>
+
+                            </div>
+
+                            <div class="bank-actions">
+
+                                <span class="status active">
+                                    Primary
+                                </span>
+
+                                <button class="menu-btn">
+                                    <i class="fa-solid fa-ellipsis-vertical"></i>
+                                </button>
+
+                            </div>
+
+                        </div>
+
+
+                        <!-- ICICI -->
+                        <div class="bank-item">
+
+                            <div class="bank-info">
+
+                                <div class="bank-logo icici">
+                                    i
+                                </div>
+
+                                <div>
+                                    <h3>ICICI Bank</h3>
+                                    <p>Current Account •••• 5678</p>
+                                </div>
+
+                            </div>
+
+                            <div class="bank-actions">
+
+                                <span class="status active">
+                                    Active
+                                </span>
+
+                                <button class="menu-btn">
+                                    <i class="fa-solid fa-ellipsis-vertical"></i>
+                                </button>
+
+                            </div>
+
+                        </div>
+
+
+                        <!-- SBI -->
+                        <div class="bank-item">
+
+                            <div class="bank-info">
+
+                                <div class="bank-logo sbi">
+                                    S
+                                </div>
+
+                                <div>
+                                    <h3>State Bank of India</h3>
+                                    <p>Savings Account •••• 8910</p>
+                                </div>
+
+                            </div>
+
+                            <div class="bank-actions">
+
+                                <span class="status active">
+                                    Active
+                                </span>
+
+                                <button class="menu-btn">
+                                    <i class="fa-solid fa-ellipsis-vertical"></i>
+                                </button>
+
+                            </div>
+
+                        </div>
+
+
+                        <!-- AXIS -->
+                        <div class="bank-item">
+
+                            <div class="bank-info">
+
+                                <div class="bank-logo axis">
+                                    A
+                                </div>
+
+                                <div>
+                                    <h3>Axis Bank</h3>
+                                    <p>Credit Card •••• 3456</p>
+                                </div>
+
+                            </div>
+
+                            <div class="bank-actions">
+
+                                <span class="status active">
+                                    Active
+                                </span>
+
+                                <button class="menu-btn">
+                                    <i class="fa-solid fa-ellipsis-vertical"></i>
+                                </button>
+
+                            </div>
+
+                        </div>
+
+
+                        <!-- KOTAK -->
+                        <div class="bank-item">
+
+                            <div class="bank-info">
+
+                                <div class="bank-logo kotak">
+                                    K
+                                </div>
+
+                                <div>
+                                    <h3>Kotak Mahindra Bank</h3>
+                                    <p>Savings Account •••• 7890</p>
+                                </div>
+
+                            </div>
+
+                            <div class="bank-actions">
+
+                                <span class="status inactive">
+                                    Inactive
+                                </span>
+
+                                <button class="menu-btn">
+                                    <i class="fa-solid fa-ellipsis-vertical"></i>
+                                </button>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+
+                    <!-- VIEW ALL -->
+                    <button class="view-all-btn">
+                        <span>View All Linked Accounts</span>
+                        <i class="fa-solid fa-chevron-right"></i>
+                    </button>
+
+                </div>
+
+
+                <!-- =========================================
+             ADD NEW LINKED ACCOUNT
+        ========================================== -->
+
+                <div class="linked-card add-account-card">
+
+                    <h2>Add New Linked Account</h2>
+
+                    <p class="card-description">
+                        Link a new bank account to manage easily
+                    </p>
+
+
+                    <!-- BANK SELECT -->
+
+                    <div class="form-group">
+
+                        <label for="bankSelect">
+                            Select Bank
+                        </label>
+
+                        <select id="bankSelect">
+
+                            <option value="">
+                                Choose your bank
+                            </option>
+
+                            <option value="HDFC Bank">
+                                HDFC Bank
+                            </option>
+
+                            <option value="ICICI Bank">
+                                ICICI Bank
+                            </option>
+
+                            <option value="State Bank of India">
+                                State Bank of India
+                            </option>
+
+                            <option value="Axis Bank">
+                                Axis Bank
+                            </option>
+
+                            <option value="Kotak Mahindra Bank">
+                                Kotak Mahindra Bank
+                            </option>
+
+                        </select>
+
+                    </div>
+
+
+                    <!-- ACCOUNT TYPE -->
+
+                    <div class="form-group">
+
+                        <label>
+                            Account Type
+                        </label>
+
+                        <div class="radio-group">
+
+                            <label class="radio-option">
+
+                                <input type="radio" name="accountType" value="Savings Account">
+
+                                <span>Savings Account</span>
+
+                            </label>
+
+
+                            <label class="radio-option">
+
+                                <input type="radio" name="accountType" value="Current Account">
+
+                                <span>Current Account</span>
+
+                            </label>
+
+
+                            <label class="radio-option">
+
+                                <input type="radio" name="accountType" value="Credit Card">
+
+                                <span>Credit Card</span>
+
+                            </label>
+
+                        </div>
+
+                    </div>
+
+
+                    <!-- LINK BUTTON -->
+
+                    <button class="link-account-btn" id="linkAccountBtn">
+                        Link Account
+                    </button>
+
+
+                    <!-- SECURITY MESSAGE -->
+
+                    <div class="security-message">
+
+                        <i class="fa-solid fa-lock"></i>
+
+                        <span>
+                            Your credentials are encrypted and secure
+                        </span>
+
+                    </div>
+
+                </div>
+
+
+                <!-- =========================================
+             CONNECTED SERVICES
+        ========================================== -->
+
+                <div class="linked-card">
+
+                    <h2>Connected Services</h2>
+
+                    <p class="card-description">
+                        Manage your third-party connected services
+                    </p>
+
+
+                    <div class="service-list">
+
+                        <!-- UPI -->
+
+                        <div class="service-item">
+
+                            <div class="service-info">
+
+                                <div class="service-logo upi">
+                                    UPI
+                                </div>
+
+                                <div>
+                                    <h3>UPI</h3>
+                                    <p>Linked with kathiravan.g@upi</p>
+                                </div>
+
+                            </div>
+
+                            <div class="service-right">
+
+                                <span class="status active">
+                                    Active
+                                </span>
+
+                                <i class="fa-solid fa-chevron-right"></i>
+
+                            </div>
+
+                        </div>
+
+
+                        <!-- PAYTM -->
+
+                        <div class="service-item">
+
+                            <div class="service-info">
+
+                                <div class="service-logo paytm">
+                                    Paytm
+                                </div>
+
+                                <div>
+                                    <h3>Paytm</h3>
+                                    <p>Linked on 15 Jan 2024</p>
+                                </div>
+
+                            </div>
+
+                            <div class="service-right">
+
+                                <span class="status active">
+                                    Active
+                                </span>
+
+                                <i class="fa-solid fa-chevron-right"></i>
+
+                            </div>
+
+                        </div>
+
+
+                        <!-- PHONEPE -->
+
+                        <div class="service-item">
+
+                            <div class="service-info">
+
+                                <div class="service-logo phonepe">
+                                    <i class="fa-solid fa-p"></i>
+                                </div>
+
+                                <div>
+                                    <h3>PhonePe</h3>
+                                    <p>Linked on 10 Dec 2023</p>
+                                </div>
+
+                            </div>
+
+                            <div class="service-right">
+
+                                <span class="status active">
+                                    Active
+                                </span>
+
+                                <i class="fa-solid fa-chevron-right"></i>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+
+                    <button class="view-all-btn">
+
+                        <span>
+                            View All Connected Services
+                        </span>
+
+                        <i class="fa-solid fa-chevron-right"></i>
+
+                    </button>
+
+                </div>
+
+
+                <!-- =========================================
+             SECURE & TRUSTED
+        ========================================== -->
+
+                <div class="linked-card trusted-card">
+
+                    <div class="trusted-heading">
+
+                        <div class="trusted-icon">
+                            <i class="fa-solid fa-shield-halved"></i>
+                        </div>
+
+                        <div>
+                            <h2>Secure & Trusted</h2>
+
+                            <p>
+                                We use industry-standard encryption to keep your
+                                linked accounts and data safe.
+                            </p>
+                        </div>
+
+                    </div>
+
+
+                    <div class="security-points">
+
+                        <div>
+                            <i class="fa-regular fa-circle-check"></i>
+                            <span>256-bit SSL encryption</span>
+                        </div>
+
+                        <div>
+                            <i class="fa-regular fa-circle-check"></i>
+                            <span>Secure token-based authentication</span>
+                        </div>
+
+                        <div>
+                            <i class="fa-regular fa-circle-check"></i>
+                            <span>Regular security monitoring</span>
+                        </div>
+
+                    </div>
+
+
+                    <div class="info-box">
+
+                        <i class="fa-solid fa-circle-info"></i>
+
+                        <p>
+                            You can unlink any account or service
+                            at any time from here.
+                        </p>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
     </div>
     <script src="script/linkaccount.js"></script>
 </body>
