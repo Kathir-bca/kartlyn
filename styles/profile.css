@@ -754,17 +754,20 @@ a {
 }
 
 
-@media (max-width: 767px) {
+@media (max-width: 746px) {
     .main-content h2 {
         font-size: 22px;
     }
     
     .settings-options {
-        justify-content: space-between;
+        gap: 70px;
+    }
+    hr{
+        width: 900px;
     }
     .customer-info-container{
         display: grid;
-        grid-template-columns: 1fr;
+        grid-template-columns:  1fr;
     }
     .personal-info {
         grid-template-columns: 1fr;
@@ -798,11 +801,15 @@ a {
     .c-profile img {
         width: 110px;
     }
-
     .c-name {
         font-size: 18px;
     }
-
+    .settings-options{
+        gap: 80px;
+    }
+    hr{
+        width: 900px;
+    }
     .main-content h2 {
         font-size: 20px;
     }
