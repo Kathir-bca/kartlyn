@@ -19,6 +19,10 @@
 
 <body>
     <header class="header">
+        <button type="button" id="menuToggle" class="menu-toggle" aria-label="Toggle navigation menu"
+            aria-expanded="false" aria-controls="sideBar">
+            <i class="fa-solid fa-bars"></i>
+        </button>
         <div class="header-search">
             <i class="fa-solid fa-magnifying-glass" style="color: rgb(0, 0, 0);"></i>
             <input type="text" placeholder="Search anything...">
@@ -41,12 +45,19 @@
         </div>
     </header>
 
-    <div class="side-bar">
+    <div id="sidebarOverlay" class="sidebar-overlay"></div>
+
+    <div class="side-bar" id="sideBar">
         <div class="side-bar-logo">
             <img src="images/secure-bank.png" alt="Profile">
         </div>
 
         <div class="side-bar-items">
+
+            <div class="active">
+                <img src="Icons/user-setting.png" alt="Settings">
+                <a href="profile.html">Profile & Settings</a>
+            </div>
             <div>
                 <img src="Icons/home.png" alt="Dashboard">
                 <a href="dashboard.html">Dashboard</a>
@@ -54,10 +65,6 @@
             <div>
                 <img src="Icons/account.png" alt="Accounts">
                 <a href="accounts.html">Accounts</a>
-            </div>
-            <div>
-                <img src="Icons/wallet.png" alt="Balance">
-                <a href="balance.html">Balance</a>
             </div>
             <div>
                 <img src="Icons/transaction.png" alt="Transactions">
@@ -72,25 +79,10 @@
                 <a href="loans.html">Loans</a>
             </div>
             <div>
-                <img src="Icons/graph.png" alt="Investments">
-                <a href="investments.html">Investments</a>
-            </div>
-            <div>
                 <img src="Icons/group.png" alt="Beneficiaries">
                 <a href="beneficiaries.html">Beneficiaries</a>
             </div>
-            <div>
-                <img src="Icons/discount.png" alt="Offers">
-                <a href="offers.html">Offers</a>
-            </div>
-            <div class="active">
-                <img src="Icons/user-setting.png" alt="Settings">
-                <a href="profile.html">Profile & Settings</a>
-            </div>
-            <div>
-                <img src="Icons/support.png" alt="Help & Support">
-                <a href="help-support.html">Help & Support</a>
-            </div>
+
         </div>
 
         <div class="side-bar-logout">
@@ -101,8 +93,8 @@
 
     <div class="content">
         <div class="main-content">
-            <h2>Profile & Settings</h2>
-            <p>Manage your profile information, preferences and account settings</p>
+            <h2>Security Settings</h2>
+            <p>Manage your account security, project your data and keep your account safe</p>
         </div>
         <div class="settings-options">
             <div>
@@ -111,10 +103,10 @@
             </div>
             <div class="active-option">
                 <i class="fa-solid fa-shield-halved"></i>
-                <a href="securitysetting.html"  style="color: #1d4ed8;">Security Settings</a>
+                <a href="securitysetting.html">Security Settings</a>
             </div>
             <div>
-                <i class="fa-solid fa-sliders" ></i>
+                <i class="fa-solid fa-sliders"></i>
                 <a href="preferences.html">Preferences</a>
             </div>
             <div>
@@ -122,13 +114,343 @@
                 <a href="notifications.html">Notifications</a>
             </div>
             <div>
-                <i class="fa-solid fa-link" ></i>
-                <a href="linkaccount.html">Linked Accounts</p>
+                <i class="fa-solid fa-link"></i>
+                <a href="linkaccount.html">Linked Accounts</a>
             </div>
         </div>
         <hr>
-    </div>
+        <aside class="sidebar" aria-label="Primary navigation placeholder"></aside>
 
+        <main class="page">
+            <div class="grid">
+
+                <section class="card" aria-labelledby="account-security-title">
+                    <h2 id="account-security-title" class="card-title">Account Security</h2>
+
+                    <ul class="setting-list">
+                        <li class="setting-row">
+                            <span class="row-icon icon-purple">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                                    stroke-linecap="round" stroke-linejoin="round">
+                                    <rect x="3" y="11" width="18" height="11" rx="2" />
+                                    <path d="M7 11V7a5 5 0 0 1 10 0v4" />
+                                </svg>
+                            </span>
+                            <span class="row-text">
+                                <span class="row-title">Change Password</span>
+                                <span class="row-subtitle">Update your account password regularly</span>
+                            </span>
+                            <button class="btn btn-outline" type="button">
+                                Change
+                                <svg class="chev" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                                    stroke-linecap="round" stroke-linejoin="round">
+                                    <path d="m9 18 6-6-6-6" />
+                                </svg>
+                            </button>
+                        </li>
+
+                        <li class="setting-row">
+                            <span class="row-icon icon-green">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                                    stroke-linecap="round" stroke-linejoin="round">
+                                    <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10Z" />
+                                </svg>
+                            </span>
+                            <span class="row-text">
+                                <span class="row-title">Two-Factor Authentication</span>
+                                <span class="row-subtitle">Add an extra layer of security to your account</span>
+                            </span>
+                            <span class="row-action">
+                                <span class="badge badge-green">Enabled</span>
+                                <svg class="chev standalone" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                    stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                    <path d="m9 18 6-6-6-6" />
+                                </svg>
+                            </span>
+                        </li>
+
+                        <li class="setting-row">
+                            <span class="row-icon icon-amber">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                                    stroke-linecap="round" stroke-linejoin="round">
+                                    <path d="M6 8a6 6 0 0 1 12 0c0 7 3 9 3 9H3s3-2 3-9" />
+                                    <path d="M10.3 21a1.94 1.94 0 0 0 3.4 0" />
+                                </svg>
+                            </span>
+                            <span class="row-text">
+                                <span class="row-title">Login Alerts</span>
+                                <span class="row-subtitle">Get notified whenever someone logs in to your
+                                    account</span>
+                            </span>
+                            <label class="toggle">
+                                <input type="checkbox" checked>
+                                <span class="toggle-track"><span class="toggle-thumb"></span></span>
+                            </label>
+                        </li>
+
+                        <li class="setting-row">
+                            <span class="row-icon icon-blue">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                                    stroke-linecap="round" stroke-linejoin="round">
+                                    <rect x="2" y="5" width="20" height="14" rx="2" />
+                                    <path d="M2 10h20" />
+                                </svg>
+                            </span>
+                            <span class="row-text">
+                                <span class="row-title">Transaction Alerts</span>
+                                <span class="row-subtitle">Receive alerts for all debit and credit
+                                    transactions</span>
+                            </span>
+                            <label class="toggle">
+                                <input type="checkbox" checked>
+                                <span class="toggle-track"><span class="toggle-thumb"></span></span>
+                            </label>
+                        </li>
+
+                        <li class="setting-row">
+                            <span class="row-icon icon-purple">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                                    stroke-linecap="round" stroke-linejoin="round">
+                                    <rect x="2" y="3" width="20" height="14" rx="2" />
+                                    <path d="M8 21h8M12 17v4" />
+                                </svg>
+                            </span>
+                            <span class="row-text">
+                                <span class="row-title">Device Management</span>
+                                <span class="row-subtitle">Manage devices that have access to your account</span>
+                            </span>
+                            <button class="btn btn-outline" type="button">
+                                Manage
+                                <svg class="chev" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                                    stroke-linecap="round" stroke-linejoin="round">
+                                    <path d="m9 18 6-6-6-6" />
+                                </svg>
+                            </button>
+                        </li>
+
+                        <li class="setting-row">
+                            <span class="row-icon icon-green">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                                    stroke-linecap="round" stroke-linejoin="round">
+                                    <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2" />
+                                    <circle cx="9" cy="7" r="4" />
+                                    <path d="M23 21v-2a4 4 0 0 0-3-3.87" />
+                                    <path d="M16 3.13a4 4 0 0 1 0 7.75" />
+                                </svg>
+                            </span>
+                            <span class="row-text">
+                                <span class="row-title">Active Sessions</span>
+                                <span class="row-subtitle">View and manage your active login sessions</span>
+                            </span>
+                            <button class="btn btn-outline" type="button">
+                                Manage
+                                <svg class="chev" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                                    stroke-linecap="round" stroke-linejoin="round">
+                                    <path d="m9 18 6-6-6-6" />
+                                </svg>
+                            </button>
+                        </li>
+                    </ul>
+                </section>
+
+
+                <section class="card" aria-labelledby="security-status-title">
+                    <h2 id="security-status-title" class="card-title">Security Status</h2>
+
+                    <div class="status-hero">
+                        <span class="status-badge">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                                stroke-linecap="round" stroke-linejoin="round">
+                                <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10Z" />
+                                <path d="m9 12 2 2 4-4" />
+                            </svg>
+                        </span>
+                        <span class="status-copy">
+                            <span class="status-heading">Your account is secure</span>
+                            <span class="status-sub">Last security check: Today, 08:45 AM</span>
+                        </span>
+                    </div>
+
+                    <ul class="check-list">
+                        <li>
+                            <svg class="check-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <circle cx="12" cy="12" r="10" />
+                                <path d="m9 12 2 2 4-4" />
+                            </svg>
+                            Password is strong
+                        </li>
+                        <li>
+                            <svg class="check-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <circle cx="12" cy="12" r="10" />
+                                <path d="m9 12 2 2 4-4" />
+                            </svg>
+                            Two-factor authentication is enabled
+                        </li>
+                        <li>
+                            <svg class="check-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <circle cx="12" cy="12" r="10" />
+                                <path d="m9 12 2 2 4-4" />
+                            </svg>
+                            No suspicious activity detected
+                        </li>
+                        <li>
+                            <svg class="check-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <circle cx="12" cy="12" r="10" />
+                                <path d="m9 12 2 2 4-4" />
+                            </svg>
+                            All security settings are up to date
+                        </li>
+                    </ul>
+
+                    <button class="btn btn-primary btn-block" type="button">View Security Report</button>
+                </section>
+
+                
+                <section class="card" aria-labelledby="recent-activity-title">
+                    <h2 id="recent-activity-title" class="card-title">Recent Security Activity</h2>
+
+                    <ul class="activity-list">
+                        <li class="activity-row">
+                            <svg class="activity-icon icon-ok" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <circle cx="12" cy="12" r="10" />
+                                <path d="m9 12 2 2 4-4" />
+                            </svg>
+                            <span class="activity-text">
+                                <span class="activity-title">Successful login from Chrome on Windows</span>
+                                <span class="activity-sub">Chennai, Tamil Nadu, India</span>
+                            </span>
+                            <span class="activity-time">Today, 08:45 AM</span>
+                        </li>
+                        <li class="activity-row">
+                            <svg class="activity-icon icon-ok" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <circle cx="12" cy="12" r="10" />
+                                <path d="m9 12 2 2 4-4" />
+                            </svg>
+                            <span class="activity-text">
+                                <span class="activity-title">Password changed successfully</span>
+                                <span class="activity-sub">Chennai, Tamil Nadu, India</span>
+                            </span>
+                            <span class="activity-time">2 May 2026, 10:30 AM</span>
+                        </li>
+                        <li class="activity-row">
+                            <svg class="activity-icon icon-ok" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <circle cx="12" cy="12" r="10" />
+                                <path d="m9 12 2 2 4-4" />
+                            </svg>
+                            <span class="activity-text">
+                                <span class="activity-title">Two-factor authentication enabled</span>
+                                <span class="activity-sub">Chennai, Tamil Nadu, India</span>
+                            </span>
+                            <span class="activity-time">1 May 2026, 04:15 PM</span>
+                        </li>
+                        <li class="activity-row">
+                            <svg class="activity-icon icon-warn" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <path d="m21.73 18-8-14a2 2 0 0 0-3.46 0l-8 14A2 2 0 0 0 4 21h16a2 2 0 0 0 1.73-3Z" />
+                                <path d="M12 9v4M12 17h.01" />
+                            </svg>
+                            <span class="activity-text">
+                                <span class="activity-title">Unusual login attempt blocked</span>
+                                <span class="activity-sub">Mumbai, Maharashtra, India</span>
+                            </span>
+                            <span class="activity-time">30 Apr 2026, 11:20 PM</span>
+                        </li>
+                    </ul>
+
+                    <a href="#" class="card-footer-link">
+                        View All Activity
+                        <svg class="chev" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                            stroke-linecap="round" stroke-linejoin="round">
+                            <path d="m9 18 6-6-6-6" />
+                        </svg>
+                    </a>
+                </section>
+
+                
+                <section class="card" aria-labelledby="security-tips-title">
+                    <h2 id="security-tips-title" class="card-title">Security Tips</h2>
+
+                    <ul class="tip-list">
+                        <li class="tip-row">
+                            <span class="row-icon icon-green sm">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                                    stroke-linecap="round" stroke-linejoin="round">
+                                    <rect x="3" y="11" width="18" height="11" rx="2" />
+                                    <path d="M7 11V7a5 5 0 0 1 10 0v4" />
+                                </svg>
+                            </span>
+                            <span class="row-text">
+                                <span class="row-title">Use a strong password</span>
+                                <span class="row-subtitle">Create a password with at least 8 characters</span>
+                            </span>
+                        </li>
+                        <li class="tip-row">
+                            <span class="row-icon icon-amber sm">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                                    stroke-linecap="round" stroke-linejoin="round">
+                                    <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10Z" />
+                                </svg>
+                            </span>
+                            <span class="row-text">
+                                <span class="row-title">Enable two-factor authentication</span>
+                                <span class="row-subtitle">Add an extra layer of security to your account</span>
+                            </span>
+                        </li>
+                        <li class="tip-row">
+                            <span class="row-icon icon-blue sm">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                                    stroke-linecap="round" stroke-linejoin="round">
+                                    <rect x="2" y="4" width="20" height="16" rx="2" />
+                                    <path d="m2 7 9.4 6.1a2 2 0 0 0 2.2 0L22 7" />
+                                </svg>
+                            </span>
+                            <span class="row-text">
+                                <span class="row-title">Keep your email updated</span>
+                                <span class="row-subtitle">Ensure your email is current for important alerts</span>
+                            </span>
+                        </li>
+                        <li class="tip-row">
+                            <span class="row-icon icon-purple sm">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                                    stroke-linecap="round" stroke-linejoin="round">
+                                    <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2" />
+                                    <circle cx="9" cy="7" r="4" />
+                                    <path d="M23 21v-2a4 4 0 0 0-3-3.87" />
+                                    <path d="M16 3.13a4 4 0 0 1 0 7.75" />
+                                </svg>
+                            </span>
+                            <span class="row-text">
+                                <span class="row-title">Log out from shared devices</span>
+                                <span class="row-subtitle">Always log out after using shared or public
+                                    devices</span>
+                            </span>
+                        </li>
+                    </ul>
+
+                    <a href="#" class="card-footer-link">
+                        View All Tips
+                        <svg class="chev" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                            stroke-linecap="round" stroke-linejoin="round">
+                            <path d="m9 18 6-6-6-6" />
+                        </svg>
+                    </a>
+                </section>
+
+            </div>
+        </main>
+
+</body>
+
+</html>
+</div>
+<script src="script/securitysetting.js"></script>
 </body>
 
 </html>
