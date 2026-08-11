@@ -35,3 +35,118 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     }
 });
+
+
+
+
+
+
+
+
+
+
+
+
+document.addEventListener("DOMContentLoaded", () => {
+
+    const themeSelect = document.getElementById("theme");
+    const settingsContent = document.querySelector(".settings-content");
+
+    if (themeSelect && settingsContent) {
+        const savedTheme = localStorage.getItem("bankTheme") || "light";
+
+        themeSelect.value = savedTheme;
+
+        function applyTheme(theme) {
+            settingsContent.style.backgroundColor =
+                theme === "dark" ? "#111827" : "#fff";
+        }
+
+        applyTheme(savedTheme);
+
+        themeSelect.addEventListener("change", () => {
+            const selectedTheme = themeSelect.value;
+
+            localStorage.setItem("bankTheme", selectedTheme);
+            applyTheme(selectedTheme);
+        });
+    }
+
+
+
+
+    const languageSelect = document.getElementById("language");
+
+    if (languageSelect) {
+
+        const savedLanguage = localStorage.getItem("bankLanguage");
+
+        if (savedLanguage) {
+            languageSelect.value = savedLanguage;
+        }
+
+        languageSelect.addEventListener("change", () => {
+
+            const language = languageSelect.value;
+
+            localStorage.setItem("bankLanguage", language);
+
+            console.log("Language changed to:", language);
+        });
+    }
+
+
+
+    const switches = document.querySelectorAll(".switch input");
+
+    switches.forEach((toggle, index) => {
+
+        const savedState = localStorage.getItem(`setting-${index}`);
+
+        if (savedState !== null) {
+            toggle.checked = savedState === "true";
+        }
+
+        toggle.addEventListener("change", () => {
+
+            localStorage.setItem(
+                `setting-${index}`,
+                toggle.checked
+            );
+
+            console.log(
+                `Setting ${index + 1}:`,
+                toggle.checked ? "ON" : "OFF"
+            );
+        });
+    });
+
+
+    const clickableRows = document.querySelectorAll(".clickable-row");
+
+    clickableRows.forEach(row => {
+
+        row.addEventListener("click", function (event) {
+
+            if (
+                event.target.tagName === "INPUT" ||
+                event.target.tagName === "SELECT"
+            ) {
+                return;
+            }
+
+            const title = this.querySelector("h3");
+
+            if (title) {
+                console.log("Selected:", title.textContent);
+
+
+                alert(`${title.textContent} clicked`);
+            }
+        });
+    });
+
+});
+
+
+

@@ -101,7 +101,7 @@
                 <i class="fa-regular fa-user"></i>
                 <a href="profile.html">Profile Information</a>
             </div>
-            <div >
+            <div>
                 <i class="fa-solid fa-shield-halved"></i>
                 <a href="securitysetting.html">Security Settings</a>
             </div>
@@ -120,6 +120,353 @@
         </div>
         <hr>
 
+
+        <!-- ================= SETTINGS CONTENT ================= -->
+        <section class="settings-content">
+
+            <!-- TOP ROW -->
+            <div class="settings-grid">
+
+                <!-- GENERAL PREFERENCES -->
+                <div class="settings-card">
+                    <h2>General Preferences</h2>
+
+                    <div class="setting-row">
+                        <div class="setting-left">
+                            <div class="setting-icon blue">
+                                <i class="fa-solid fa-globe"></i>
+                            </div>
+
+                            <div>
+                                <h3>Language</h3>
+                                <p>Select your preferred language</p>
+                            </div>
+                        </div>
+
+                        <select class="setting-select" id="language">
+                            <option>English</option>
+                            <option>Tamil</option>
+                            <option>Hindi</option>
+                        </select>
+                    </div>
+
+                    <div class="setting-row">
+                        <div class="setting-left">
+                            <div class="setting-icon green">
+                                <i class="fa-solid fa-palette"></i>
+                            </div>
+
+                            <div>
+                                <h3>Theme</h3>
+                                <p>Choose your preferred theme</p>
+                            </div>
+                        </div>
+
+                        <select class="setting-select" id="theme">
+                            <option value="light">☀ Light</option>
+                            <option value="dark">🌙 Dark</option>
+                        </select>
+                    </div>
+
+                    <div class="setting-row">
+                        <div class="setting-left">
+                            <div class="setting-icon purple">
+                                <i class="fa-regular fa-clock"></i>
+                            </div>
+
+                            <div>
+                                <h3>Date Format</h3>
+                                <p>Choose how dates are displayed</p>
+                            </div>
+                        </div>
+
+                        <select class="setting-select">
+                            <option>DD MMM YYYY</option>
+                            <option>DD/MM/YYYY</option>
+                            <option>MM/DD/YYYY</option>
+                        </select>
+                    </div>
+
+                    <div class="setting-row">
+                        <div class="setting-left">
+                            <div class="setting-icon yellow">
+                                <i class="fa-solid fa-indian-rupee-sign"></i>
+                            </div>
+
+                            <div>
+                                <h3>Currency</h3>
+                                <p>Select your preferred currency</p>
+                            </div>
+                        </div>
+
+                        <select class="setting-select">
+                            <option>INR (₹)</option>
+                            <option>USD ($)</option>
+                            <option>EUR (€)</option>
+                            <option>GBP (£)</option>
+                        </select>
+                    </div>
+                </div>
+
+
+                <div class="settings-card">
+                    <h2>Display Preferences</h2>
+
+                    <div class="setting-row">
+                        <div class="setting-left">
+                            <div class="setting-icon green">
+                                <i class="fa-regular fa-credit-card"></i>
+                            </div>
+
+                            <div>
+                                <h3>Show Account Balances</h3>
+                                <p>Display balances on dashboard and account lists</p>
+                            </div>
+                        </div>
+
+                        <label class="switch">
+                            <input type="checkbox" checked>
+                            <span class="slider"></span>
+                        </label>
+                    </div>
+
+                    <div class="setting-row">
+                        <div class="setting-left">
+                            <div class="setting-icon blue">
+                                <i class="fa-solid fa-list"></i>
+                            </div>
+
+                            <div>
+                                <h3>Show Recent Transactions</h3>
+                                <p>Display recent transactions on dashboard</p>
+                            </div>
+                        </div>
+
+                        <label class="switch">
+                            <input type="checkbox" checked>
+                            <span class="slider"></span>
+                        </label>
+                    </div>
+
+                    <div class="setting-row">
+                        <div class="setting-left">
+                            <div class="setting-icon purple">
+                                <i class="fa-solid fa-grip"></i>
+                            </div>
+
+                            <div>
+                                <h3>Compact View</h3>
+                                <p>Use compact layout for tables and lists</p>
+                            </div>
+                        </div>
+
+                        <label class="switch">
+                            <input type="checkbox">
+                            <span class="slider"></span>
+                        </label>
+                    </div>
+
+                    <div class="setting-row">
+                        <div class="setting-left">
+                            <div class="setting-icon yellow">
+                                <i class="fa-solid fa-bolt"></i>
+                            </div>
+
+                            <div>
+                                <h3>Show Quick Actions</h3>
+                                <p>Display quick action buttons on dashboard</p>
+                            </div>
+                        </div>
+
+                        <label class="switch">
+                            <input type="checkbox" checked>
+                            <span class="slider"></span>
+                        </label>
+                    </div>
+                </div>
+
+
+                <div class="settings-card">
+                    <h2>Banking Preferences</h2>
+
+                    <div class="clickable-row">
+                        <div class="setting-left">
+                            <div class="setting-icon blue">
+                                <i class="fa-solid fa-credit-card"></i>
+                            </div>
+
+                            <div>
+                                <h3>Default Account</h3>
+                                <p>Set your preferred default account</p>
+                            </div>
+                        </div>
+
+                        <div class="right-value">
+                            <span>
+                                Savings Account<br>
+                                <strong>•••• 5678</strong>
+                            </span>
+                            <i class="fa-solid fa-chevron-right"></i>
+                        </div>
+                    </div>
+
+                    <div class="clickable-row">
+                        <div class="setting-left">
+                            <div class="setting-icon green">
+                                <i class="fa-solid fa-right-left"></i>
+                            </div>
+
+                            <div>
+                                <h3>Transaction Limits</h3>
+                                <p>Manage your daily transaction limits</p>
+                            </div>
+                        </div>
+
+                        <i class="fa-solid fa-chevron-right arrow"></i>
+                    </div>
+
+                    <div class="clickable-row">
+                        <div class="setting-left">
+                            <div class="setting-icon purple">
+                                <i class="fa-regular fa-file-lines"></i>
+                            </div>
+
+                            <div>
+                                <h3>Bill Pay Preferences</h3>
+                                <p>Manage your bill payment preferences</p>
+                            </div>
+                        </div>
+
+                        <i class="fa-solid fa-chevron-right arrow"></i>
+                    </div>
+
+                    <div class="clickable-row">
+                        <div class="setting-left">
+                            <div class="setting-icon yellow">
+                                <i class="fa-solid fa-leaf"></i>
+                            </div>
+
+                            <div>
+                                <h3>Paperless Settings</h3>
+                                <p>Manage paperless statements and documents</p>
+                            </div>
+                        </div>
+
+                        <i class="fa-solid fa-chevron-right arrow"></i>
+                    </div>
+                </div>
+
+
+                <!-- PERSONALIZATION -->
+                <div class="settings-card">
+                    <h2>Personalization</h2>
+
+                    <div class="clickable-row">
+                        <div class="setting-left">
+                            <div class="setting-icon green">
+                                <i class="fa-solid fa-table-cells-large"></i>
+                            </div>
+
+                            <div>
+                                <h3>Dashboard Customization</h3>
+                                <p>Customize your dashboard widgets</p>
+                            </div>
+                        </div>
+
+                        <i class="fa-solid fa-chevron-right arrow"></i>
+                    </div>
+
+                    <div class="clickable-row">
+                        <div class="setting-left">
+                            <div class="setting-icon blue">
+                                <i class="fa-regular fa-user"></i>
+                            </div>
+
+                            <div>
+                                <h3>Account Nicknames</h3>
+                                <p>Manage nicknames for your accounts</p>
+                            </div>
+                        </div>
+
+                        <i class="fa-solid fa-chevron-right arrow"></i>
+                    </div>
+
+                    <div class="clickable-row">
+                        <div class="setting-left">
+                            <div class="setting-icon purple">
+                                <i class="fa-regular fa-heart"></i>
+                            </div>
+
+                            <div>
+                                <h3>Favorite Services</h3>
+                                <p>Manage your favorite banking services</p>
+                            </div>
+                        </div>
+
+                        <i class="fa-solid fa-chevron-right arrow"></i>
+                    </div>
+
+                    <div class="clickable-row">
+                        <div class="setting-left">
+                            <div class="setting-icon yellow">
+                                <i class="fa-solid fa-universal-access"></i>
+                            </div>
+
+                            <div>
+                                <h3>Accessibility Options</h3>
+                                <p>Manage accessibility and display options</p>
+                            </div>
+                        </div>
+
+                        <i class="fa-solid fa-chevron-right arrow"></i>
+                    </div>
+                </div>
+
+            </div>
+
+
+            <div class="settings-card privacy-card">
+
+                <h2>Data & Privacy Preferences</h2>
+
+                <div class="privacy-grid">
+
+                    <div class="clickable-row privacy-item">
+                        <div class="setting-left">
+                            <div class="setting-icon blue">
+                                <i class="fa-solid fa-shield-halved"></i>
+                            </div>
+
+                            <div>
+                                <h3>Data Sharing Preferences</h3>
+                                <p>Manage how your data is used and shared</p>
+                            </div>
+                        </div>
+
+                        <i class="fa-solid fa-chevron-right arrow"></i>
+                    </div>
+
+
+                    <div class="clickable-row privacy-item">
+                        <div class="setting-left">
+                            <div class="setting-icon green">
+                                <i class="fa-solid fa-lock"></i>
+                            </div>
+
+                            <div>
+                                <h3>Privacy Settings</h3>
+                                <p>Manage your privacy and data protection settings</p>
+                            </div>
+                        </div>
+
+                        <i class="fa-solid fa-chevron-right arrow"></i>
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
     </div>
     <script src="script/preferences.js"></script>
 </body>

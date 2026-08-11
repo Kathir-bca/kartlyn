@@ -758,11 +758,14 @@ a {
     .main-content h2 {
         font-size: 22px;
     }
-
+    
     .settings-options {
-        gap: 24px;
+        justify-content: space-between;
     }
-
+    .customer-info-container{
+        display: grid;
+        grid-template-columns: 1fr;
+    }
     .personal-info {
         grid-template-columns: 1fr;
         row-gap: 20px;
@@ -783,6 +786,11 @@ a {
     .content {
         padding-right: 15px;
         padding-left: 15px;
+    }
+    .footer {
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 20px;
     }
 }
 

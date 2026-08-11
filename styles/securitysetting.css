@@ -737,6 +737,9 @@ svg {
     .sidebar {
         display: none;
     }
+    .grid {
+        place-items: center;
+    }
 
     .page {
         padding: 20px;
