@@ -245,7 +245,14 @@ a {
 .content {
     padding: 90px 0 0 290px;
 }
-
+.main-content{
+    border-radius: 12px  12px 0px 0px;
+}
+.main-content , .settings-options{
+    background-color: #fff;
+    padding: 10px 0px 0px 10px;
+    
+}
 .main-content h2 {
     font-size: 26px;
     font-weight: 600;
@@ -260,6 +267,7 @@ a {
 .settings-options {
     display: flex;
     gap: 40px;
+    margin-top: -20px;
 }
 
 .settings-options div {
@@ -555,9 +563,10 @@ a {
     .settings-content {
         padding: 16px;
     }
-    hr{
+    .main-content , .settings-options, hr {
         width: 750px;
     }
+    
     .settings-card {
         padding: 18px;
         width: 650px;
@@ -610,9 +619,6 @@ a {
         align-items: flex-start;
         padding: 12px 0;
     }
-    /* .settings-card {
-        width: 100px;
-    } */
     .setting-select {
         width: 105px;
         min-width: 95px;

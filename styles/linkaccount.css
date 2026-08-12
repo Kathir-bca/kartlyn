@@ -290,7 +290,6 @@ a {
     width: 100%;
     padding: 24px 34px;
     box-sizing: border-box;
-    background: #f7f9fc;
 }
 
 
@@ -403,50 +402,9 @@ a {
 }
 
 
-/* HDFC */
-
-.bank-logo.hdfc {
-    color: #d71920;
-    background: #fff;
-    border: 2px solid #d71920;
+.bank-logo img {
+    width: 34px;
 }
-
-
-/* ICICI */
-
-.bank-logo.icici {
-    color: #ffffff;
-    background: linear-gradient(135deg, #c0392b, #e67e22);
-    font-family: Georgia, serif;
-}
-
-
-/* SBI */
-
-.bank-logo.sbi {
-    color: #ffffff;
-    background: #168bd1;
-    border-radius: 50%;
-}
-
-
-/* AXIS */
-
-.bank-logo.axis {
-    color: #c2185b;
-    background: #fff;
-    font-style: italic;
-}
-
-
-/* KOTAK */
-
-.bank-logo.kotak {
-    color: #ffffff;
-    background: #163c68;
-    border-radius: 50%;
-}
-
 
 /* =====================================================
    BANK ACTIONS
@@ -717,35 +675,11 @@ a {
 }
 
 
-/* UPI */
 
-.service-logo.upi {
-    color: #19a75a;
-    font-size: 12px;
-}
-
-
-/* Paytm */
-
-.service-logo.paytm {
-    color: #1474d4;
-    font-size: 10px;
-}
-
-
-/* PhonePe */
-
-.service-logo.phonepe {
+.service-logo img {
     width: 34px;
-    height: 34px;
-
-    background: #673ab7;
-    color: white;
-
-    border-radius: 50%;
-
-    font-size: 16px;
 }
+
 
 
 /* =====================================================

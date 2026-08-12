@@ -50,16 +50,16 @@ document.addEventListener('DOMContentLoaded', () => {
 document.addEventListener("DOMContentLoaded", () => {
 
     const themeSelect = document.getElementById("theme");
-    const settingsContent = document.querySelector(".settings-content");
 
-    if (themeSelect && settingsContent) {
+    if (themeSelect) {
         const savedTheme = localStorage.getItem("bankTheme") || "light";
 
         themeSelect.value = savedTheme;
 
         function applyTheme(theme) {
-            settingsContent.style.backgroundColor =
-                theme === "dark" ? "#111827" : "#fff";
+            document.body.style.backgroundColor =
+                theme === "dark" ? "#1b2438" : "#fff";
+
         }
 
         applyTheme(savedTheme);
