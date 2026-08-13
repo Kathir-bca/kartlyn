@@ -14,7 +14,7 @@
     <link
         href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
         rel="stylesheet">
-
+</head>
 <body>
     <p class=" Announcement">Flash Sale!<i class="fa-solid fa-tag"></i> Up to 50% off on selected products. <span
             style="color: #1D4ED8;">Shop Now</span> </p>
@@ -42,13 +42,13 @@
             <div>
                 <i class="fa-solid fa-truck"></i>Track Order
             </div>
-            <div class="wishlist">
+            <div class="header-wishlist">
                 <i class="fa-regular fa-heart"></i>Wishlist
-                <span>3</span>
+                <span id="wish-count">3</span>
             </div>
             <div class="cart">
                 <i class="fa-solid fa-cart-shopping"></i>Cart
-                <span>2</span>
+                <span id="cart-count">2</span>
             </div>
             <div class="user-profile">
                 <div>
@@ -66,11 +66,484 @@
 
 
     <nav class="nav">
-            <a href="home.html">Home</a>
-            <a href="shop.html" class="nav-active">Shop</a>
-            <a href="deals.html">Deals</a>
-            <a href="new.html">New Arrivals</a>
-            <a href="brands.html">Brands</a>
-            <a href="blog.html">Blog</a>
-            <a href="contact.html">Contact Us</a>
+        <a href="home.html">Home</a>
+        <a href="shop.html" class="nav-active">Shop</a>
+        <a href="deals.html">Deals</a>
+        <a href="new.html">New Arrivals</a>
+        <a href="brands.html">Brands</a>
+        <a href="blog.html">Blog</a>
+        <a href="contact.html">Contact Us</a>
     </nav>
+
+    <!-- Breadcrumb -->
+    <div class="breadcrumb">
+        <span>Home</span>
+        <i>›</i>
+        <strong>Shop</strong>
+    </div>
+
+    <!-- Main Container -->
+    <main class="shop-container">
+
+        <!-- ================= SIDEBAR ================= -->
+        <aside class="sidebar">
+
+            <!-- Categories -->
+            <section class="filter-box">
+
+                <h3>Categories</h3>
+
+                <div class="category-item">
+                    <span><i class="fa-solid fa-display"></i></span>
+                    <p>Electronics</p>
+                    <b>128</b>
+                </div>
+
+                <div class="category-item">
+                    <span><i class="fa-solid fa-shirt"></i></span>
+                    <p>Fashion & Apparel</p>
+                    <b>180</b>
+                </div>
+
+                <div class="category-item">
+                    <span><i class="fa-solid fa-home"></i></span>
+                    <p>Home & Living</p>
+                    <b>96</b>
+                </div>
+
+                <div class="category-item">
+                    <span><i class="fa-solid fa-spray-can-sparkles"></i></span>
+                    <p>Beauty & Personal Care</p>
+                    <b>64</b>
+                </div>
+
+                <div class="category-item">
+                    <span><i class="fa-regular fa-futbol"></i></span>
+                    <p>Sports & Outdoors</p>
+                    <b>75</b>
+                </div>
+
+                <div class="category-item">
+                    <span><i class="fa-solid fa-book"></i></span>
+                    <p>Books & Stationery</p>
+                    <b>42</b>
+                </div>
+
+                <div class="category-item">
+                    <span>
+                        <i class="fa-solid fa-car"></i>
+                    </span>
+                    <p>Automotive</p>
+                    <b>38</b>
+                </div>
+
+                <div class="category-item">
+                    <span>
+                        <i class="fa-solid fa-cubes-stacked"></i>
+                    </span>
+                    <p>Toys & Games</p>
+                    <b>58</b>
+                </div>
+
+                <div class="category-item">
+                    <span><i class="fa-solid fa-heart-circle-plus"></i></span>
+                    <p>Health & Wellness</p>
+                    <b>52</b>
+                </div>
+
+                <div class="category-item">
+                    <span>•••</span>
+                    <p>More Categories</p>
+                    <b>+</b>
+                </div>
+
+            </section>
+
+
+            <!-- Price -->
+            <section class="filter-box">
+
+                <h3>Filter by Price</h3>
+
+                <div class="range-wrapper">
+                    <input type="range" min="199" max="50000" value="25000" id="priceRange">
+                </div>
+
+                <div class="price-labels">
+                    <span>₹199</span>
+                    <span>₹50,000+</span>
+                </div>
+
+                <div class="price-inputs">
+
+                    <input type="text" value="₹199">
+
+                    <span>−</span>
+
+                    <input type="text" value="₹50000">
+
+                </div>
+
+                <button class="apply-btn">Apply</button>
+
+            </section>
+
+
+            <!-- Brand -->
+            <section class="filter-box">
+
+                <h3>Brand</h3>
+
+                <label class="check-row">
+                    <span>
+                        <input type="checkbox">
+                        boAt
+                    </span>
+                    <b>32</b>
+                </label>
+
+                <label class="check-row">
+                    <span>
+                        <input type="checkbox">
+                        Sony
+                    </span>
+                    <b>28</b>
+                </label>
+
+                <label class="check-row">
+                    <span>
+                        <input type="checkbox">
+                        Apple
+                    </span>
+                    <b>24</b>
+                </label>
+
+                <label class="check-row">
+                    <span>
+                        <input type="checkbox">
+                        Samsung
+                    </span>
+                    <b>36</b>
+                </label>
+
+                <label class="check-row">
+                    <span>
+                        <input type="checkbox">
+                        Noise
+                    </span>
+                    <b>18</b>
+                </label>
+
+                <label class="check-row">
+                    <span>
+                        <input type="checkbox">
+                        Puma
+                    </span>
+                    <b>26</b>
+                </label>
+
+                <label class="check-row">
+                    <span>
+                        <input type="checkbox">
+                        Adidas
+                    </span>
+                    <b>22</b>
+                </label>
+
+                <button class="view-more">View More +</button>
+
+            </section>
+
+
+            <!-- Rating -->
+            <section class="filter-box">
+
+                <h3>Customer Rating</h3>
+
+                <div class="rating-filter">
+                    <span>★★★★★</span>
+                    <b>(124)</b>
+                </div>
+
+                <div class="rating-filter">
+                    <span>★★★★☆</span>
+                    <b>(98)</b>
+                </div>
+
+                <div class="rating-filter">
+                    <span>★★★☆☆</span>
+                    <b>(64)</b>
+                </div>
+
+                <div class="rating-filter">
+                    <span>★★☆☆☆</span>
+                    <b>(32)</b>
+                </div>
+
+                <div class="rating-filter">
+                    <span>★☆☆☆☆</span>
+                    <b>(16)</b>
+                </div>
+
+            </section>
+
+
+            <!-- Availability -->
+            <section class="filter-box">
+
+                <h3>Availability</h3>
+
+                <label class="check-row">
+                    <span>
+                        <input type="checkbox">
+                        In Stock
+                    </span>
+                    <b>362</b>
+                </label>
+
+                <label class="check-row">
+                    <span>
+                        <input type="checkbox">
+                        Out of stock
+                    </span>
+                    <b>28</b>
+                </label>
+
+            </section>
+
+
+            <!-- Discount -->
+            <section class="filter-box">
+
+                <h3>Discount</h3>
+
+                <label class="check-row">
+                    <span>
+                        <input type="checkbox">
+                        10% and above
+                    </span>
+                    <b>125</b>
+                </label>
+
+                <label class="check-row">
+                    <span>
+                        <input type="checkbox">
+                        20% and above
+                    </span>
+                    <b>98</b>
+                </label>
+
+                <label class="check-row">
+                    <span>
+                        <input type="checkbox">
+                        30% and above
+                    </span>
+                    <b>76</b>
+                </label>
+
+                <label class="check-row">
+                    <span>
+                        <input type="checkbox">
+                        40% and above
+                    </span>
+                    <b>42</b>
+                </label>
+
+                <label class="check-row">
+                    <span>
+                        <input type="checkbox">
+                        50% and above
+                    </span>
+                    <b>28</b>
+                </label>
+
+            </section>
+
+        </aside>
+
+
+        <!-- ================= PRODUCTS ================= -->
+
+        <section class="products-section">
+
+            <div class="shop-header">
+
+                <div>
+                    <h1>Shop</h1>
+                    <p>Discover amazing products at the best prices</p>
+                </div>
+
+            </div>
+
+
+            <div class="products-top">
+
+                <p id="productCount">
+                    Showing 1-12 of 36 products
+                </p>
+
+                <div class="shop-controls">
+
+                    <div class="view-buttons">
+                        <button class="view-btn active">▦</button>
+                        <button class="view-btn">☷</button>
+                    </div>
+
+                    <label class="sort-label">
+                        Sort by:
+                        <select id="sortProducts">
+                            <option value="featured">Featured</option>
+                            <option value="low">Price: Low to High</option>
+                            <option value="high">Price: High to Low</option>
+                            <option value="rating">Top Rated</option>
+                            <option value="discount">Big Discount</option>
+                        </select>
+                    </label>
+
+                </div>
+
+            </div>
+
+
+            <!-- JavaScript inserts products here -->
+            <div class="products-grid" id="productsGrid"></div>
+
+
+            <!-- Pagination -->
+            <div class="pagination" id="pagination"></div>
+
+        </section>
+
+    </main>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <section class="feature">
+        <div class="sec1">
+            <img src="Icons/truck.png" alt="deliver">
+            <div>
+                <h4>Free Shipping</h4>
+                <p>On orders over ₹499</p>
+            </div>
+        </div>
+        <div class="sec2">
+            <img src="Icons/return.png" alt="return">
+            <div>
+                <h4>Easy Returns</h4>
+                <p>30 days return policy</p>
+            </div>
+        </div>
+        <div class="sec3">
+            <img src="Icons/security.png" alt="return">
+            <div>
+                <h4>Secure Payments</h4>
+                <p>100% secure checkout</p>
+            </div>
+        </div>
+        <div class="sec4">
+            <img src="Icons/tag.png" alt="return">
+            <div>
+                <h4>Best Prices</h4>
+                <p>Guaranteed best price</p>
+            </div>
+        </div>
+        <div class="sec5">
+            <img src="Icons/support.png" alt="return">
+            <div>
+                <h4>24/7 Support</h4>
+                <p>Dedicated Support</p>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- Footer -->
+
+    <footer class="footer">
+        <div class="footer-top">
+            <div style="width: 300px; text-align: center;">
+                <img src="images/Kartlyn.PNG" alt="KartLyn">
+                <p>Your one-stop destination for all your shopping needs. Quality products, best prices & great service.
+                </p>
+                <div class="app-icons">
+                    <img src="Icons/communication.png" alt="fb">
+                    <img src="Icons/twitter.png" alt="twitter">
+                    <img src="Icons/youtube.png" alt="yt">
+                    <img src="Icons/instagram.png" alt="insta">
+                </div>
+            </div>
+            <div>
+                <h4>Customer Service</h4>
+                <p>Help Center</p>
+                <p>Track Order</p>
+                <p>Return & Refunds</p>
+                <p>Shipping Info</p>
+                <p>FAQs</p>
+            </div>
+            <div>
+                <h4>About Us</h4>
+                <p>About Kartlyn</p>
+                <p>Careers</p>
+                <p>Press & Media</p>
+                <p>Become a Seller</p>
+                <p>Contact Us</p>
+            </div>
+            <div>
+                <h4>My Account</h4>
+                <p>My Orders</p>
+                <p>Wishlist</p>
+                <p>Account Details</p>
+                <p>Addresses</p>
+                <p>Logout</p>
+            </div>
+            <div>
+                <h4>Categories</h4>
+                <p>Electronics</p>
+                <p>Fashion</p>
+                <p>Home & Living</p>
+                <p>Beauty</p>
+                <p>View All Categories</p>
+            </div>
+        </div>
+
+
+        <hr>
+
+
+        <div class="footer-bottom">
+            <div>
+                <p>&copy; 2026 Kartlyn. All Rights Reserved.</p>
+            </div>
+            <div class="footer-info">
+                <p><a href="privacy-policy.pdf">Privacy Policy</a></p>
+                <p><a href="Terms of Service.txt">Terms of Service</a></p>
+                <p><a href="refund.pdf">Refund Policy</a></p>
+            </div>
+            <div class="div">
+                <img src="Icons/visa.png" alt="visa">
+                <img src="Icons/mcard.png" alt="mc">
+                <img src="Icons/paytm.png" alt="paytm">
+                <img src="Icons/upi.png" alt="upi">
+            </div>
+        </div>
+    </footer>
+
+    <script src="shop.js"></script>
+
+</body>
+
+</html>

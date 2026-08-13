@@ -14,9 +14,12 @@ img {
     max-width: 100%;
     height: auto;
 }
-@media (max-width: 1400px){
+@media (max-width: 1380px){
     .side-bar{
         width: 365px;
+    }
+    .slider-viewport{
+        width: 100%;
     }
 }
 @media (max-width: 1200px) {

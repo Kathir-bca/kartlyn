@@ -159,11 +159,12 @@ a {
 .my-account {
     display: grid;
     grid-template-columns: 100px;
-    border: 2px solid #1D4ED8;
-    background-color: #bfcceb;
+    border: 2px solid #e5e9f5;
+    background-color: #fff;
     border-radius: 40px;
     padding: 6px 0px 6px 50px;
     margin-bottom: 25px;
+    box-shadow: 4px 6px 16px rgba(0, 0, 0, .15);
 }
 .my-account  small{
     color: #000;
@@ -275,7 +276,7 @@ a {
 
 .slider-viewport {
     position: relative;
-    width: 1013px;
+    width: 1150px;
     min-width: 0;
     overflow: hidden;
     border-radius: 14px;
