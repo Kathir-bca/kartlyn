@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Kartlyn</title>
-    <link rel="stylesheet" href="styles/home.css">
+    <link rel="stylesheet" href="styles/shop.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.3.0/css/all.min.css"
         integrity="sha512-ApSLB1Pd3/bZN8fWB/RG9YhN/7bd9Hkf3AGaE2mPfebjrxagjuBtx2GcgdqIlJkUzwylBo61r9Xa9NmgBI0swA=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
@@ -16,7 +16,7 @@
         rel="stylesheet">
 
 <body>
-    <p class="Announcement">Flash Sale!<i class="fa-solid fa-tag"></i> Up to 50% off on selected products. <span
+    <p class=" Announcement">Flash Sale!<i class="fa-solid fa-tag"></i> Up to 50% off on selected products. <span
             style="color: #1D4ED8;">Shop Now</span> </p>
 
 
@@ -24,7 +24,7 @@
     <header class="header">
 
         <div class="left-section">
-            <img src="images/Kartlyn.png" alt="kartlyn" class="page-logo">
+            <img src="images/Kartlyn.PNG" alt="KartLyn" class="page-logo">
         </div>
 
         <div class="middle-section">
@@ -35,29 +35,29 @@
                 <option value="home">Home & Living</option>
             </select>
             <input type="text" id="search-bar" placeholder="Search for products, brands and more...">
-            <i class="fa-solid fa-magnifying-glass"></i>
+            <button type="button"><img src="Icons/search.png" alt="search"></button>
         </div>
 
         <div class="right-section">
             <div>
-                <i class="fa-solid fa-truck"></i></i>
-                <div>Track Order</div>
+                <i class="fa-solid fa-truck"></i>Track Order
             </div>
-            <div>
-                <i class="fa-regular fa-heart"></i>
-                <div>Wishlist</div>
+            <div class="wishlist">
+                <i class="fa-regular fa-heart"></i>Wishlist
+                <span>3</span>
             </div>
-            <div>
-                <i class="fa-solid fa-cart-shopping"></i>
-                <div>Cart</div>
-                <!-- <span></span> -->
+            <div class="cart">
+                <i class="fa-solid fa-cart-shopping"></i>Cart
+                <span>2</span>
             </div>
-            <div>
-                <i class="fa-solid fa-user"></i>
-            </div>
-            <div>
-                <small>Hi, Kathiravan</small>
-                <div class="user-account">My Account<i class="fa-solid fa-angle-down"></i></div>
+            <div class="user-profile">
+                <div>
+                    <a href="profile.html"><img src="images/luffy.jpeg" alt="user"></a>
+                </div>
+                <span class="my-account">
+                    <a href="profile.html"><small>Hi, Kathiravan</small></a>
+                    <a href="profile.html" class="user-account">My Account<i class="fa-solid fa-angle-down"></i></a>
+                </span>
             </div>
         </div>
 
@@ -66,11 +66,6 @@
 
 
     <nav class="nav">
-        <div class="allCate">
-            <i class="fa-solid fa-bars"></i>
-            <span>All Categories</span>
-        </div>
-        <div class="nav-row">
             <a href="home.html">Home</a>
             <a href="shop.html" class="nav-active">Shop</a>
             <a href="deals.html">Deals</a>
@@ -78,11 +73,4 @@
             <a href="brands.html">Brands</a>
             <a href="blog.html">Blog</a>
             <a href="contact.html">Contact Us</a>
-        </div>
     </nav>
-
-
-
-</body>
-
-</html>

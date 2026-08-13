@@ -149,10 +149,10 @@ a {
 }
 .user-profile img {
     border-radius: 50%;
-    width: 44px;
+    width: 46px;
     position: absolute;
-    top: 22px;
-    left: 4px;
+    top: 20px;
+    left: 2px;
     border: 2px solid gray;
 }
 
@@ -243,7 +243,7 @@ a {
     padding: 10px;
     margin-left: 20px;
     border-radius: 0 0 6px 6px;
-    width: 365px;
+    width: 354px;
     overflow: hidden;
     transition: all .3s ease;
 }

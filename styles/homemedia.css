@@ -14,7 +14,11 @@ img {
     max-width: 100%;
     height: auto;
 }
-
+@media (max-width: 1400px){
+    .side-bar{
+        width: 365px;
+    }
+}
 @media (max-width: 1200px) {
     .header {
         grid-template-columns: 200px minmax(0, 1fr);
@@ -41,7 +45,7 @@ img {
     }
 
     .side-bar {
-        width: 315px;
+        width: 290px;
     }
 
     .side-bar div {
@@ -141,7 +145,7 @@ img {
 
     .middle-section button {
         flex: 0 0 50px;
-        padding: 0;
+        height: 52px;
     }
 
     .right-section {
@@ -159,11 +163,9 @@ img {
     }
 
     .user-profile img {
-        border-radius: 50%;
-        width: 42px;
-        position: absolute;
-        top: 16px;
-        left: 0px;
+        width: 44px;
+        top: 19px;
+        left: 2px;
     }
 
     .nav {
@@ -441,7 +443,10 @@ img {
         place-items: center;
         gap: 5px;
     }
-
+    .user-profile img{
+        top: 19px;
+        left: 2px;
+    }
     .dealofday {
         grid-template-columns: 1fr;
         text-align: center;
