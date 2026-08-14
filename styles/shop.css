@@ -786,16 +786,12 @@ a {
     vertical-align: center;
 }
 
-/* ================= RESPONSIVE ================= */
 
-
-  replaces the inline style you currently have on that div */
 .footer-brand {
     width: 300px;
     text-align: center;
 }
  
-/* -------- 1200px : small laptops -------- */
 @media (max-width: 1200px) {
  
     .header {
@@ -834,7 +830,6 @@ a {
     }
 }
  
-/* -------- 992px : tablets, landscape -------- */
 @media (max-width: 992px) {
  
     .page-logo {
@@ -842,7 +837,7 @@ a {
     }
  
     .feature {
-        grid-template-columns: repeat(2, 1fr);
+        grid-template-columns: repeat(3, 1fr);
         margin: 15px;
         padding: 20px 15px;
         row-gap: 18px;
@@ -850,12 +845,13 @@ a {
  
     .sec1, .sec2, .sec3, .sec4, .sec5 {
         padding-right: 15px;
+        border: none;
     }
  
     .footer-top {
-        flex-wrap: wrap;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
         gap: 30px;
-        margin-top: 30px;
     }
  
     .footer-brand {
@@ -890,7 +886,6 @@ a {
     }
 }
  
-/* -------- 768px : tablets portrait / large phones -------- */
 @media (max-width: 768px) {
  
     .Announcement {
@@ -945,9 +940,16 @@ a {
     .products-grid{
         grid-template-columns: 1fr 1fr;
     }
+    .footer-top {
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 20px;
+        place-items: center;
+        text-align: center;
+    }
 }
- 
-/* -------- 576px : phones -------- */
+
+
 @media (max-width: 576px) {
  
     .page-logo {
