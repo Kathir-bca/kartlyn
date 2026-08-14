@@ -257,7 +257,7 @@ const products = [
     {
         id: 25,
         name: "Apple AirPods Pro",
-        image: "images/airpods-pro.jpg",
+        image: "images/airpods-pro.webp",
         price: 18999,
         oldPrice: 24999,
         discount: 24,
@@ -267,7 +267,7 @@ const products = [
     {
         id: 26,
         name: "Dell Inspiron Laptop",
-        image: "images/dell-laptop.jpg",
+        image: "images/dell-inspiron.jpg",
         price: 55999,
         oldPrice: 67999,
         discount: 18,
@@ -277,7 +277,7 @@ const products = [
     {
         id: 27,
         name: "Mi Smart Air Purifier",
-        image: "images/mi-air-purifier.jpg",
+        image: "images/mi-aircooler.png",
         price: 8999,
         oldPrice: 10999,
         discount: 18,
@@ -307,7 +307,7 @@ const products = [
     {
         id: 30,
         name: "Philips Beard Trimmer",
-        image: "images/philips-trimmer.jpg",
+        image: "images/philips-trimmer.png",
         price: 1199,
         oldPrice: 1599,
         discount: 25,
@@ -337,7 +337,7 @@ const products = [
     {
         id: 33,
         name: "Nike Sports T-Shirt",
-        image: "images/nike-shirt.jpg",
+        image: "images/nike-tshirt.jpg",
         price: 1299,
         oldPrice: 1799,
         discount: 27,
@@ -347,7 +347,7 @@ const products = [
     {
         id: 34,
         name: "Samsung Fast Charger",
-        image: "images/samsung-charger.jpg",
+        image: "images/samsung-charger.webp",
         price: 999,
         oldPrice: 1499,
         discount: 33,
@@ -357,7 +357,7 @@ const products = [
     {
         id: 35,
         name: "Fastrack Men's Watch",
-        image: "images/fastrack-watch.jpg",
+        image: "images/fastrack-watch.png",
         price: 1799,
         oldPrice: 2499,
         discount: 28,
