@@ -55,7 +55,7 @@ const products = [
     },
 
     {
-        id: 2,
+        id: 6,
         name: "Noise Fit Halo Plus Smart Watch",
         image: "images/watch.png",
         price: 3695,
@@ -139,7 +139,7 @@ const products = [
         rating: 4.6
     },
 
-    {git
+    {
         id: 14,
         name: "Apple iPhone 15 128GB",
         image: "images/iphone-15.png",
@@ -392,13 +392,10 @@ let displayedProducts = [...products];
 // DOM ELEMENTS
 // ======================================================
 
-const productsGrid = document.getElementById("productsGrid");
-
-const pagination = document.getElementById("pagination");
-
-const productCount = document.getElementById("productCount");
-
-const sortProducts = document.getElementById("sortProducts");
+let productsGrid;
+let pagination;
+let productCount;
+let sortProducts;
 
 
 // ======================================================
@@ -429,6 +426,7 @@ function createStars(rating) {
     const emptyStars =
         5 - fullStars - halfStar;
 
+    // note: using a full star for half ratings for simplicity
     return "★".repeat(fullStars) +
         (halfStar ? "★" : "") +
         "☆".repeat(emptyStars);
@@ -441,6 +439,8 @@ function createStars(rating) {
 // ======================================================
 
 function renderProducts() {
+
+    if (!productsGrid) return;
 
     productsGrid.innerHTML = "";
 
@@ -553,6 +553,8 @@ function renderProducts() {
 
 function updateProductCount() {
 
+    if (!productCount) return;
+
     const total = displayedProducts.length;
 
     const start =
@@ -579,6 +581,8 @@ function updateProductCount() {
 
 function renderPagination() {
 
+    if (!pagination) return;
+
     pagination.innerHTML = "";
 
 
@@ -588,6 +592,10 @@ function renderPagination() {
             productsPerPage
         );
 
+    if (totalPages === 0) {
+        // nothing to show
+        return;
+    }
 
     // Previous
     const previousButton =
@@ -698,59 +706,7 @@ function renderPagination() {
 // SORT PRODUCTS
 // ======================================================
 
-sortProducts.addEventListener("change", function () {
-
-    const value = this.value;
-
-
-    if (value === "low") {
-
-        displayedProducts.sort(
-            (a, b) => a.price - b.price
-        );
-
-    }
-
-
-    else if (value === "high") {
-
-        displayedProducts.sort(
-            (a, b) => b.price - a.price
-        );
-
-    }
-
-
-    else if (value === "rating") {
-
-        displayedProducts.sort(
-            (a, b) => b.rating - a.rating
-        );
-
-    }
-
-
-    else if (value === "discount") {
-
-        displayedProducts.sort(
-            (a, b) => b.discount - a.discount
-        );
-
-    }
-
-
-    else {
-
-        displayedProducts = [...products];
-
-    }
-
-
-    currentPage = 1;
-
-    renderProducts();
-
-});
+// attach listener later after DOM is ready
 
 
 // ======================================================
@@ -803,4 +759,69 @@ function addToCart(productId) {
 // INITIAL LOAD
 // ======================================================
 
-renderProducts();
+document.addEventListener("DOMContentLoaded", () => {
+    productsGrid = document.getElementById("productsGrid");
+    pagination = document.getElementById("pagination");
+    productCount = document.getElementById("productCount");
+    sortProducts = document.getElementById("sortProducts");
+
+    // attach sort listener if element exists
+    if (sortProducts) {
+        sortProducts.addEventListener("change", function () {
+
+            const value = this.value;
+
+
+            if (value === "low") {
+
+                displayedProducts.sort(
+                    (a, b) => a.price - b.price
+                );
+
+            }
+
+
+            else if (value === "high") {
+
+                displayedProducts.sort(
+                    (a, b) => b.price - a.price
+                );
+
+            }
+
+
+            else if (value === "rating") {
+
+                displayedProducts.sort(
+                    (a, b) => b.rating - a.rating
+                );
+
+            }
+
+
+            else if (value === "discount") {
+
+                displayedProducts.sort(
+                    (a, b) => b.discount - a.discount
+                );
+
+            }
+
+
+            else {
+
+                displayedProducts = [...products];
+
+            }
+
+
+            currentPage = 1;
+
+            renderProducts();
+
+        });
+    }
+
+    // initial render
+    renderProducts();
+});
