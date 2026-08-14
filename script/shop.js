@@ -139,7 +139,7 @@ const products = [
         rating: 4.6
     },
 
-    {
+    {git
         id: 14,
         name: "Apple iPhone 15 128GB",
         image: "images/iphone-15.png",
