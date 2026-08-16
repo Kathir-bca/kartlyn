@@ -92,7 +92,7 @@ const products = [
         discount: 12,
         rating: 4.4
     },
-    
+
     {
         id: 9,
         name: "Adidas Men's Running Shoes",
@@ -702,25 +702,21 @@ function renderPagination() {
 }
 
 
-// ======================================================
-// SORT PRODUCTS
-// ======================================================
-
-// attach listener later after DOM is ready
 
 
-// ======================================================
+
 // WISHLIST
-// ======================================================
 
 function toggleWishlist(button) {
 
+    let wishlist = document.querySelector(".wishlist");
+    let addWishlist = document.getElementById("wish-count")
+
+    addWishlist.textContent ++;
     button.classList.toggle("active");
 
 
-    if (
-        button.classList.contains("active")
-    ) {
+    if (button.classList.contains("active")) {
 
         button.innerHTML = "♥";
 
@@ -733,20 +729,13 @@ function toggleWishlist(button) {
 }
 
 
-// ======================================================
 // ADD TO CART
-// ======================================================
 
 function addToCart(productId) {
-
-    const product =
-        products.find(
-            product => product.id === productId
-        );
-
-
-    if (!product) return;
-
+    const cartCount = document.getElementById("cart-count");
+    const addCart = document.querySelector(".add-cart");
+    const product = products.find(product => product.id === productId);
+    cartCount.textContent++;
 
     alert(
         `${product.name} added to cart!`
