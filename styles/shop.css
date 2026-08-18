@@ -1081,13 +1081,13 @@ a {
     }
 }
 
-@media(max-width: 450px) {
+@media(max-width: 40px) {
     .header {
         width: 100%;
         position: relative;
         padding-top: 50px;
-    }
-
+    } 
+    
     .page-logo {
         width: 200px;
         position: absolute;
