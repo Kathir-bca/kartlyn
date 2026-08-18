@@ -125,9 +125,7 @@ const products = [
     },
 
 
-    // ==================================================
     // PAGE 2
-    // ==================================================
 
     {
         id: 13,
@@ -249,10 +247,7 @@ const products = [
         rating: 4.4
     },
 
-
-    // ==================================================
     // PAGE 3
-    // ==================================================
 
     {
         id: 25,
@@ -377,9 +372,8 @@ const products = [
 ];
 
 
-// ======================================================
 // SETTINGS
-// ======================================================
+
 
 const productsPerPage = 12;
 
@@ -388,9 +382,8 @@ let currentPage = 1;
 let displayedProducts = [...products];
 
 
-// ======================================================
 // DOM ELEMENTS
-// ======================================================
+
 
 let productsGrid;
 let pagination;
@@ -398,30 +391,24 @@ let productCount;
 let sortProducts;
 
 
-// ======================================================
 // FORMAT PRICE
-// ======================================================
 
-function formatPrice(price) {
-
-    return new Intl.NumberFormat("en-IN", {
-        style: "currency",
-        currency: "INR",
-        maximumFractionDigits: 0
+function formatPrice(price){
+    return Intl.NumberFormat("en-IN", {
+        style : "currency",
+        currency : "INR",
+        maximumFractionDigits : 0
     }).format(price);
-
 }
 
 
-// ======================================================
 // CREATE STAR RATING
-// ======================================================
 
 function createStars(rating) {
 
     const fullStars = Math.floor(rating);
 
-    const halfStar = rating % 1 >= 0.5 ? 1 : 0;
+    const halfStar = (rating % 1) >= 0.5 ? 1 : 0;
 
     const emptyStars =
         5 - fullStars - halfStar;
@@ -434,9 +421,8 @@ function createStars(rating) {
 }
 
 
-// ======================================================
 // RENDER PRODUCTS
-// ======================================================
+
 
 function renderProducts() {
 
@@ -547,9 +533,8 @@ function renderProducts() {
 }
 
 
-// ======================================================
 // PRODUCT COUNT
-// ======================================================
+
 
 function updateProductCount() {
 
@@ -575,9 +560,8 @@ function updateProductCount() {
 }
 
 
-// ======================================================
 // PAGINATION
-// ======================================================
+
 
 function renderPagination() {
 
@@ -744,9 +728,8 @@ function addToCart(productId) {
 }
 
 
-// ======================================================
 // INITIAL LOAD
-// ======================================================
+
 
 document.addEventListener("DOMContentLoaded", () => {
     productsGrid = document.getElementById("productsGrid");

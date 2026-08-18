@@ -1,0 +1,485 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kartlyn</title>
+    <link rel="icon" href="images/Kartlyn-logo.png">
+    <link rel="stylesheet" href="styles/deals.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.3.0/css/all.min.css"
+        integrity="sha512-ApSLB1Pd3/bZN8fWB/RG9YhN/7bd9Hkf3AGaE2mPfebjrxagjuBtx2GcgdqIlJkUzwylBo61r9Xa9NmgBI0swA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <p class=" Announcement">Flash Sale!<i class="fa-solid fa-tag"></i> Up to 50% off on selected products. <span
+            style="color: #1D4ED8;">Shop Now</span> </p>
+
+
+
+    <header class="header">
+
+        <div class="left-section">
+            <img src="images/Kartlyn.PNG" alt="KartLyn" class="page-logo">
+        </div>
+
+        <div class="middle-section">
+            <select name="All Categories" id="categories">
+                <option value="all">All Categories</option>
+                <option value="electronics">Electronics</option>
+                <option value="fashion">Fashion</option>
+                <option value="home">Home & Living</option>
+            </select>
+            <input type="text" id="search-bar" placeholder="Search for products, brands and more...">
+            <button type="button"><img src="Icons/search.png" alt="search"></button>
+        </div>
+
+        <div class="right-section">
+            <div>
+                <i class="fa-solid fa-truck"></i>Track Order
+            </div>
+            <div class="header-wishlist">
+                <i class="fa-regular fa-heart"></i>Wishlist
+                <span id="wish-count">3</span>
+            </div>
+            <div class="cart">
+                <i class="fa-solid fa-cart-shopping"></i>Cart
+                <span id="cart-count">2</span>
+            </div>
+            <div class="user-profile">
+                <div>
+                    <a href="profile.html"><img src="images/luffy.jpeg" alt="user"></a>
+                </div>
+                <span class="my-account">
+                    <a href="profile.html"><small>Hi, Kathiravan</small></a>
+                    <a href="profile.html" class="user-account">My Account<i class="fa-solid fa-angle-down"></i></a>
+                </span>
+            </div>
+        </div>
+
+    </header>
+
+
+
+    <nav class="nav">
+        <a href="home.html">Home</a>
+        <a href="shop.html">Shop</a>
+        <a href="deals.html" class="nav-active">Deals</a>
+        <a href="new.html">New Arrivals</a>
+        <a href="brands.html">Brands</a>
+        <a href="blog.html">Blog</a>
+        <a href="contact.html">Contact Us</a>
+    </nav>
+
+
+    <main class="deals-layout">
+
+        <!-- ================= SIDEBAR ================= -->
+
+        <aside class="deals-sidebar">
+
+            <h2>Deals</h2>
+
+            <nav class="deal-navigation">
+
+                <button class="deal-nav active" data-type="all">
+                    <span>◆</span>
+                    All Deals
+                </button>
+
+                <button class="deal-nav" data-type="flash">
+                    <span>ϟ</span>
+                    Flash Deals
+                </button>
+
+                <button class="deal-nav" data-type="top">
+                    <span>☆</span>
+                    Top Deals
+                </button>
+
+                <button class="deal-nav" data-type="day">
+                    <span>◷</span>
+                    Deals of the Day
+                </button>
+
+                <button class="deal-nav" data-type="weekend">
+                    <span>♧</span>
+                    Weekend Special
+                </button>
+
+                <button class="deal-nav" data-type="clearance">
+                    <span>◇</span>
+                    Clearance Sale
+                </button>
+
+                <button class="deal-nav" data-type="bank">
+                    <span>▣</span>
+                    Bank Offers
+                </button>
+
+            </nav>
+
+
+            <!-- FILTER -->
+
+            <div class="filter-section">
+
+                <div class="filter-title">
+                    <h3>Filter By</h3>
+                    <button id="filterToggle">⌃</button>
+                </div>
+
+
+                <div id="filterContent">
+
+                    <h4>Categories</h4>
+
+                    <label>
+                        <input type="checkbox" class="category-filter" value="Electronics">
+                        Electronics
+                        <span>(120)</span>
+                    </label>
+
+                    <label>
+                        <input type="checkbox" class="category-filter" value="Fashion">
+                        Fashion
+                        <span>(85)</span>
+                    </label>
+
+                    <label>
+                        <input type="checkbox" class="category-filter" value="Home">
+                        Home & Living
+                        <span>(65)</span>
+                    </label>
+
+                    <label>
+                        <input type="checkbox" class="category-filter" value="Beauty">
+                        Beauty
+                        <span>(40)</span>
+                    </label>
+
+                    <label>
+                        <input type="checkbox" class="category-filter" value="Sports">
+                        Sports
+                        <span>(30)</span>
+                    </label>
+
+                    <label>
+                        <input type="checkbox" class="category-filter" value="Toys">
+                        Toys & Games
+                        <span>(25)</span>
+                    </label>
+
+                    <label>
+                        <input type="checkbox" class="category-filter" value="Automotive">
+                        Automotive
+                        <span>(20)</span>
+                    </label>
+
+                    <button class="view-more" id="viewMore">
+                        View More ↓
+                    </button>
+
+                </div>
+
+            </div>
+
+        </aside>
+
+
+        <!-- ================= MAIN ================= -->
+
+        <section class="deals-main">
+
+            <!-- Header -->
+
+            <header class="deals-header">
+
+                <div>
+
+                    <h1>Best Deals & Offers</h1>
+
+                    <p>
+                        Grab the best deals and save more on your
+                        favorite products!
+                    </p>
+
+                </div>
+
+
+                <!-- Countdown -->
+
+                <div class="countdown">
+
+                    <span class="countdown-title">
+                        Deals End In
+                    </span>
+
+                    <div class="time-box">
+
+                        <strong id="hours">
+                            08
+                        </strong>
+
+                        <small>Hours</small>
+
+                    </div>
+
+
+                    <div class="time-box">
+
+                        <strong id="minutes">
+                            45
+                        </strong>
+
+                        <small>Mins</small>
+
+                    </div>
+
+
+                    <div class="time-box">
+
+                        <strong id="seconds">
+                            32
+                        </strong>
+
+                        <small>Secs</small>
+
+                    </div>
+
+                </div>
+
+            </header>
+
+
+            <!-- Deal Tabs + Sort -->
+
+            <div class="top-controls">
+
+                <div class="deal-tabs">
+
+                    <button class="deal-tab active" data-type="all">
+                        All Deals
+                    </button>
+
+                    <button class="deal-tab" data-type="flash">
+                        ϟ Flash Deals
+                    </button>
+
+                    <button class="deal-tab" data-type="top">
+                        ☆ Top Deals
+                    </button>
+
+                    <button class="deal-tab" data-type="day">
+                        ♢ Deals of the Day
+                    </button>
+
+                    <button class="deal-tab" data-type="weekend">
+                        ☆ Weekend Special
+                    </button>
+
+                </div>
+
+
+                <select id="sortDeals">
+
+                    <option value="featured">
+                        Sort By: Featured
+                    </option>
+
+                    <option value="priceLow">
+                        Price: Low to High
+                    </option>
+
+                    <option value="priceHigh">
+                        Price: High to Low
+                    </option>
+
+                    <option value="discount">
+                        Biggest Discount
+                    </option>
+
+                    <option value="rating">
+                        Top Rated
+                    </option>
+
+                </select>
+
+            </div>
+
+
+            <!-- ================= BANNER ================= -->
+
+            <section class="deal-banner">
+
+                <div class="banner-content">
+
+                    <p class="mega-sale">
+                        MEGA <span>SAVINGS SALE</span>
+                    </p>
+
+                    <h2>
+                        Up to
+                        <strong>60%</strong>
+                        OFF
+                    </h2>
+
+                    <p>
+                        Limited time offers on top brands
+                    </p>
+
+                </div>
+
+
+                <div class="banner-products">
+
+                    <img src="images/bg-deals.png" alt="Headphones">
+
+                </div>
+
+
+                <button class="shop-now">
+                    Shop Now →
+                </button>
+
+            </section>
+
+
+            <!-- ================= PRODUCTS ================= -->
+
+            <div class="deals-grid" id="dealsGrid"></div>
+
+
+            <!-- ================= PAGINATION ================= -->
+
+            <div class="pagination" id="pagination"></div>
+
+        </section>
+
+    </main>
+
+    <!-- ================= FEATURES ================= -->
+
+    <section class="feature">
+
+        <div class="sec1">
+            <img src="Icons/truck.png" alt="deliver">
+            <div>
+                <h4>Free Shipping</h4>
+                <p>On orders over ₹499</p>
+            </div>
+        </div>
+        <div class="sec2">
+            <img src="Icons/return.png" alt="return">
+            <div>
+                <h4>Easy Returns</h4>
+                <p>30 days return policy</p>
+            </div>
+        </div>
+        <div class="sec3">
+            <img src="Icons/security.png" alt="return">
+            <div>
+                <h4>Secure Payments</h4>
+                <p>100% secure checkout</p>
+            </div>
+        </div>
+        <div class="sec4">
+            <img src="Icons/tag.png" alt="return">
+            <div>
+                <h4>Best Prices</h4>
+                <p>Guaranteed best price</p>
+            </div>
+        </div>
+        <div class="sec5">
+            <img src="Icons/support.png" alt="return">
+            <div>
+                <h4>24/7 Support</h4>
+                <p>Dedicated Support</p>
+            </div>
+        </div>
+
+    </section>
+
+    <!-- Footer -->
+
+    <footer class="footer">
+        <div class="footer-top">
+            <div style="width: 300px; text-align: center;">
+                <img src="images/Kartlyn.PNG" alt="KartLyn">
+                <p>Your one-stop destination for all your shopping needs. Quality products, best prices & great service.
+                </p>
+                <div class="app-icons">
+                    <img src="Icons/communication.png" alt="fb">
+                    <img src="Icons/twitter.png" alt="twitter">
+                    <img src="Icons/youtube.png" alt="yt">
+                    <img src="Icons/instagram.png" alt="insta">
+                </div>
+            </div>
+            <div>
+                <h4>Customer Service</h4>
+                <p>Help Center</p>
+                <p>Track Order</p>
+                <p>Return & Refunds</p>
+                <p>Shipping Info</p>
+                <p>FAQs</p>
+            </div>
+            <div>
+                <h4>About Us</h4>
+                <p>About Kartlyn</p>
+                <p>Careers</p>
+                <p>Press & Media</p>
+                <p>Become a Seller</p>
+                <p>Contact Us</p>
+            </div>
+            <div>
+                <h4>My Account</h4>
+                <p>My Orders</p>
+                <p>Wishlist</p>
+                <p>Account Details</p>
+                <p>Addresses</p>
+                <p>Logout</p>
+            </div>
+            <div>
+                <h4>Categories</h4>
+                <p>Electronics</p>
+                <p>Fashion</p>
+                <p>Home & Living</p>
+                <p>Beauty</p>
+                <p>View All Categories</p>
+            </div>
+        </div>
+
+
+        <hr>
+
+
+        <div class="footer-bottom">
+            <div>
+                <p>&copy; 2026 Kartlyn. All Rights Reserved.</p>
+            </div>
+            <div class="footer-info">
+                <p><a href="privacy-policy.pdf">Privacy Policy</a></p>
+                <p><a href="Terms of Service.txt">Terms of Service</a></p>
+                <p><a href="refund.pdf">Refund Policy</a></p>
+            </div>
+            <div class="div">
+                <img src="Icons/visa.png" alt="visa">
+                <img src="Icons/mcard.png" alt="mc">
+                <img src="Icons/paytm.png" alt="paytm">
+                <img src="Icons/upi.png" alt="upi">
+            </div>
+        </div>
+    </footer>
+
+
+    <script src="script/deals.js"></script>
+
+</body>
+
+</html>
