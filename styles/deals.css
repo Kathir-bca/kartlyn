@@ -1162,13 +1162,52 @@ a {
    RESPONSIVE
 ===================================================== */
 /* ================= RESPONSIVE ================= */
-
-@media (max-width: 1100px) {
-    
+@media (max-width: 1250px){
+    .header {
+        width: 100%;
+    }
     .header {
         grid-template-columns: 190px minmax(0, 1fr) auto;
         gap: 12px;
     }
+    .deals-main , .footer{
+        width: 96%;
+    }
+}
+@media (max-width: 1100px) {
+
+    
+     .header {
+        grid-template-columns: 1fr;
+    }
+
+    .left-section,
+    .middle-section,
+    .right-section {
+        width: 100%;
+    }
+
+    .left-section {
+        display: flex;
+        justify-content: center;
+    }
+
+    .middle-section {
+        max-width: 700px;
+        margin: auto;
+    }
+
+    #search-bar {
+        flex: 1;
+        min-width: 0;
+        width: auto;
+    }
+
+    .right-section {
+        justify-content: space-evenly;
+        flex-wrap: wrap;
+    }
+
 
     .page-logo {
         width: 150px;
@@ -1227,11 +1266,6 @@ a {
         width: auto;
     }
 
-    .right-section {
-        justify-content: center;
-        flex-wrap: wrap;
-    }
-
     .nav {
         flex-wrap: wrap;
         gap: 12px 26px;
@@ -1247,12 +1281,12 @@ a {
         grid-template-columns: repeat(2, minmax(0, 1fr));
     }
 
-    .feature > div {
+    .feature>div {
         width: 100%;
         border-right: none;
-        padding-top: 20px ;
+        padding-top: 20px;
     }
-    
+
     .footer-top {
         display: grid;
         grid-template-columns: repeat(2, minmax(0, 1fr));
@@ -1260,7 +1294,7 @@ a {
         place-items: center;
     }
 
-    .footer-top > div:first-child {
+    .footer-top>div:first-child {
         width: 100% !important;
         grid-column: 1 / -1;
     }
@@ -1277,10 +1311,11 @@ a {
 }
 
 @media (max-width: 768px) {
-    .header{
+    .header {
         width: 100%;
     }
-     .left-section,
+
+    .left-section,
     .middle-section,
     .right-section {
         width: 100%;
@@ -1293,7 +1328,7 @@ a {
 
     .deals-sidebar {
         display: none;
-    } 
+    }
 
     .deals-header {
         flex-direction: column;
@@ -1344,22 +1379,24 @@ a {
     .deals-grid {
         grid-template-columns: repeat(2, minmax(0, 1fr));
     }
-   
-    
+
+
 }
 
 @media (max-width: 576px) {
-    .Announcement{
-        width: 650px;
+    .Announcement {
+        width: 100%;
         font-size: 11px;
     }
-    .header{
-        width: 576;
+
+    .header {
+        width: 100%;
     }
-     .left-section,
+
+    .left-section,
     .middle-section,
     .right-section {
-        width: 600px;
+        width: 100%;
     }
 
     #categories {
@@ -1388,11 +1425,17 @@ a {
         justify-content: flex-start;
         white-space: nowrap;
         font-size: 13px;
-        width: 630px;
+        width: 100%;
     }
-    .deals-main{
-        width: 98%;
+
+    .deals-main {
+        width: 82%;
     }
+
+    .deals-header {
+        width: 100%;
+    }
+
     .deals-header h1 {
         font-size: 22px;
     }
@@ -1419,12 +1462,15 @@ a {
         font-size: 40px;
     }
 
-    .product-image {
-        height: 105px;
-    }
 
     .deal-card {
+        width: 350px;
         padding: 7px;
+    }
+
+    .deals-grid {
+        place-items: center;
+        grid-template-columns: 1fr;
     }
 
     .product-name {
@@ -1452,22 +1498,22 @@ a {
 
     .feature {
         grid-template-columns: 1fr 1fr;
-        width: 600px;
+        width: 93%;
     }
 
-    .feature > div {
+    .feature>div {
         border-right: none;
         border-bottom: 1px solid #e9e8ec;
         padding: 12px 8px;
     }
 
-    .feature > div:last-child {
+    .feature>div:last-child {
         border-bottom: none;
     }
 
     .footer {
         margin: 10px 8px;
-        width: 600px;
+        width: 95%;
     }
 
     .footer-top {
@@ -1482,8 +1528,38 @@ a {
     }
 }
 
-@media (max-width: 380px) {
-    .deals-grid {
+@media (max-width: 480px) {
+    .Announcement{
+        width: 100%;
+    }
+    .header{
+        width: 100%;
+    }
+    .deals-main {
+        width: 400px;
+    }
+    .deals-grid{
+        width: 100%;
+    }
+    .feature{
         grid-template-columns: 1fr;
+        width: 400px;
+    }
+}
+@media(max-width: 350px) {
+     .Announcement{
+        width: 110%;
+    }
+    .header{
+        width: 100%;
+    }
+    .deals-main {
+        width: 300px;
+    }
+    .deals-grid{
+        width: 10px;
+    }
+    .feature{
+        width: 95%;
     }
 }
