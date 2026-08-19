@@ -519,9 +519,9 @@ img {
     min-width: 0;
   }
 
-  .right-section > div:first-child {
+  /* .right-section > div:first-child {
     display: none;
-  }
+  } */
 
   .right-section > div:not(.user-profile) {
     font-size: 0;
