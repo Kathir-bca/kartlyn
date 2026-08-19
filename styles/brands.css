@@ -265,3 +265,1143 @@ a {
     align-items: center;
     vertical-align: center;
 }
+
+
+
+
+
+
+
+/* =========================================
+   RESET
+========================================= */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+:root {
+
+    --primary: #1d4ed8;
+
+    --primary-light: #edf3ff;
+
+    --text: #161616;
+
+    --muted: #666;
+
+    --border: #e5e5e5;
+
+    --background: #ffffff;
+
+    --card-background: #ffffff;
+
+    --radius: 9px;
+
+}
+
+
+body {
+
+    font-family: "Poppins", sans-serif;
+
+    background: #ffffff;
+
+    color: var(--text);
+
+}
+
+
+/* =========================================
+   MAIN PAGE
+========================================= */
+
+.brands-page {
+
+    width: 95%;
+
+    max-width: 1450px;
+
+    margin: 0 auto;
+
+    display: grid;
+
+    grid-template-columns: 260px minmax(0, 1fr);
+
+    gap: 22px;
+
+}
+
+
+/* =========================================
+   SIDEBAR
+========================================= */
+
+.brands-sidebar {
+
+    border: 1px solid var(--border);
+
+    border-radius: 10px;
+
+    padding: 16px;
+
+    height: fit-content;
+
+    margin-top: 2px;
+
+}
+
+
+.brands-sidebar>h2 {
+
+    font-size: 18px;
+
+    margin-bottom: 14px;
+
+}
+
+
+/* Navigation */
+
+.brand-navigation {
+
+    display: flex;
+
+    flex-direction: column;
+
+    gap: 4px;
+
+}
+
+
+.side-nav {
+
+    width: 100%;
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 12px;
+
+    border: none;
+
+    background: transparent;
+
+    padding: 10px;
+
+    border-radius: 7px;
+
+    text-align: left;
+
+    font-family: inherit;
+
+    font-size: 12px;
+
+    cursor: pointer;
+
+    color: #333;
+
+}
+
+
+.side-nav span {
+
+    width: 17px;
+
+    color: #333;
+
+}
+
+
+.side-nav:hover {
+
+    background: #f5f7fa;
+
+}
+
+
+.side-nav.active {
+
+    color: var(--primary);
+
+    background: var(--primary-light);
+
+    font-weight: 500;
+
+}
+
+
+.side-nav.active span {
+
+    color: var(--primary);
+
+}
+
+
+.brands-sidebar hr {
+
+    border: none;
+
+    border-top: 1px solid #eeeeee;
+
+    margin: 17px 0;
+
+}
+
+
+/* =========================================
+   FILTER
+========================================= */
+
+.filter-title {
+
+    display: flex;
+
+    justify-content: space-between;
+
+    align-items: center;
+
+    margin-bottom: 15px;
+
+}
+
+
+.filter-title h3,
+.sort-section h3 {
+
+    font-size: 13px;
+
+    font-weight: 600;
+
+}
+
+
+.filter-title button {
+
+    border: none;
+
+    background: transparent;
+
+    cursor: pointer;
+
+    font-size: 16px;
+
+}
+
+
+.filter-section h4 {
+
+    font-size: 11px;
+
+    margin-bottom: 10px;
+
+}
+
+
+.filter-option {
+
+    display: flex;
+
+    justify-content: space-between;
+
+    align-items: center;
+
+    margin: 10px 0;
+
+    font-size: 10px;
+
+    color: #444;
+
+}
+
+
+.filter-option span {
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 7px;
+
+}
+
+
+.filter-option input {
+
+    width: 13px;
+
+    height: 13px;
+
+    accent-color: var(--primary);
+
+}
+
+
+.filter-option small {
+
+    color: #777;
+
+}
+
+
+.view-more {
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 8px;
+
+    margin-top: 14px;
+
+    border: none;
+
+    background: transparent;
+
+    color: var(--primary);
+
+    font-family: inherit;
+
+    font-size: 10px;
+
+    cursor: pointer;
+
+}
+
+
+/* =========================================
+   SORT
+========================================= */
+
+.sort-section {
+
+    display: flex;
+
+    flex-direction: column;
+
+    gap: 11px;
+
+}
+
+
+.sort-section label {
+
+    font-size: 10px;
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 7px;
+
+    color: #444;
+
+}
+
+
+.sort-section input {
+
+    accent-color: var(--primary);
+
+}
+
+
+/* =========================================
+   CONTENT HEADER
+========================================= */
+
+.brands-content {
+
+    min-width: 0;
+
+    padding-top: 11px;
+
+}
+
+
+.brands-header {
+
+    display: flex;
+
+    justify-content: space-between;
+
+    align-items: center;
+
+    gap: 25px;
+
+    margin-bottom: 20px;
+
+}
+
+
+.brands-header h1 {
+
+    font-size: 24px;
+
+    margin-bottom: 4px;
+
+}
+
+
+.brands-header p {
+
+    font-size: 12px;
+
+    color: #555;
+
+}
+
+
+/* =========================================
+   SEARCH
+========================================= */
+
+.search-box {
+
+    width: 265px;
+
+    height: 40px;
+
+    border: 1px solid #dedede;
+
+    border-radius: 7px;
+
+    display: flex;
+
+    align-items: center;
+
+    padding: 0 10px;
+
+    flex-shrink: 0;
+
+}
+
+
+.search-box input {
+
+    flex: 1;
+
+    width: 100%;
+
+    height: 100%;
+
+    border: none;
+
+    outline: none;
+
+    font-family: inherit;
+
+    font-size: 11px;
+
+}
+
+
+.search-box button {
+
+    width: 28px;
+
+    height: 30px;
+
+    border: none;
+
+    background: transparent;
+
+    cursor: pointer;
+
+    font-size: 19px;
+
+}
+
+
+/* =========================================
+   ALPHABET
+========================================= */
+
+.alphabet-filter {
+
+    display: grid;
+
+    grid-template-columns: repeat(27, minmax(27px, 1fr));
+
+    gap: 6px;
+
+    margin-bottom: 18px;
+
+}
+
+
+.letter {
+
+    height: 36px;
+
+    border: 1px solid #e2e2e2;
+
+    background: white;
+
+    border-radius: 6px;
+
+    font-family: inherit;
+
+    font-size: 11px;
+
+    cursor: pointer;
+
+    transition: 0.2s;
+
+}
+
+
+.letter:hover {
+
+    border-color: var(--primary);
+
+    color: var(--primary);
+
+}
+
+
+.letter.active {
+
+    background: var(--primary);
+
+    border-color: var(--primary);
+
+    color: white;
+
+}
+
+
+/* =========================================
+   BRAND GRID
+========================================= */
+
+.brands-grid {
+
+    display: grid;
+
+    grid-template-columns:
+        repeat(6, minmax(0, 1fr));
+
+    gap: 10px;
+
+}
+
+
+/* =========================================
+   BRAND CARD
+========================================= */
+
+.brand-card {
+
+    min-width: 0;
+
+    height: 190px;
+
+    border: 1px solid #e7e7e7;
+
+    border-radius: 9px;
+
+    padding: 14px 12px;
+
+    display: flex;
+
+    flex-direction: column;
+
+    align-items: center;
+
+    justify-content: space-between;
+
+    background: var(--card-background);
+
+    transition:
+        transform 0.2s ease,
+        box-shadow 0.2s ease;
+
+}
+
+
+.brand-card:hover {
+
+    transform: translateY(-2px);
+
+    box-shadow:
+        0 7px 20px rgba(0, 0, 0, 0.07);
+
+}
+
+
+/* Logo */
+
+.brand-logo {
+
+    width: 100%;
+
+    height: 82px;
+
+    display: flex;
+
+    justify-content: center;
+
+    align-items: center;
+
+}
+
+
+.brand-logo img {
+
+    width: 115px;
+
+    height: 70px;
+
+    object-fit: contain;
+
+}
+
+
+.brand-name {
+
+    width: 100%;
+
+    text-align: center;
+
+    font-size: 12px;
+
+    font-weight: 600;
+
+    display: flex;
+
+    justify-content: center;
+
+    align-items: center;
+
+    gap: 4px;
+
+}
+
+
+.verified {
+
+    color: white;
+    background-color: var(--primary);
+    font-size: 6px;
+    border-radius: 50%;
+    padding: 1px 2px;
+}
+
+
+.brand-products {
+
+    font-size: 10px;
+
+    color: #555;
+
+    margin-top: 2px;
+
+}
+
+
+/* Button */
+
+.view-products {
+
+    width: 100%;
+
+    height: 29px;
+
+    border: 1px solid #8aa9e8;
+
+    background: white;
+
+    color: var(--primary);
+
+    border-radius: 5px;
+
+    font-family: inherit;
+
+    font-size: 10px;
+
+    cursor: pointer;
+
+    transition: 0.2s;
+
+}
+
+
+.view-products:hover {
+
+    background: var(--primary);
+
+    color: white;
+
+}
+
+
+/* =========================================
+   EMPTY STATE
+========================================= */
+
+.empty-state {
+
+    display: none;
+
+    text-align: center;
+
+    padding: 60px 20px;
+
+}
+
+
+.empty-state.show {
+
+    display: block;
+
+}
+
+
+.empty-state div {
+
+    font-size: 35px;
+
+    margin-bottom: 10px;
+
+}
+
+
+.empty-state h3 {
+
+    font-size: 16px;
+
+}
+
+
+.empty-state p {
+
+    font-size: 11px;
+
+    color: var(--muted);
+
+}
+
+
+/* =========================================
+   BOTTOM FEATURES
+========================================= */
+
+.features {
+
+    margin-top: 16px;
+
+    border: 1px solid #e7e7e7;
+
+    border-radius: 9px;
+
+    display: grid;
+
+    grid-template-columns:
+        repeat(5, 1fr);
+
+    min-height: 70px;
+
+}
+
+
+.feature {
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    gap: 10px;
+
+    padding: 10px;
+
+    border-right: 1px solid #eeeeee;
+
+}
+
+
+.feature:last-child {
+
+    border-right: none;
+
+}
+
+
+.feature-icon {
+
+    color: var(--primary);
+
+    font-size: 22px;
+
+}
+
+
+.feature h4 {
+
+    font-size: 11px;
+
+    margin-bottom: 2px;
+
+}
+
+
+.feature p {
+
+    font-size: 9px;
+
+    color: #777;
+
+}
+
+
+/* =========================================
+   TABLET
+========================================= */
+
+@media (max-width: 1200px) {
+
+    .brands-page {
+
+        grid-template-columns: 220px minmax(0, 1fr);
+
+        width: 94%;
+
+    }
+
+
+    .brands-grid {
+
+        grid-template-columns:
+            repeat(4, minmax(0, 1fr));
+
+    }
+
+
+    .alphabet-filter {
+
+        grid-template-columns:
+            repeat(14, 1fr);
+
+    }
+
+
+    .letter {
+
+        height: 34px;
+
+    }
+
+
+
+
+}
+
+
+/* =========================================
+   TABLET SMALL
+========================================= */
+
+@media (max-width: 900px) {
+
+    .brands-page {
+
+        grid-template-columns: 1fr;
+
+        width: 92%;
+
+    }
+
+
+    .brands-sidebar {
+
+        width: 100%;
+
+    }
+
+
+    .brand-navigation {
+
+        display: grid;
+
+        grid-template-columns:
+            repeat(4, 1fr);
+
+    }
+
+
+    .brands-sidebar hr {
+
+        margin: 12px 0;
+
+    }
+
+
+    .filter-section {
+
+        display: none;
+
+    }
+
+
+    .sort-section {
+
+        display: grid;
+
+        grid-template-columns:
+            repeat(4, 1fr);
+
+        align-items: center;
+
+    }
+
+
+    .sort-section h3 {
+
+        grid-column: 1 / -1;
+
+    }
+
+
+    .brands-grid {
+
+        grid-template-columns:
+            repeat(3, minmax(0, 1fr));
+
+    }
+
+
+    .alphabet-filter {
+
+        grid-template-columns:
+            repeat(10, 1fr);
+
+    }
+
+    .features {
+
+        grid-template-columns:
+            repeat(3, 1fr);
+
+    }
+
+
+    .feature:nth-child(3) {
+
+        border-right: none;
+        padding-top: 25%;
+
+    }
+
+    .feature:last-child {
+        border-right: 1px solid #eeeeee;
+    }
+
+
+}
+
+
+
+
+/* =========================================
+   MOBILE
+========================================= */
+
+@media (max-width: 650px) {
+
+    .brands-page {
+
+        width: 94%;
+
+    }
+
+
+    .brands-sidebar {
+
+        padding: 12px;
+
+    }
+
+
+    .brands-sidebar>h2 {
+
+        font-size: 16px;
+
+    }
+
+
+    .brand-navigation {
+
+        grid-template-columns:
+            repeat(2, 1fr);
+
+    }
+
+
+    .sort-section {
+
+        grid-template-columns:
+            repeat(2, 1fr);
+
+    }
+
+
+    .brands-header {
+
+        flex-direction: column;
+
+        align-items: stretch;
+
+        gap: 12px;
+
+    }
+
+
+    .brands-header h1 {
+
+        font-size: 21px;
+
+    }
+
+
+    .search-box {
+
+        width: 100%;
+
+    }
+
+
+    .alphabet-filter {
+
+        display: flex;
+
+        overflow-x: auto;
+
+        padding-bottom: 5px;
+
+        scrollbar-width: thin;
+
+    }
+
+
+    .letter {
+
+        min-width: 35px;
+
+        flex-shrink: 0;
+
+    }
+
+
+    .brands-grid {
+
+        grid-template-columns:
+            repeat(2, minmax(0, 1fr));
+
+        gap: 8px;
+
+    }
+
+
+    .brand-card {
+
+        height: 180px;
+
+        padding: 12px 9px;
+
+    }
+
+
+    .brand-logo {
+
+        height: 70px;
+
+    }
+
+
+    .brand-logo img {
+
+        width: 100px;
+
+        height: 60px;
+
+    }
+
+
+    .features {
+
+        grid-template-columns: 1fr;
+
+    }
+
+
+    .feature {
+
+        justify-content: flex-start;
+
+        border-right: none;
+
+        border-bottom: 1px solid #eeeeee;
+
+        padding: 13px 20px;
+
+    }
+    .feature:nth-child(3){
+        padding-top: 13px;
+    }
+
+    .feature:last-child {
+
+        border-bottom: none;
+
+    }
+
+}
+
+
+/* =========================================
+   VERY SMALL MOBILE
+========================================= */
+
+@media (max-width: 400px) {
+
+    .brands-grid {
+
+        grid-template-columns: 1fr 1fr;
+
+    }
+
+
+    .brand-card {
+
+        height: 170px;
+
+    }
+
+
+    .brand-name {
+
+        font-size: 10px;
+
+    }
+
+
+    .brand-products {
+
+        font-size: 9px;
+
+    }
+
+
+    .view-products {
+
+        font-size: 9px;
+
+    }
+
+}

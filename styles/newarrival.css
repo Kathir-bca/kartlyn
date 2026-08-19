@@ -1435,9 +1435,7 @@ input {
     .hero-products img{
         width: 200px;
     }
-    .footer-top{
-        place-items: center;
-    }
+    
 }
 
 

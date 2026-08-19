@@ -37,7 +37,7 @@ img {
     min-width: 0;
   }
 
-  .header > .page-logo {
+  .header>.page-logo {
     width: min(180px, 100%);
   }
 
@@ -78,7 +78,7 @@ img {
     box-sizing: border-box;
   }
 
-  .right-section{
+  .right-section {
     gap: 80px;
   }
 }
@@ -119,15 +119,15 @@ img {
     gap: clamp(8px, 1.5vw, 16px);
   }
 
-  .right-section > div {
+  .right-section>div {
     min-width: 0;
   }
 
-  .right-section > div:not(.user-profile) {
+  .right-section>div:not(.user-profile) {
     white-space: nowrap;
   }
 
-  .right-section > .user-profile {
+  .right-section>.user-profile {
     display: grid;
     grid-template-columns: 38px minmax(0, 1fr);
     width: min(210px, 28vw);
@@ -138,7 +138,7 @@ img {
     border-radius: 0;
   }
 
-  .user-profile > div {
+  .user-profile>div {
     display: block;
   }
 
@@ -216,15 +216,16 @@ img {
   .footer-top {
     display: grid;
     grid-template-columns: repeat(4, minmax(0, 1fr));
+    place-items: center;
     gap: 28px 20px;
     margin-top: 32px;
   }
 
-  .footer-top > div {
+  .footer-top>div {
     min-width: 0;
   }
 
-  .footer-top > div:first-child {
+  .footer-top>div:first-child {
     grid-column: 1 / -1;
     width: min(100%, 300px) !important;
     justify-self: center;
@@ -236,9 +237,7 @@ img {
 
   .footer-bottom {
     grid-template-columns:
-      minmax(0, 1fr)
-      minmax(0, 1.25fr)
-      minmax(170px, auto);
+      minmax(0, 1fr) minmax(0, 1.25fr) minmax(170px, auto);
     gap: 12px;
     align-items: center;
   }
@@ -259,7 +258,7 @@ img {
     margin: 0;
   }
 
-  .footer-bottom > div:last-child {
+  .footer-bottom>div:last-child {
     display: flex;
     justify-content: flex-end;
     flex-wrap: wrap;
@@ -310,12 +309,12 @@ img {
     min-width: 0;
   }
 
-  .right-section > div:not(.user-profile) {
+  .right-section>div:not(.user-profile) {
     font-size: 0;
     white-space: nowrap;
   }
 
-  .right-section > div i {
+  .right-section>div i {
     padding-right: 0;
     font-size: 18px;
   }
@@ -326,7 +325,7 @@ img {
     right: -7px;
   }
 
-  .right-section > .user-profile {
+  .right-section>.user-profile {
     display: block;
     width: 42px;
     min-width: 42px;
@@ -336,7 +335,7 @@ img {
     border-radius: 0;
   }
 
-  .user-profile > div {
+  .user-profile>div {
     display: block;
     width: 42px;
     height: 42px;
@@ -420,14 +419,15 @@ img {
     display: grid;
     grid-template-columns: repeat(2, minmax(0, 1fr));
     gap: 24px 18px;
+    place-items: center;
     margin-top: 28px;
   }
 
-  .footer-top > div {
+  .footer-top>div {
     min-width: 0;
   }
 
-  .footer-top > div:first-child {
+  .footer-top>div:first-child {
     grid-column: 1 / -1;
     width: min(100%, 300px) !important;
     justify-self: center;
@@ -448,7 +448,7 @@ img {
     text-align: center;
   }
 
-  .footer-bottom > div {
+  .footer-bottom>div {
     min-width: 0;
   }
 
@@ -468,7 +468,7 @@ img {
     margin: 0;
   }
 
-  .footer-bottom > div:last-child {
+  .footer-bottom>div:last-child {
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
@@ -523,11 +523,11 @@ img {
     display: none;
   } */
 
-  .right-section > div:not(.user-profile) {
+  .right-section>div:not(.user-profile) {
     font-size: 0;
   }
 
-  .right-section > div i {
+  .right-section>div i {
     padding-right: 0;
     font-size: 17px;
   }
@@ -538,7 +538,7 @@ img {
     right: -7px;
   }
 
-  .right-section > .user-profile {
+  .right-section>.user-profile {
     display: block;
     width: 36px;
     min-width: 36px;
@@ -548,7 +548,7 @@ img {
     border-radius: 0;
   }
 
-  .user-profile > div {
+  .user-profile>div {
     display: block;
     width: 36px;
     height: 36px;
@@ -634,13 +634,14 @@ img {
     grid-template-columns: 1fr;
     gap: 22px;
     margin-top: 24px;
+    place-items: center;
   }
 
-  .footer-top > div {
+  .footer-top>div {
     min-width: 0;
   }
 
-  .footer-top > div:first-child {
+  .footer-top>div:first-child {
     grid-column: auto;
     width: 100% !important;
     max-width: 300px;
@@ -687,7 +688,7 @@ img {
     margin: 0;
   }
 
-  .footer-bottom > div:last-child {
+  .footer-bottom>div:last-child {
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
