@@ -103,7 +103,7 @@ const brands = [
     {
         id: 9,
         name: "Puma",
-        logo: "logo/puma.png",
+        logo: "logo/puma.jpg",
         products: 42,
         category: "Sports",
         popularity: 84,
@@ -127,7 +127,7 @@ const brands = [
     {
         id: 11,
         name: "JBL",
-        logo: "logo/jbl.png",
+        logo: "logo/jbl.jpg",
         products: 35,
         category: "Electronics",
         popularity: 80,
@@ -151,7 +151,7 @@ const brands = [
     {
         id: 13,
         name: "Amazon Basics",
-        logo: "logo/amazon-basics.png",
+        logo: "logo/amazon.png",
         products: 30,
         category: "Home & Living",
         popularity: 75,

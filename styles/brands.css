@@ -3,17 +3,38 @@
     --text-cl: #FAF9F6;
     --font-fam: Poppins, sans-serif;
     --color: #1D4ED8;
+    --primary: #1d4ed8;
+    --primary-light: #edf3ff;
+    --text: #161616;
+    --muted: #666;
+    --border: #e5e5e5;
+    --background: #ffffff;
+    --card-background: #ffffff;
+    --radius: 9px;
+
 }
 
 * {
     padding: 0;
     margin: 0;
     font-family: var(--font-fam);
+    box-sizing: border-box;
 }
 
 body {
-    background-color: white;
+
+    font-family: "Poppins", sans-serif;
+
+    background: #ffffff;
+
+    color: var(--text);
+
 }
+
+
+
+
+
 
 * i {
     cursor: pointer;
@@ -81,7 +102,7 @@ a {
     padding: 10px;
     width: 350px;
     margin-left: -1px;
-    height: 32px;
+    height: 54px;
 }
 
 .middle-section button {
@@ -272,48 +293,6 @@ a {
 
 
 
-/* =========================================
-   RESET
-========================================= */
-
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
-
-:root {
-
-    --primary: #1d4ed8;
-
-    --primary-light: #edf3ff;
-
-    --text: #161616;
-
-    --muted: #666;
-
-    --border: #e5e5e5;
-
-    --background: #ffffff;
-
-    --card-background: #ffffff;
-
-    --radius: 9px;
-
-}
-
-
-body {
-
-    font-family: "Poppins", sans-serif;
-
-    background: #ffffff;
-
-    color: var(--text);
-
-}
-
 
 /* =========================================
    MAIN PAGE
@@ -332,6 +311,7 @@ body {
     grid-template-columns: 260px minmax(0, 1fr);
 
     gap: 22px;
+    padding-top: 20px;
 
 }
 

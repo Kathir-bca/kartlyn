@@ -69,14 +69,312 @@
 
 
     <nav class="nav">
-            <a href="home.html">Home</a>
-            <a href="shop.html">Shop</a>
-            <a href="deals.html">Deals</a>
-            <a href="newarrivals.html" >New Arrivals</a>
-            <a href="brands.html" >Brands</a>
-            <a href="blog.html" class="nav-active"a>Blog</a>
-            <a href="contact.html">Contact Us</a>
+        <a href="home.html">Home</a>
+        <a href="shop.html">Shop</a>
+        <a href="deals.html">Deals</a>
+        <a href="newarrivals.html">New Arrivals</a>
+        <a href="brands.html">Brands</a>
+        <a href="blog.html" class="nav-active" a>Blog</a>
+        <a href="contact.html">Contact Us</a>
     </nav>
+
+
+    <!-- MAIN -->
+
+    <main class="blog-page">
+
+
+        <!-- =========================================
+             PAGE HEADER
+        ========================================== -->
+
+        <header class="page-header">
+
+            <h1>Our Blog</h1>
+
+            <p>
+                Tips, trends and inspiration to help you
+                shop smarter and live better.
+            </p>
+
+        </header>
+
+
+        <!-- =========================================
+             MAIN BLOG LAYOUT
+        ========================================== -->
+
+        <div class="blog-layout">
+
+
+            <!-- =====================================
+                 LEFT / MAIN CONTENT
+            ====================================== -->
+
+            <section class="main-blog-content">
+
+
+                <!-- Featured Blog -->
+
+                <div class="featured-blog" id="featuredBlog"></div>
+
+
+                <!-- Latest Articles Header -->
+
+                <div class="latest-header">
+
+                    <h2>Latest Articles</h2>
+
+
+                    <select id="sortBlogs">
+
+                        <option value="latest">
+                            Sort By: Latest
+                        </option>
+
+                        <option value="oldest">
+                            Oldest
+                        </option>
+
+                        <option value="az">
+                            A to Z
+                        </option>
+
+                        <option value="za">
+                            Z to A
+                        </option>
+
+                    </select>
+
+                </div>
+
+
+                <!-- Blog Cards -->
+
+                <div class="blog-grid" id="blogGrid"></div>
+
+
+                <!-- Empty Result -->
+
+                <div class="empty-state" id="emptyState">
+
+                    <div>🔍</div>
+
+                    <h3>No articles found</h3>
+
+                    <p>
+                        Try another search or category.
+                    </p>
+
+                </div>
+
+
+                <!-- Pagination -->
+
+                <div class="pagination" id="pagination"></div>
+
+
+            </section>
+
+
+            <!-- =====================================
+                 RIGHT SIDEBAR
+            ====================================== -->
+
+            <aside class="blog-sidebar">
+
+
+                <!-- Search -->
+
+                <section class="sidebar-box">
+
+                    <h3>Search Blog</h3>
+
+
+                    <div class="blog-search">
+
+                        <input type="search" id="blogSearch" placeholder="Search articles...">
+
+                        <button id="searchButton">
+                            <i class="fa-solid fa-search" style="font-size: 10px; color: var(--muted);"></i>
+                        </button>
+
+                    </div>
+
+                </section>
+
+
+                <!-- Categories -->
+
+                <section class="sidebar-box">
+
+                    <h3>Categories</h3>
+
+
+                    <div class="category-list" id="categoryList"></div>
+
+                </section>
+
+                <!-- Popular Posts -->
+
+                <section class="sidebar-box">
+
+                    <h3>Popular Posts</h3>
+
+
+                    <div class="popular-list" id="popularList"></div>
+
+                </section>
+
+
+                <!-- Newsletter -->
+
+                <section class="sidebar-box newsletter">
+
+                    <h3>
+                        Subscribe to Our Newsletter
+                    </h3>
+
+
+                    <p>
+                        Get the latest updates, offers and
+                        blog articles straight to your inbox.
+                    </p>
+
+
+                    <form id="newsletterForm">
+
+                        <input type="email" id="emailInput" placeholder="Enter your email" required>
+
+
+                        <button type="submit">
+
+                            <i class="fa-solid fa-location-arrow"></i> Subscribe
+
+                        </button>
+
+                    </form>
+
+
+                    <small>
+                        We respect your privacy.
+                        Unsubscribe at any time.
+                    </small>
+
+                </section>
+
+
+            </aside>
+
+        </div>
+
+
+        <!-- =========================================
+             BOTTOM FEATURES
+        ========================================== -->
+
+        <section class="features">
+
+
+            <div class="feature">
+
+                <span class="feature-icon">
+                    <i class="fa-solid fa-truck-fast"></i>
+                </span>
+
+                <div>
+
+                    <h4>Free Shipping</h4>
+
+                    <p>
+                        On orders over ₹499
+                    </p>
+
+                </div>
+
+            </div>
+
+
+            <div class="feature">
+
+                <span class="feature-icon">
+                    <i class="fa-solid fa-rotate"></i>
+                </span>
+
+                <div>
+
+                    <h4>Easy Returns</h4>
+
+                    <p>
+                        7 days return policy
+                    </p>
+
+                </div>
+
+            </div>
+
+
+            <div class="feature">
+
+                <span class="feature-icon">
+                    <i class="fa-solid fa-shield-halved"></i>
+                </span>
+
+                <div>
+
+                    <h4>Secure Payments</h4>
+
+                    <p>
+                        100% secure checkout
+                    </p>
+
+                </div>
+
+            </div>
+
+
+            <div class="feature">
+
+                <span class="feature-icon">
+                    <i class="fa-solid fa-tags"></i>
+                </span>
+
+                <div>
+
+                    <h4>Best Prices</h4>
+
+                    <p>
+                        Guaranteed best prices
+                    </p>
+
+                </div>
+
+            </div>
+
+
+            <div class="feature">
+
+                <span class="feature-icon">
+                    <i class="fa-solid fa-headphones"></i>
+                </span>
+
+                <div>
+
+                    <h4>24/7 Support</h4>
+
+                    <p>
+                        Dedicated support
+                    </p>
+
+                </div>
+
+            </div>
+
+
+        </section>
+
+
+    </main>
 
 
 
@@ -153,4 +451,5 @@
 
     <script src="script/blog.js"></script>
 </body>
+
 </html>
