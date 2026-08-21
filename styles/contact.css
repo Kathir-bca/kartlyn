@@ -524,7 +524,7 @@ textarea:focus {
 }
 
 
-.input-box img {
+.input-box i {
     position: absolute;
 
     width: 14px;
@@ -819,66 +819,13 @@ textarea {
     display: grid;
     gap: 10px;
 }
-
-.social-box p {
-    font-size: 11px;
-    color: #64748b;
-}
-
-.social-icons {
-    display: flex;
-    gap: 15px;
-    margin-top: 13px;
-    margin-bottom: 24px;
-}
-
-.social-icons img {
-    width: 25px;
-    object-fit: contain;
-}
-
-
-
-/* --FOOTER--  */
-.footer {
-    margin: 20px;
-}
-
-.footer-top {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    margin-top: 40px;
-    margin-bottom: 20px;
-}
-
-.footer-top img {
-    width: 200px;
-}
-
-.footer-top p {
-    color: #64748b;
-    font-size: 12px;
-    font-weight: 500;
-    padding-top: 10px;
-
-}
-
-.footer-top h4 {
-    font-size: 14px;
-    margin-bottom: 3px;
-}
-
-.footer-newsletter {
-    width: 400px;
-}
-
 /* ========================================
    NEWSLETTER
 ======================================== */
 
 .newsletter {
     border: 1px solid #c9d9fa;
+    background-color: #e1e9fa;
     border-radius: 9px;
     padding: 13px;
     margin-bottom: 13px;
@@ -914,18 +861,23 @@ textarea {
     line-height: 1.5;
     color: #64748b;
 }
-
+.newsletter h4{
+    font-size: 12px;
+}
 
 .newsletter form {
     display: flex;
+    flex-direction: column;
+    gap: 8px;
+    align-items: center;
 }
 
 
 .newsletter input {
     height: 30px;
-    width: 250px;
     border: 1px solid #dce2eb;
-    border-radius: 4px 0px 0px 4px;
+    border-radius: 4px;
+    width: 100%;
     padding: 0 10px;
     outline: none;
     background: white;
@@ -937,37 +889,64 @@ textarea {
     height: 29px;
     background: var(--primary);
     border: 0;
-    margin-left: -2px;
-    border-radius: 0px 4px 4px 0px;
+    border-radius: 4px;
     color: white;
-    width: 100px;
+    width: 100%;
     font-size: 11px;
     font-weight: 600;
 }
 
 
-/* ========================================
-   PRIVACY
-======================================== */
 
-.privacy-card {
-    display: flex;
-    align-items: center;
-    gap: 11px;
-    padding: 13px;
-    border: 1px solid #c7d7f4;
-    border-radius: 9px;
-}
 
-.privacy-icon img {
-    width: 70px;
-    border-radius: 50%;
-}
-
-.privacy-card p {
-    font-size: 10px;
-    line-height: 1.45;
+.social-box p {
+    font-size: 11px;
     color: #64748b;
+}
+
+.social-icons {
+    display: flex;
+    gap: 15px;
+    margin-top: 13px;
+    margin-bottom: 24px;
+}
+
+.social-icons img {
+    width: 25px;
+    object-fit: contain;
+}
+
+
+
+
+/* --FOOTER--  */
+.footer {
+    margin: 20px;
+}
+
+.footer-top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 40px;
+    margin-bottom: 20px;
+}
+
+.footer-top img {
+    width: 200px;
+}
+
+.footer-top p {
+    color: #64748b;
+    font-size: 12px;
+    font-weight: 500;
+    padding-top: 10px;
+
+}
+
+.footer-top h4 {
+    font-size: 14px;
+    margin-bottom: 3px;
 }
 
 .app-icons {
@@ -980,10 +959,28 @@ textarea {
 .app-icons img {
     width: 28px;
 }
-
+.download-section{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+.download-section h4 , .download-section p{
+    padding: 0;
+    margin: 0;
+}
+.stores img{
+    width: 140px;
+}
+.pay-logo{
+    display: flex;
+    gap: 20px;
+}
+.pay-logo img {
+    width: 50px;
+}
 .footer-bottom {
     display: grid;
-    grid-template-columns: 1fr 450px 250px;
+    grid-template-columns: 1fr 1fr;
     margin-top: 20px;
 }
 
@@ -996,14 +993,12 @@ textarea {
     padding-left: 20px;
 }
 
-.footer-bottom img {
-    width: 40px;
-}
+
 
 .footer-info {
     display: flex;
     align-items: center;
-    vertical-align: center;
+    gap: 40px;
 }
 
 
@@ -1081,6 +1076,12 @@ textarea {
     .newsletter button {
         width: 150px;
     }
+    .pay-logo img{
+        width: 40px;
+    }
+    .pay-logo{
+        gap: 10px;
+    }
 }
 
 
@@ -1124,14 +1125,7 @@ textarea {
     .newsletter {
         margin-bottom: 13px;
     }
-    .footer-top{
-        align-items: center;
-    }
-    .footer-top>div:last-child {
-        grid-column: -1 / 1;
-        width: min(100%, 300px) !important;
-        justify-self: center;
-    }
+
 }
 
 
