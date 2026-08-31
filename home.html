@@ -8,6 +8,7 @@
     <link rel="icon" href="images/Kartlyn-logo.png">
     <link rel="stylesheet" href="styles/home.css">
     <link rel="stylesheet" href="styles/homemedia.css">
+    <link rel="stylesheet" href="styles/responsive.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.3.0/css/all.min.css"
         integrity="sha512-ApSLB1Pd3/bZN8fWB/RG9YhN/7bd9Hkf3AGaE2mPfebjrxagjuBtx2GcgdqIlJkUzwylBo61r9Xa9NmgBI0swA=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
@@ -68,9 +69,8 @@
 
 
     <nav class="nav">
-        <div class="allCate">
-            <i class="fa-solid fa-bars"></i>
-            <span>All Categories</span>
+        <div>
+            <i class="fa-solid fa-bars categories-menu js-menu-btn"></i>
         </div>
         <div class="nav-row">
             <a href="home.html" class="nav-active">Home</a>
@@ -86,154 +86,99 @@
 
 
     <div class="main">
-        <div class="side-bar">
+        <div class="side-bar js-side-bar">
+
             <div>
-                <i class="fa-solid fa-display" style="color: rgb(0, 0, 0);"></i>
-                <p>Electronics</p>
-                <i class="fa-solid fa-chevron-right" style="color: rgb(0, 0, 0);"></i>
+                <i class="fa-solid fa-display"></i>
+                <a href="shop.html">
+                    <p>Electronics</p>
+                </a>
+                <i class="fa-solid fa-chevron-right"></i>
             </div>
             <div>
-                <i class="fa-solid fa-shirt" style="color: rgb(0, 0, 0);"></i>
-                <p>Fashion & Apparel</p>
-                <i class="fa-solid fa-chevron-right" style="color: rgb(0, 0, 0);"></i>
+                <i class="fa-solid fa-shirt"></i>
+                <a href="shop.html">
+                    <p>Fashion & Apparel</p>
+                </a>
+                <i class="fa-solid fa-chevron-right"></i>
             </div>
             <div>
-                <i class="fa-solid fa-home" style="color: rgb(0, 0, 0);"></i>
-                <p>Home & Living</p>
-                <i class="fa-solid fa-chevron-right" style="color: rgb(0, 0, 0);"></i>
+                <i class="fa-solid fa-home"></i>
+                <a href="shop.html">
+                    <p>Home & Living</p>
+                </a>
+                <i class="fa-solid fa-chevron-right"></i>
             </div>
             <div>
-                <i class="fa-solid fa-spray-can-sparkles" style="color: rgb(0, 0, 0);"></i>
-                <p>Beauty & Personal Care</p>
-                <i class="fa-solid fa-chevron-right" style="color: rgb(0, 0, 0);"></i>
+                <i class="fa-solid fa-spray-can-sparkles"></i>
+                <a href="shop.html">
+                    <p>Beauty & Personal Care</p>
+                </a>
+                <i class="fa-solid fa-chevron-right"></i>
             </div>
             <div>
-                <i class="fa-regular fa-futbol" style="color: rgb(0, 0, 0);"></i>
-                <p>Sports & Outdoors</p>
-                <i class="fa-solid fa-chevron-right" style="color: rgb(0, 0, 0);"></i>
+                <i class="fa-regular fa-futbol"></i>
+                <a href="shop.html">
+                    <p>Sports & Outdoors</p>
+                </a>
+                <i class="fa-solid fa-chevron-right"></i>
             </div>
             <div>
-                <i class="fa-solid fa-book" style="color: rgb(0, 0, 0);"></i>
-                <p>Books & Stationary</p>
-                <i class="fa-solid fa-chevron-right" style="color: rgb(0, 0, 0);"></i>
+                <i class="fa-solid fa-book"></i>
+                <a href="shop.html">
+                    <p>Books & Stationary</p>
+                </a>
+                <i class="fa-solid fa-chevron-right"></i>
             </div>
             <div>
-                <i class="fa-solid fa-car" style="color: rgb(0, 0, 0);"></i>
-                <p>Automotive</p>
-                <i class="fa-solid fa-chevron-right" style="color: rgb(0, 0, 0);"></i>
+                <i class="fa-solid fa-car"></i>
+                <a href="shop.html">
+                    <p>Automotive</p>
+                </a>
+                <i class="fa-solid fa-chevron-right"></i>
             </div>
             <div>
-                <i class="fa-solid fa-cubes-stacked" style="color: rgb(0, 0, 0);"></i>
-                <p>Toys & Games</p>
-                <i class="fa-solid fa-chevron-right" style="color: rgb(0, 0, 0);"></i>
+                <i class="fa-solid fa-cubes-stacked"></i>
+                <a href="shop.html">
+                    <p>Toys & Games</p>
+                </a>
+                <i class="fa-solid fa-chevron-right"></i>
             </div>
             <div>
-                <i class="fa-solid fa-heart-circle-plus" style="color: rgb(0, 0, 0);"></i>
-                <p>Health & Wellness</p>
-                <i class="fa-solid fa-chevron-right" style="color: rgb(0, 0, 0);"></i>
+                <i class="fa-solid fa-heart-circle-plus"></i>
+                <a href="shop.html">
+                    <p>Health & Wellness</p>
+                </a>
+                <i class="fa-solid fa-chevron-right"></i>
             </div>
             <div>
-                <i class="fa-solid fa-ellipsis" style="color: rgb(0, 0, 0);"></i>
-                <p>More Categories</p>
-                <i class="fa-solid fa-chevron-right" style="color: rgb(0, 0, 0);"></i>
+                <i class="fa-solid fa-ellipsis"></i>
+                <a href="shop.html">
+                    <p>More Categories</p>
+                </a>
+                <i class="fa-solid fa-chevron-right"></i>
             </div>
         </div>
 
+        <section class="slider">
+            <a href="shop.html" class="slider-flex">
+                <img src="images/home/hero (3).jpeg" alt="">
 
+                <img src="images/home/hero (2).jpeg" alt="">
 
+                <img src="images/home/hero (7).jpeg" alt="">
 
+                <img src="images/home/hero (5).jpeg" alt="">
 
+                <img src="images/home/hero (4).jpeg" alt="">
 
+                <img src="images/home/hero (1).jpeg" alt="">
 
-
-        <section class="slider" data-slider aria-label="Featured products">
-
-            <div class="slider-viewport">
-
-                <div class="slides" data-track>
-
-                    <article class="slide is-active" data-slide aria-hidden="false">
-                        <div class="slide-content">
-                            <p class="slide-label" style="color: #1D4ED8;">Featured Product</p>
-                            <h1>Experience Music Like Never Before</h1>
-                            <p>Premium sound. Ultimate comfort.</p>
-                            <p>Up to 40% OFF on headphones</p>
-
-                            <a class="slide-button" href="shop.html">
-                                Shop Now <span aria-hidden="true">→</span>
-                            </a>
-                        </div>
-
-                        <img class="slide-image" src="images/headphone.png" alt="Wireless headphones">
-                    </article>
-
-                    <article class="slide" data-slide aria-hidden="true">
-                        <div class="slide-content">
-                            <p class="slide-label" style="color: #1D4ED8;">New Collection</p>
-                            <h1>Premium Fashion For Every Occasion</h1>
-                            <p>Discover the latest trends in clothing, footwear<p>and accessories for every occasion.</p></p>
-                            <p>Up to 60% OFF on t-shirts</p>
-
-                            <a class="slide-button" href="shop.html">
-                                Explore Fashion <span aria-hidden="true">→</span>
-                            </a>
-                        </div>
-
-                        <img class="slide-image" src="images/fashionslider.png" alt="Modern laptop">
-                    </article>
-
-                    <article class="slide" data-slide aria-hidden="true">
-                        <div class="slide-content">
-                            <p class="slide-label" style="color: #1D4ED8;">Exclusive Collection</p>
-                            <h1>Complete Your Look with Premium Accessories</h1>
-                            <p>Explore trendy backpacks, wallets, belts, Watches, sunglasses
-                            <p>and-crafted to add the perfect finishing touch every oufit.</p>
-                            </p>
-                            <p>Smart watches up to 40% OFF</p>
-
-                            <a class="slide-button" href="shop.html">
-                                Shop Now <span aria-hidden="true">→</span>
-                            </a>
-                        </div>
-
-                        <img class="slide-image" src="images/accessslider.png" alt="Smart watch">
-                    </article>
-
-                </div>
-
-                <button type="button" class="slider-arrow slider-arrow-left" data-prev aria-label="Previous slide">
-                    &#10094;
-                </button>
-
-                <button type="button" class="slider-arrow slider-arrow-right" data-next aria-label="Next slide">
-                    &#10095;
-                </button>
-
-                <div class="slider-dots" data-dots role="tablist" aria-label="Choose a slide">
-                </div>
-
-            </div>
-
+                <img src="images/home/hero (6).jpeg" alt="">
+            </a>
         </section>
 
     </div>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 
@@ -602,6 +547,7 @@
     </footer>
 
 
+    <script src="script/all.js"></script>
     <script src="script/home.js"></script>
 </body>
 

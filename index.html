@@ -3,127 +3,270 @@
 
 <head>
     <meta charset="UTF-8">
+
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Login</title>
-    <link rel="stylesheet" href="styles/style.css">
+
+    <meta name="description" content="KartLyn Login Page">
+    <link rel="icon" href="images/Kartlyn-logo.png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.3.0/css/all.min.css"
+        integrity="sha512-ApSLB1Pd3/bZN8fWB/RG9YhN/7bd9Hkf3AGaE2mPfebjrxagjuBtx2GcgdqIlJkUzwylBo61r9Xa9NmgBI0swA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
-        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
         rel="stylesheet">
+
+    <title>Login - KartLyn</title>
+
+    <link rel="stylesheet" href="styles/style.css">
+    <link rel="stylesheet" href="styles/responsive.css">
 </head>
 
 <body>
-    <center class="admin">
-        <img src="images/admin.png" alt="img">
-        <h1>Welcome Back!</h1>
-        <p>Login to your account to continue</p>
-    </center>
-    <div id="login-container">
-        <div>
-            <h1>LOGIN</h1>
-            <hr class="u-line">
-        </div>
 
-        <form id="login-form" onsubmit="return validate()" action="home.html
-        " novalidate>
-            <div id="email-container">
-                <label for="email">Email / Username :</label>
-                <input type="text" placeholder="Enter Email / Username" id="email">
-            </div>
+    <main class="login-page">
 
-            <p class="error" id="email-error"></p>
+        <div class="login-container">
 
-            <div id="password-container">
-                <label for="password">Password :</label>
-                <input type="password" placeholder="Enter Your Password" id="password">
-            </div>
+            <!-- =========================
+                 LEFT BRANDING SECTION
+            ========================== -->
+            <section class="welcome-section">
 
-            <p class="error" id="password-error"></p>
+                <div class="circle circle-one"></div>
+                <div class="circle circle-two"></div>
+                <div class="circle circle-three"></div>
 
-
-            <span class="forget">Forget Password?</span>
-            <button type="submit" class="login-btn">Login</button>
-
-            <div class="OR">
-                <div>
-                    <hr>
+                <!-- Logo -->
+                <div class="brand-logo">
+                    <img src="images/Kartlyn.PNG" alt="KartLyn">
                 </div>
-                <span>OR</span>
-                <div>
-                    <hr>
+
+                <!-- Welcome Text -->
+                <div class="welcome-content">
+
+                    <h1>
+                        Welcome Back to
+                        <span>KartLyn</span>
+                    </h1>
+
+                    <p>
+                        Login to your account and continue
+                        shopping the best deals.
+                    </p>
+
                 </div>
-            </div>
 
-            <button type="button" class="login-google" onclick="popUp()"><img src="images/google.png">Login With Google</button>
-            <p class="create-account">Don't have an account? <a href="register.html">Create Account</a></p>
-        </form>
-    </div>
+                <!-- Shopping Illustration -->
+                <div class="shopping-image">
+                    <img src="images/kartlyn-shopping.png" alt="Shopping Image">
+                </div>
+
+            </section>
 
 
+            <!-- =========================
+                 RIGHT LOGIN SECTION
+            ========================== -->
+            <section class="form-section">
 
-    <div class="login-with-google"  id="login-with-google">
-        <img src="images/google.png" alt="google">
-        <p>Login with Google</p>
-        <h2>Choose an account for MySite</h2>
+                <div class="form-wrapper">
 
-        <div class="google-accounts">
-            <div>
-                <img src="images/k2.jpg" alt="K">
-                <span>
-                    <h3>Kathir</h3>
-                    <p>kathir1234@gmail.com</p>
-                </span>
-            </div>
-            <hr>
-            <div>
-                <img src="images/m.jpg" alt="m">
-                <span>
-                    <h3>Mohamed Rajak</h3>
-                    <p>rajak35@gmail.com</p>
-                </span>
-            </div>
-            <hr>
-            <div>
-                <img src="images/h.jpg" alt="h">
-                <span>
-                    <h3>Hari</h3>
-                    <p>hari1234@gmail.com</p>
-                </span>
-            </div>
-            <hr>
-            <div>
-                <img src="images/s.jpg" alt="s">
-                <span>
-                    <h3>Saravanan</h3>
-                    <p>sara1234@gmail.com</p>
-                </span>
-            </div>
-            <hr>
-            <div style="border-bottom: none;">
-                <img src="images/add.png" alt="add" id="add-acc">
-                <h4>Add another account</h4>
-            </div>
+                    <!-- Heading -->
+                    <div class="form-heading">
+
+                        <h2>
+                            Login to
+                            <span>KartLyn</span>
+                        </h2>
+
+                        <p>
+                            New here?
+                            <a href="register.html">
+                                Create an account
+                            </a>
+                        </p>
+
+                    </div>
+
+
+                    <!-- =====================
+                         LOGIN FORM
+                    ====================== -->
+                    <form id="loginForm" novalidate>
+
+                        <!-- Email -->
+                        <div class="form-group">
+
+                            <label for="email">
+                                Email Address
+                            </label>
+
+                            <div class="input-wrapper">
+
+                                <span class="input-icon">
+                                    <svg viewBox="0 0 24 24">
+                                        <rect x="3" y="5" width="18" height="14" rx="2"></rect>
+                                        <polyline points="3,7 12,13 21,7"></polyline>
+                                    </svg>
+                                </span>
+
+                                <input type="email" id="email" name="email" placeholder="Enter your email address"
+                                    autocomplete="email">
+
+                            </div>
+
+                            <small class="error-message" id="emailError"></small>
+
+                        </div>
+
+
+                        <!-- Password -->
+                        <div class="form-group">
+
+                            <label for="password">
+                                Password
+                            </label>
+
+                            <div class="input-wrapper">
+
+                                <span class="input-icon">
+                                    <svg viewBox="0 0 24 24">
+                                        <rect x="5" y="10" width="14" height="10" rx="2"></rect>
+
+                                        <path d="M8 10V7a4 4 0 0 1 8 0v3"></path>
+                                    </svg>
+                                </span>
+
+                                <input type="password" id="password" name="password" placeholder="Enter your password"
+                                    autocomplete="current-password">
+
+                                <!-- Show Password -->
+                                <button type="button" class="password-toggle" id="togglePassword"
+                                    aria-label="Show password">
+
+                                    <svg id="eyeOpen" viewBox="0 0 24 24">
+                                        <path d="M2 12s3.5-6 10-6 10 6 10 6-3.5 6-10 6S2 12 2 12Z"></path>
+                                        <circle cx="12" cy="12" r="3"></circle>
+                                    </svg>
+
+                                    <svg id="eyeClosed" class="hidden" viewBox="0 0 24 24">
+                                        <path d="M3 3l18 18"></path>
+                                        <path d="M10.6 10.6a2 2 0 0 0 2.8 2.8"></path>
+                                        <path d="M9.9 5.1A10.5 10.5 0 0 1 12 5c6.5 0 10 7 10 7a18.4 18.4 0 0 1-3.1 3.7">
+                                        </path>
+                                        <path d="M6.6 6.6C3.7 8.4 2 12 2 12s3.5 7 10 7c1.4 0 2.7-.3 3.8-.8"></path>
+                                    </svg>
+
+                                </button>
+
+                            </div>
+
+                            <small class="error-message" id="passwordError"></small>
+
+                        </div>
+
+
+                        <!-- Forgot Password -->
+                        <div class="forgot-row">
+
+                            <button type="button" id="forgotPassword" class="forgot-link">
+                                Forgot Password?
+                            </button>
+
+                        </div>
+
+
+                        <!-- Login Button -->
+                        <button type="submit" class="login-button" id="loginButton">
+                            <span id="loginText">
+                                Login
+                            </span>
+
+                            <span id="loginLoader" class="loader hidden"></span>
+                        </button>
+
+                    </form>
+
+
+                    <!-- =====================
+                         SOCIAL LOGIN
+                    ====================== -->
+
+                    <div class="divider">
+
+                        <span></span>
+
+                        <p>or continue with</p>
+
+                        <span></span>
+
+                    </div>
+
+
+                    <div class="social-buttons">
+
+                        <button type="button" class="social-button" data-provider="Google">
+                            <img src="images/google.png" alt="">
+                            <span>Google</span>
+                        </button>
+
+
+                        <button type="button" class="social-button" data-provider="Facebook">
+                            <img src="Icons/communication.png" alt="">
+                            <span>Facebook</span>
+                        </button>
+
+
+                        <button type="button" class="social-button" data-provider="Apple">
+                            <img src="Icons/apple.png" alt="">
+                            <span>Apple</span>
+                        </button>
+
+                    </div>
+
+
+                    <!-- =====================
+                         SECURITY MESSAGE
+                    ====================== -->
+
+                    <div class="secure-login">
+
+                        <div class="security-icon">
+
+                            <svg viewBox="0 0 24 24">
+                                <path d="M12 3l8 3v6c0 5-3.5 8-8 9-4.5-1-8-4-8-9V6l8-3Z"></path>
+                                <path d="m8.5 12 2.2 2.2 4.8-5"></path>
+                            </svg>
+
+                        </div>
+
+                        <div>
+                            <h3>Secure Login</h3>
+
+                            <p>
+                                Your data is safe with us
+                            </p>
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </section>
+
         </div>
-        <button type="button" id="backToLogin" onclick="back()">Back</button>
-    </div>
+
+    </main>
 
 
+    <!-- Toast Notification -->
+    <div id="toast" class="toast" role="alert"></div>
 
 
-
-
-
-    <div class="footer">
-        <div class="image">
-            <img src="images/fb.png" alt="img">
-            <img src="images/twitter.png" alt="img">
-            <img src="images/link.png" alt="img">
-            <img src="images/ins.png" alt="img">
-        </div>
-        <p>&copy; 2025 Your Company. All rights reserved.</p>
-    </div>
     <script src="script/script.js"></script>
+
 </body>
 
 </html>

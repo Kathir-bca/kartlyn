@@ -1,0 +1,95 @@
+/*
+  Shared responsive foundation
+  Loaded after each page stylesheet to prevent horizontal overflow and keep
+  common page shells readable at tablet and mobile widths.
+*/
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  max-width: 100%;
+  overflow-x: hidden;
+}
+
+img,
+svg,
+video,
+canvas {
+  max-width: 100%;
+}
+
+@media (max-width: 1024px) {
+  .blog-page,
+  .brands-page,
+  .contact-page,
+  .deals-layout,
+  .shop-container,
+  .main-content {
+    width: min(100% - 32px, 1200px);
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .header,
+  .nav,
+  .page-header,
+  .brands-header,
+  .deals-header,
+  .arrival-hero,
+  .page-heading {
+    min-width: 0;
+  }
+}
+
+@media (max-width: 768px) {
+  .nav-row {
+    max-width: 100%;
+    overflow-x: auto;
+    overscroll-behavior-inline: contain;
+    scrollbar-width: none;
+  }
+
+  .nav-row::-webkit-scrollbar {
+    display: none;
+  }
+
+  .page-header,
+  .brands-header,
+  .deals-header,
+  .arrival-hero,
+  .page-heading {
+    padding-left: 16px;
+    padding-right: 16px;
+  }
+
+  .features,
+  .feature,
+  .bottom-features {
+    min-width: 0;
+  }
+}
+
+@media (max-width: 480px) {
+  .blog-page,
+  .brands-page,
+  .contact-page,
+  .deals-layout,
+  .shop-container,
+  .main-content {
+    width: calc(100% - 24px);
+  }
+
+  .page-header,
+  .brands-header,
+  .deals-header,
+  .arrival-hero,
+  .page-heading {
+    padding-left: 12px;
+    padding-right: 12px;
+  }
+}

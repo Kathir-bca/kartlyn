@@ -182,46 +182,30 @@ a {
     padding-left: 2px;
 }
 
-.nav {
+.nav{
     display: grid;
-    grid-template-columns: 280px 1fr;
-    padding: 20px;
-    text-align: center;
+    grid-template-columns:200px 1fr;
     font-size: 16px;
     font-weight: 600;
     background-color: var(--bg-cl);
     box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.2);
+    padding: 20px 10px;
+    position: relative;
 }
 
-.allCate {
-    text-align: left;
-    background-color: #1D4ED8;
-    color: var(--bg-cl);
-    margin-bottom: -20px;
-    margin-top: -20px;
-    padding-top: 20px;
-    border-radius: 6px 6px 0 0;
-    cursor: pointer;
-}
 
-.allCate span {
-    margin-left: 30px;
-}
-
-.allCate span,
-.allCate i {
-    font-size: 16px;
-    font-weight: 600;
-    padding-left: 10px;
-    color: #FAF9F6;
-}
 
 .nav-row {
     display: flex;
-    flex-direction: row;
-    justify-content: space-evenly;
+    justify-content: space-between;
 }
-
+.categories-menu{
+    position: absolute;
+    font-family: 22px;
+    font-weight: 800px;
+    left: 100px;
+    bottom: 25px;
+}
 .nav-active {
     color: var(--color);
     padding-bottom: 20px;
@@ -230,226 +214,66 @@ a {
 }
 
 .main {
-    display: flex;
-    transition: .3s ease;
+    transition: 0.3s ease;
+    margin: 20px;
+    gap: 20px;
+    position: relative;
 }
 
 .side-bar {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    background-color: var(--bg-cl);
+    align-items: start;
+    padding: 20px;
+    background-color: white;
     gap: 20px;
-    box-shadow: 4px 4px 6px rgba(0, 0, 0, 0.1);
-    padding: 10px;
-    margin-left: 20px;
-    border-radius: 0 0 6px 6px;
-    width: 354px;
+    border: #b4b9c7 2px solid;
+    border-radius: 6px;
     overflow: hidden;
     transition: all .3s ease;
+    position: absolute;
+    z-index: 1000;
+    top: -10px;
+    opacity: 0;
 }
 
-.side-bar.hide {
-    width: 0;
-    padding: 0;
-    margin: 0;
-    opacity: 0;
-    min-width: 0;
+.side-bar-show {
+    opacity: 1;
     overflow: hidden;
 }
 
 .side-bar div {
     display: grid;
-    grid-template-columns: 20px 200px 10px;
-    place-items: center;
+    grid-template-columns: 30px 200px 20px;
     font-size: 14px;
     font-weight: 500;
 }
-
-.slider {
-    width: 100%;
-    min-width: 0;
-    padding: 0 40px 0 0;
-    box-sizing: border-box;
-    margin: 20px 0 0 20px;
+.side-bar a {
+    transition: all 0.4s ease;
 }
-
-.slider-viewport {
-    position: relative;
-    width: 1150px;
-    min-width: 0;
-    overflow: hidden;
-    border-radius: 14px;
-    background: linear-gradient(135deg, #081C3A 0%, #0D3B66 45%, #2563EB 100%);
-    transition: width .3s ease;
-}
-
-.slides {
-    display: flex;
-    width: 100%;
-    transition: transform 0.55s ease-in-out;
-    will-change: transform;
-}
-
-.slide {
-    position: relative;
-    flex: 0 0 100%;
-    min-width: 0;
-    min-height: 360px;
-    display: flex;
-    align-items: center;
-    padding: 45px 80px;
-    box-sizing: border-box;
-    overflow: hidden;
-    isolation: isolate;
-    color: white;
-}
-
-.slide::before {
-    content: "";
-    position: absolute;
-    inset: 0;
-    z-index: 0;
-    background: linear-gradient(90deg,
-            #D8E3F5 0%,
-            #C0D3F1 35%,
-            #B0C6EB 70%,
-            #769FCB 100%);
-}
-
-.slide-content {
-    position: relative;
-    z-index: 2;
-    width: 50%;
-    max-width: 510px;
-}
-
-
-.slide-label {
-    display: inline-block;
-    margin-bottom: 18px;
-    padding: 6px 14px;
-    border-radius: 20px;
-    background-color: rgb(255, 255, 255);
-    font-size: 13px;
-    font-weight: 600;
-}
-
-.slide h1 {
-    margin-bottom: 18px;
-    color: #143b96;
-    font-size: clamp(28px, 4vw, 46px);
-    line-height: 1.15;
-    font-size: 40px;
-}
-
-.slide p {
-    margin-bottom: 7px;
-    color: #1b1972;
-    font-size: 15px;
-}
-
-.slide-button {
-    display: inline-block;
-    margin-top: 20px;
-    padding: 11px 16px;
-    border-radius: 6px;
-    background: white;
+.side-bar a:hover{
     color: #1d4ed8;
-    font-size: 14px;
-    font-weight: 600;
-    text-decoration: none;
-    transition: background 0.2s ease, transform 0.2s ease;
+    opacity: 0.6;
 }
-
-.slide-button span {
-    margin-left: 6px;
-}
-
-.slide-button:hover {
-    background: #eaf0ff;
-    transform: translateY(-2px);
-}
-
-.slide-image {
-    position: absolute;
-    z-index: 1;
-    right: 5%;
-    top: 50%;
-    width: min(43%, 520px);
-    max-height: 90%;
-    object-fit: contain;
-    transform: translateY(-50%);
-    pointer-events: none;
-}
-
-
-.slider-arrow {
-    position: absolute;
-    top: 50%;
-    z-index: 3;
-    width: 48px;
-    height: 48px;
-    border: none;
-    border-radius: 50%;
-    background: white;
-    color: #111827;
-    font-size: 25px;
-    line-height: 1;
-    cursor: pointer;
-    box-shadow: 0 3px 12px rgba(0, 0, 0, 0.2);
-    transform: translateY(-50%);
-    transition: transform 0.2s ease, background 0.2s ease;
-}
-
-.slider-arrow:hover {
-    background: #eef3ff;
-    transform: translateY(-50%) scale(1.08);
-}
-
-.slider-arrow-left {
-    left: 18px;
-}
-
-.slider-arrow-right {
-    right: 18px;
-}
-
-
-
-.slider-dots {
-    position: absolute;
-    bottom: 18px;
-    left: 50%;
-    z-index: 3;
-    display: flex;
-    gap: 8px;
-    transform: translateX(-50%);
-}
-
-.slider-dot {
-    width: 10px;
-    height: 10px;
-    padding: 0;
-    border: none;
-    border-radius: 50%;
-    background: rgba(255, 255, 255, 0.55);
-    cursor: pointer;
-}
-
-.slider-dot.is-active {
-    background: white;
-    transform: scale(1.25);
-}
-
-/* Prevent horizontal overflow in your existing layout */
-
-.main,
-.slider,
-.slide {
+.slider {
     min-width: 0;
+    box-sizing: border-box;
 }
-
+.slider-flex{
+    display: flex;
+    gap: 30px;
+    overflow-x: auto;
+    scroll-behavior: smooth;
+    scrollbar-width: none;
+}
+.slider-flex::-webkit-scrollbar {
+    display: none;
+}
+.slider-flex img{
+    border-radius: 20px;
+    width: 500px;
+}
 
 .feature {
     display: grid;
@@ -917,7 +741,7 @@ button i {
 
 .blogs {
     display: flex;
-    gap: 50px;
+    gap: 20px;
     justify-content: center;
 }
 

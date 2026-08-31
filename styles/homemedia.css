@@ -43,10 +43,6 @@ img {
         margin-top: 10px;
     }
 
-    .nav {
-        grid-template-columns: 220px minmax(0, 1fr);
-    }
-
     .side-bar {
         width: 290px;
     }
@@ -177,27 +173,15 @@ img {
         padding: 0;
     }
 
-    .allCate {
-        width: 100%;
-        margin: 0;
-        padding: 13px 16px;
-        border-radius: 0;
-    }
-
-    .allCate span {
-        margin-left: 10px;
-    }
-
     .side-bar {
         display: none;
     }
-
     .nav-row {
         justify-content: flex-start;
         gap: 22px;
         overflow-x: auto;
         white-space: nowrap;
-        padding: 14px 16px;
+        padding: 0px 16px;
     }
 
     .nav-active {
@@ -481,5 +465,192 @@ img {
     .offer-container2,
     .offer-container3 {
         grid-template-columns: 1fr 110px;
+    }
+}
+
+/* Keep the category menu button aligned before the navigation links. */
+.nav {
+    display: flex;
+    align-items: center;
+    gap: 18px;
+}
+
+.nav > div:first-child {
+    flex: 0 0 auto;
+    display: flex;
+    align-items: center;
+}
+
+.categories-menu {
+    position: static;
+    font-size: 22px;
+    font-weight: 800;
+    line-height: 1;
+    padding: 4px;
+}
+
+.nav-row {
+    flex: 1 1 auto;
+    min-width: 0;
+}
+
+@media (max-width: 768px) {
+    .nav {
+        flex-direction: row;
+        padding: 12px;
+    }
+
+    .nav-row {
+        padding: 0 4px;
+    }
+
+    .side-bar {
+        display: flex;
+        width: min(320px, calc(100vw - 24px));
+        max-height: calc(100dvh - 24px);
+        overflow-y: auto;
+        left: 0;
+        top: 0;
+        pointer-events: none;
+    }
+
+    .side-bar.side-bar-show {
+        opacity: 1;
+        pointer-events: auto;
+    }
+}
+
+/* Home page responsive overrides for the current markup. */
+@media (max-width: 768px) {
+    .main,
+    .feature,
+    .product-section,
+    .cate-deals,
+    .blog-section,
+    .footer {
+        margin-left: 12px;
+        margin-right: 12px;
+    }
+
+    .slider {
+        margin: 0;
+    }
+
+    .slider-flex {
+        gap: 12px;
+        scroll-snap-type: x mandatory;
+    }
+
+    .slider-flex img {
+        flex: 0 0 calc(100vw - 48px);
+        width: calc(100vw - 48px);
+        height: auto;
+        scroll-snap-align: start;
+    }
+
+    .feature {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        gap: 8px;
+    }
+
+    .feature .sec1,
+    .feature .sec2,
+    .feature .sec3,
+    .feature .sec4,
+    .feature .sec5 {
+        justify-items: start;
+    }
+
+    .footer-bottom {
+        grid-template-columns: 1fr;
+    }
+}
+
+@media (max-width: 480px) {
+    .header {
+        padding: 10px 12px;
+    }
+
+    .middle-section {
+        display: grid;
+        grid-template-columns: minmax(0, 1fr) 50px;
+    }
+
+    #categories {
+        grid-column: 1 / -1;
+        width: 100%;
+        max-width: none;
+        border-radius: 8px;
+        margin: 0 0 8px;
+    }
+
+    #search-bar {
+        width: 100%;
+        border-radius: 8px 0 0 8px;
+    }
+
+    .middle-section button {
+        width: 50px;
+        padding-left: 0;
+        padding-right: 0;
+    }
+
+    .right-section {
+        gap: 10px 4px;
+    }
+
+    .slider-flex img {
+        flex-basis: calc(100vw - 24px);
+        width: calc(100vw - 24px);
+        border-radius: 12px;
+    }
+
+    .feature {
+        grid-template-columns: 1fr;
+        padding: 12px;
+    }
+
+    .feature .sec1,
+    .feature .sec2,
+    .feature .sec3,
+    .feature .sec4,
+    .feature .sec5 {
+        padding: 8px 0;
+    }
+
+    .cate-title,
+    .product-top-sec {
+        grid-template-columns: 1fr auto;
+        gap: 8px;
+    }
+
+    .products,
+    .e-products {
+        gap: 10px;
+    }
+
+    .card {
+        min-width: 0;
+        padding: 28px 10px 12px;
+    }
+
+    .card h3 {
+        font-size: 12px;
+    }
+
+    .price {
+        font-size: 15px;
+    }
+
+    .offer-container1,
+    .offer-container2,
+    .offer-container3 {
+        grid-template-columns: minmax(0, 1fr) 100px;
+        gap: 8px;
+    }
+
+    .footer-bottom p,
+    .footer-bottom a {
+        padding-left: 0;
     }
 }
