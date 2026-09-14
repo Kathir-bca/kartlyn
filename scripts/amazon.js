@@ -5,13 +5,8 @@ import { formatCurrency } from './utils/money.js';
 // Rendering Products
 loadProducts(renderProductsGrid);
 
-function renderProductsGrid() {
-
-    let productsHTML = '';
-
-    products.forEach((product) => {
-
-        productsHTML += `
+function renderProduct(product) {
+    return `
         <div class="product-container js-product-container-${product.id}">
             <div class="product-image-container">
             <img class="product-image" src="${product.image}">
@@ -60,7 +55,16 @@ function renderProductsGrid() {
             <button class="add-to-cart-button button-primary js-add-to-cart" data-product-id = "${product.id}">
             Add to Cart
             </button>
-      </div> `
+      </div> `;
+}
+
+function renderProductsGrid() {
+
+    let productsHTML = '';
+
+    products.forEach((product) => {
+
+        productsHTML += renderProduct(product);
 
     });
 
@@ -139,3 +143,92 @@ document.querySelector('.js-mobile-right-section').addEventListener('click', () 
         isOpen = false;
     }
 })
+
+
+
+// FOR SEARCHING PRODUCT 
+
+
+const searchInput = document.querySelector('#searchInput');
+const searchBtn = document.querySelector('#searchButton');
+
+function searchProduct() {
+
+    const query = searchInput.value.trim().toLowerCase();
+    // const regex = new RegExp(`\\b${query}\\b`,'i')
+    console.log(query);
+    const result = products.filter((product) => {
+        const searchText = `
+                ${product.name}
+                ${product.type}
+                ${product.keywords}
+                ${product.stock}
+            `.toLowerCase();
+
+        let searchContainer = document.querySelector('#searchedProduct');
+        let searchedProduct = '';
+
+        if (searchText.includes(query)) {
+            console.log(product);
+
+            searchContainer.classList.remove('js-products-grid');
+            searchedProduct += renderProduct(product);
+            searchContainer.innerHTML = searchedProduct;
+        }
+        
+
+    });
+
+}
+
+searchInput.addEventListener('keydown', (event) => {
+
+    if (event.key === 'Enter') {
+        searchProduct();
+    }
+
+});
+
+searchBtn.addEventListener('click', () => {
+
+    searchProduct();
+
+});
+
+
+//  {
+//     "id": "d62a4f97-81c5-43be-9057-26e318ca740b",
+//     "image": "images/products/adults-plain-cotton-tshirt-2-pack-teal.jpg",
+//     "name": "Adults Plain Cotton T-Shirt - 2 Pack",
+//     "rating": {
+//       "stars": 4.5,
+//       "count": 56
+//     },
+//     "priceCents": 799,
+//     "keywords": [
+//       "tshirts",
+//       "apparel",
+//       "mens"
+//     ],
+//     "type": "clothing",
+//     "sizeChartLink": "images/clothing-size-chart.png",
+//     "stock": "unavailable"
+//   },
+//   {
+//     "id": "c94a7e21-35f8-46bd-a062-81ce5274b903",
+//     "image": "images/products/realme.png",
+//     "name": "Realme 10 Pro 5G (Nebula Blue, 128 GB)",
+//     "rating": {
+//       "stars": 4.5,
+//       "count": 184
+//     },
+//     "priceCents": 21005,
+//     "keywords": [
+//       "smartphone",
+//       "mobile",
+//       "realme",
+//       "5g",
+//       "electronics"
+//     ],
+//     "stock": "unavailable"
+//   },

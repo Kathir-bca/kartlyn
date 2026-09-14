@@ -102,6 +102,10 @@ loadProducts(
 
         requestAnimationFrame(() => {
             document.querySelector('.progress-bar').style.width = `${progressPercent > 2 ? progressPercent : 2}%`;
+            console.log(progressPercent
+                
+            );
+            
         });
     })
 
